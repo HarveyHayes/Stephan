@@ -352,14 +352,14 @@
     <label><input type="radio" name="ord-test" value="weak"> Bevorzugt schwache Fragen</label>
   </div>
 
-  <h3>Themen</h3>
+  <button class="primary" id="btn-start" style="margin-bottom:18px;">▶ Lernen starten</button>
+
+  <h3>Themen <span id="cat-count-hint" style="color:var(--muted); font-weight:normal; text-transform:none; letter-spacing:0; font-size:12px;"></span></h3>
   <div class="cat-actions">
     <button id="btn-all">Alle</button>
     <button id="btn-none">Keine</button>
   </div>
   <div class="cat-list" id="cat-list"></div>
-
-  <button class="primary" id="btn-start">Lernen starten</button>
 
   <div class="help" id="voice-help" style="display:none;">
     <strong>🎙 Sprachbefehle (Testmodus):</strong><br>
@@ -504,8 +504,12 @@ function weakScore(q) {
 }
 
 async function loadQuestions() {
-  const res = await fetch("questions.json");
+  const res = await fetch("questions.json", { cache: "no-cache" });
+  if (!res.ok) throw new Error("HTTP " + res.status + " beim Laden von questions.json");
   QUESTIONS = await res.json();
+  if (!Array.isArray(QUESTIONS) || QUESTIONS.length === 0) {
+    throw new Error("questions.json ist leer oder hat falsches Format.");
+  }
   const seen = new Map();
   for (const q of QUESTIONS) {
     const key = qid(q);
@@ -1062,7 +1066,11 @@ document.getElementById("btn-reset").onclick = () => {
 loadQuestions().then(() => {
   renderStartScreen();
 }).catch(err => {
-  document.body.innerHTML = "<main><h1>Fehler beim Laden der Fragen</h1><p>" + err + "</p></main>";
+  document.body.innerHTML =
+    "<main><h1 style='color:#ef4444'>⚠ Fehler beim Laden der Fragen</h1>" +
+    "<p style='color:#f0f0f0'>" + (err && err.message ? err.message : err) + "</p>" +
+    "<p style='color:#999'>Prüfe, ob <code>questions.json</code> im selben Ordner liegt wie <code>index.html</code>. " +
+    "Im Browser unter <a href='questions.json' style='color:#f97316'>questions.json</a> nachsehen.</p></main>";
 });
 
 if ("serviceWorker" in navigator) {
