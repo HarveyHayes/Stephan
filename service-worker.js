@@ -1,5 +1,5 @@
 /* Service Worker für Offline-Lernen */
-const CACHE = "meister-lernen-v1";
+const CACHE = "meister-lernen-v3";
 const ASSETS = [
   "./",
   "./index.html",

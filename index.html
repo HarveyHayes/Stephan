@@ -22,153 +22,302 @@
     --bad: #ef4444;
     --partial: #eab308;
     --border: #3a3a3a;
+    --listening: #38bdf8;
   }
   * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   html, body {
     margin: 0; padding: 0; min-height: 100vh;
     background: var(--bg); color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-    font-size: 17px; line-height: 1.5;
+    font-size: 16px; line-height: 1.45;
   }
   body {
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   }
   main {
     max-width: 640px; margin: 0 auto;
-    padding: 16px 16px 80px;
+    padding: 14px 14px 110px;
   }
   h1 {
-    font-size: 20px; margin: 8px 0 16px;
-    color: var(--accent); letter-spacing: 0.5px;
+    font-size: 19px; margin: 6px 0 14px;
+    color: var(--accent); letter-spacing: 0.3px;
+  }
+  h2 {
+    font-size: 17px; margin: 18px 0 10px;
+    color: var(--text);
+  }
+  h3 {
+    font-size: 14px; margin: 14px 0 6px;
+    color: var(--muted); text-transform: uppercase;
+    letter-spacing: 1px; font-weight: 600;
   }
   .screen { display: none; }
   .screen.active { display: block; }
 
-  /* Start screen */
+  /* Tab-Navigation oben */
+  .tabs {
+    display: flex; gap: 4px; margin-bottom: 14px;
+    background: var(--surface); padding: 4px; border-radius: 10px;
+  }
+  .tabs button {
+    flex: 1; background: transparent; color: var(--muted);
+    border: none; padding: 9px 4px;
+    border-radius: 7px; font-size: 13px; font-weight: 600;
+    cursor: pointer; line-height: 1.2;
+  }
+  .tabs button.active {
+    background: var(--surface-2); color: var(--text);
+  }
+
   .stats {
     display: grid; grid-template-columns: 1fr 1fr 1fr;
-    gap: 8px; margin-bottom: 20px;
+    gap: 6px; margin-bottom: 16px;
   }
   .stat {
-    background: var(--surface); border-radius: 12px;
-    padding: 12px 8px; text-align: center;
+    background: var(--surface); border-radius: 10px;
+    padding: 10px 6px; text-align: center;
   }
-  .stat .num { font-size: 24px; font-weight: 600; }
-  .stat .lbl { font-size: 12px; color: var(--muted); text-transform: uppercase; }
+  .stat .num { font-size: 22px; font-weight: 700; }
+  .stat .lbl { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
 
-  .cat-list { display: grid; gap: 8px; margin-bottom: 16px; }
+  .cat-list { display: grid; gap: 6px; margin-bottom: 14px; }
   .cat {
     background: var(--surface); border: 1px solid var(--border);
-    border-radius: 10px; padding: 12px 14px;
+    border-radius: 10px; padding: 11px 14px;
     display: flex; align-items: center; gap: 12px;
     cursor: pointer; user-select: none;
-    transition: background 0.15s;
   }
   .cat:active { background: var(--surface-2); }
   .cat input[type="checkbox"] {
     width: 22px; height: 22px; accent-color: var(--accent);
-    pointer-events: none;
+    pointer-events: none; flex-shrink: 0;
   }
-  .cat .name { flex: 1; }
-  .cat .count { color: var(--muted); font-size: 14px; }
+  .cat .name { flex: 1; font-size: 15px; }
+  .cat .count { color: var(--muted); font-size: 13px; flex-shrink: 0; }
   .cat-actions {
-    display: flex; gap: 8px; margin-bottom: 16px;
+    display: flex; gap: 6px; margin-bottom: 12px;
   }
   .cat-actions button {
     flex: 1; background: var(--surface-2); color: var(--text);
-    border: 1px solid var(--border); padding: 8px 12px;
-    border-radius: 8px; font-size: 14px; cursor: pointer;
+    border: 1px solid var(--border); padding: 8px 10px;
+    border-radius: 8px; font-size: 13px; cursor: pointer;
   }
 
-  /* Quiz screen */
+  /* Modus-Karten — eine Spalte, gross genug zum Lesen */
+  .mode-cards {
+    display: grid; gap: 8px; margin-bottom: 12px;
+  }
+  .mode-card {
+    background: var(--surface); border: 2px solid var(--border);
+    border-radius: 12px; padding: 12px 14px;
+    cursor: pointer; user-select: none;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .mode-card:active { background: var(--surface-2); }
+  .mode-card.active {
+    border-color: var(--accent); background: rgba(249, 115, 22, 0.08);
+  }
+  .mode-card .title {
+    font-size: 16px; font-weight: 600; margin-bottom: 4px;
+    color: var(--text);
+  }
+  .mode-card.active .title { color: var(--accent); }
+  .mode-card .desc {
+    font-size: 13px; color: var(--muted); line-height: 1.35;
+  }
+
+  /* Sub-Optionen pro Modus */
+  .sub-opts {
+    background: var(--surface); border-radius: 10px;
+    padding: 10px 12px; margin-bottom: 12px;
+    font-size: 14px;
+  }
+  .sub-opts label {
+    display: flex; align-items: center; gap: 8px;
+    padding: 6px 0; cursor: pointer;
+  }
+  .sub-opts input[type="radio"] {
+    accent-color: var(--accent); width: 18px; height: 18px;
+  }
+
   .quiz-header {
     display: flex; justify-content: space-between; align-items: center;
-    margin-bottom: 12px; font-size: 13px; color: var(--muted);
+    margin-bottom: 10px; font-size: 12px; color: var(--muted);
+    gap: 8px;
   }
   .quiz-header .cat-tag {
-    background: var(--surface-2); padding: 4px 10px; border-radius: 12px;
-    color: var(--accent);
+    background: var(--surface-2); padding: 3px 9px; border-radius: 10px;
+    color: var(--accent); font-size: 12px;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    max-width: 60%;
   }
   .question {
     background: var(--surface); border-radius: 14px;
-    padding: 18px 16px; margin-bottom: 16px;
-    font-size: 18px; line-height: 1.45;
+    padding: 16px 14px; margin-bottom: 14px;
+    font-size: 17px; line-height: 1.4;
   }
   .answer-box {
     background: var(--surface); border: 1px dashed var(--border);
-    border-radius: 14px; padding: 16px;
-    margin-bottom: 16px; min-height: 80px;
+    border-radius: 14px; padding: 14px;
+    margin-bottom: 14px; min-height: 60px;
     display: none;
   }
   .answer-box.visible { display: block; }
   .answer-box .label {
-    font-size: 12px; text-transform: uppercase; color: var(--muted);
-    margin-bottom: 8px; letter-spacing: 1px;
+    font-size: 11px; text-transform: uppercase; color: var(--muted);
+    margin-bottom: 6px; letter-spacing: 1px;
   }
-  .answer-box ul { margin: 0; padding-left: 20px; }
-  .answer-box li { margin-bottom: 6px; }
+  .answer-box ul { margin: 0; padding-left: 20px; font-size: 15px; }
+  .answer-box li { margin-bottom: 5px; }
 
-  /* Buttons */
-  .btn-row { display: grid; gap: 10px; }
+  .btn-row { display: grid; gap: 8px; }
   .btn-row.three { grid-template-columns: 1fr 1fr 1fr; }
   button.primary, button.action {
     background: var(--accent); color: #111; border: none;
-    padding: 16px; border-radius: 12px; font-size: 17px;
+    padding: 15px; border-radius: 12px; font-size: 16px;
     font-weight: 600; cursor: pointer; width: 100%;
-    -webkit-tap-highlight-color: transparent;
   }
   button.action:active { transform: scale(0.98); }
   button.secondary {
     background: var(--surface-2); color: var(--text);
     border: 1px solid var(--border);
-    padding: 14px; border-radius: 12px; font-size: 16px;
+    padding: 12px; border-radius: 10px; font-size: 15px;
     cursor: pointer; width: 100%;
   }
-  button.judge { padding: 14px 8px; font-size: 15px; font-weight: 600; }
+  button.judge { padding: 13px 6px; font-size: 14px; font-weight: 700; }
   button.good { background: var(--good); color: #fff; border: none; border-radius: 12px; }
   button.partial { background: var(--partial); color: #111; border: none; border-radius: 12px; }
   button.bad { background: var(--bad); color: #fff; border: none; border-radius: 12px; }
 
-  /* Top controls */
-  .topbar {
-    display: flex; gap: 8px; margin-bottom: 12px;
-  }
-  .topbar button {
-    flex: 1; padding: 10px; font-size: 14px;
-    background: var(--surface-2); color: var(--text);
-    border: 1px solid var(--border); border-radius: 8px;
-    cursor: pointer;
-  }
-
   .progress-bar {
     height: 4px; background: var(--surface-2);
-    border-radius: 2px; overflow: hidden; margin-bottom: 16px;
+    border-radius: 2px; overflow: hidden; margin-bottom: 14px;
   }
   .progress-bar .fill {
     height: 100%; background: var(--accent);
     transition: width 0.3s;
   }
 
-  /* End screen */
-  .end-summary {
-    text-align: center; padding: 32px 16px;
+  /* Voice-Statusleiste */
+  .voice-bar {
+    position: fixed; left: 0; right: 0; bottom: 0;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: 10px 14px;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom));
+    display: none; align-items: center; gap: 10px;
+    z-index: 50;
   }
-  .end-summary h2 { font-size: 24px; }
+  .voice-bar.visible { display: flex; }
+  .voice-bar .mic-icon {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--surface-2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; flex-shrink: 0;
+  }
+  .voice-bar.listening .mic-icon {
+    background: var(--listening);
+    box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.25);
+    animation: pulse 1.4s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.25); }
+    50% { box-shadow: 0 0 0 10px rgba(56, 189, 248, 0); }
+  }
+  .voice-bar .voice-text {
+    flex: 1; font-size: 12px; color: var(--muted);
+    line-height: 1.3;
+  }
+  .voice-bar .voice-text strong { color: var(--text); }
+
+  .end-summary { text-align: center; padding: 24px 14px; }
+  .end-summary h2 { font-size: 22px; margin-bottom: 4px; }
   .end-summary .big-num {
-    font-size: 56px; font-weight: 700; color: var(--accent);
-    margin: 16px 0;
+    font-size: 52px; font-weight: 700; color: var(--accent);
+    margin: 12px 0;
   }
 
   .footnote {
-    margin-top: 24px; font-size: 12px; color: var(--muted);
-    text-align: center;
+    margin-top: 18px; font-size: 12px; color: var(--muted);
+    text-align: center; line-height: 1.5;
+  }
+  .help {
+    background: var(--surface); border-radius: 10px; padding: 11px 13px;
+    font-size: 12.5px; color: var(--muted); margin-top: 10px;
+    line-height: 1.5;
+  }
+  .help strong { color: var(--text); }
+  .help code {
+    background: var(--surface-2); padding: 1px 5px; border-radius: 4px;
+    color: var(--accent); font-family: inherit;
+  }
+
+  /* Statistik-Tab */
+  .stat-cat {
+    background: var(--surface); border-radius: 10px;
+    padding: 12px 14px; margin-bottom: 8px;
+  }
+  .stat-cat .top {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 8px; gap: 8px;
+  }
+  .stat-cat .name {
+    font-weight: 600; flex: 1;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .stat-cat .pct {
+    color: var(--good); font-weight: 700; font-size: 14px;
+    flex-shrink: 0;
+  }
+  .stat-cat .meta {
+    font-size: 12px; color: var(--muted);
+  }
+  .stat-cat .pbar {
+    height: 6px; background: var(--surface-2); border-radius: 3px;
+    overflow: hidden; margin-top: 6px;
+  }
+  .stat-cat .pbar .fill {
+    height: 100%; background: var(--good);
+    transition: width 0.3s;
+  }
+  .question-row {
+    background: var(--surface); border-radius: 8px;
+    padding: 10px 12px; margin-bottom: 6px;
+    font-size: 14px; line-height: 1.35;
+    display: flex; gap: 10px; align-items: flex-start;
+  }
+  .question-row .badge {
+    font-size: 11px; padding: 2px 7px; border-radius: 10px;
+    flex-shrink: 0; font-weight: 700;
+  }
+  .badge.bad { background: var(--bad); color: #fff; }
+  .badge.partial { background: var(--partial); color: #111; }
+  .badge.good { background: var(--good); color: #fff; }
+  .badge.new { background: var(--surface-2); color: var(--muted); }
+  .question-row .text { flex: 1; }
+  .question-row .text small { color: var(--muted); font-size: 11px; }
+  .empty {
+    text-align: center; color: var(--muted); padding: 24px 12px;
+    font-size: 13px;
+  }
+  .danger {
+    background: var(--surface); color: var(--bad);
+    border: 1px solid var(--bad); padding: 10px;
+    border-radius: 8px; font-size: 13px; cursor: pointer;
+    width: 100%; margin-top: 16px;
   }
 </style>
 </head>
 <body>
 <main>
 
-<!-- ============ START / KATEGORIE-AUSWAHL ============ -->
+<!-- ===== TABS ===== -->
+<div class="tabs" id="tabs">
+  <button data-tab="start" class="active">Lernen</button>
+  <button data-tab="statistik">Statistik</button>
+</div>
+
+<!-- ===== START ===== -->
 <section id="screen-start" class="screen active">
   <h1>🛠 Meisterprüfung Dachdecker</h1>
 
@@ -178,15 +327,32 @@
     <div class="stat"><div class="num" id="stat-due">0</div><div class="lbl">Fällig</div></div>
   </div>
 
-  <div class="topbar">
-    <button id="btn-mode-mixed">Gemischt</button>
-    <button id="btn-mode-due">Nur fällige</button>
-    <button id="btn-mode-listen">Nur Vorlesen</button>
+  <h3>Modus</h3>
+  <div class="mode-cards">
+    <div class="mode-card" data-mode="lernen">
+      <div class="title">📚 Lernmodus</div>
+      <div class="desc">Frage und Lösung werden hintereinander vorgelesen. Du hörst nur zu — keine Bewertung.</div>
+    </div>
+    <div class="mode-card" data-mode="test">
+      <div class="title">🎓 Testmodus</div>
+      <div class="desc">Frage wird vorgelesen, du antwortest laut, dann sagst „Antwort". Du wirst gefragt: „Wusstest du es?" — Antwort per Sprache.</div>
+    </div>
   </div>
 
-  <p style="font-size:14px; color:var(--muted); margin: 8px 0;">
-    Themen wählen:
-  </p>
+  <!-- Lernmodus-Optionen -->
+  <div class="sub-opts" id="sub-lernen" style="display:none;">
+    <label><input type="radio" name="ord-lernen" value="random" checked> Zufällige Reihenfolge</label>
+    <label><input type="radio" name="ord-lernen" value="sequential"> In Reihenfolge der Themen</label>
+  </div>
+
+  <!-- Testmodus-Optionen -->
+  <div class="sub-opts" id="sub-test" style="display:none;">
+    <label><input type="radio" name="ord-test" value="random" checked> Zufällige Auswahl</label>
+    <label><input type="radio" name="ord-test" value="due"> Nur fällige (Spaced Repetition)</label>
+    <label><input type="radio" name="ord-test" value="weak"> Bevorzugt schwache Fragen</label>
+  </div>
+
+  <h3>Themen</h3>
   <div class="cat-actions">
     <button id="btn-all">Alle</button>
     <button id="btn-none">Keine</button>
@@ -195,13 +361,20 @@
 
   <button class="primary" id="btn-start">Lernen starten</button>
 
-  <p class="footnote">
-    Tippe „Lernen starten". Die Frage wird vorgelesen,
-    du antwortest laut, dann die Lösung anhören und selbst bewerten.
-  </p>
+  <div class="help" id="voice-help" style="display:none;">
+    <strong>🎙 Sprachbefehle (Testmodus):</strong><br>
+    <code>antwort</code> Lösung anhören ·
+    <code>weiter</code> nächste Frage ·
+    <code>nochmal</code> wiederholen ·
+    <code>ja</code> / <code>teils</code> / <code>nein</code> bewerten ·
+    <code>stopp</code> beenden
+    <br><br>
+    Beim ersten Start einmal <strong>auf den Bildschirm tippen</strong>,
+    damit das Mikrofon freigegeben wird (iOS-Vorgabe). Danach hands-free.
+  </div>
 </section>
 
-<!-- ============ QUIZ ============ -->
+<!-- ===== QUIZ ===== -->
 <section id="screen-quiz" class="screen">
   <div class="progress-bar"><div class="fill" id="progress-fill"></div></div>
   <div class="quiz-header">
@@ -217,16 +390,14 @@
   </div>
 
   <div id="action-area">
-    <!-- Phase 1: Frage gezeigt, Antwort verdeckt -->
     <div id="phase-question" class="btn-row">
       <button class="action" id="btn-show">Antwort anzeigen &amp; vorlesen</button>
-      <button class="secondary" id="btn-repeat">🔁 Frage nochmal vorlesen</button>
+      <button class="secondary" id="btn-repeat">🔁 Frage nochmal</button>
       <button class="secondary" id="btn-skip">Überspringen</button>
     </div>
 
-    <!-- Phase 2: Antwort gezeigt, Selbstbewertung -->
     <div id="phase-judge" style="display:none;">
-      <p style="text-align:center; font-size:14px; color:var(--muted); margin: 8px 0;">
+      <p style="text-align:center; font-size:13px; color:var(--muted); margin: 6px 0;">
         Wusstest du es?
       </p>
       <div class="btn-row three">
@@ -234,81 +405,107 @@
         <button class="judge partial" data-judge="1">Teils</button>
         <button class="judge good" data-judge="2">Ja</button>
       </div>
-      <div style="margin-top:12px;">
+      <div style="margin-top:10px;">
         <button class="secondary" id="btn-replay-answer">🔁 Antwort nochmal</button>
       </div>
     </div>
   </div>
 
-  <div style="margin-top:24px;">
+  <div style="margin-top:18px;">
     <button class="secondary" id="btn-end">Sitzung beenden</button>
   </div>
 </section>
 
-<!-- ============ ENDE ============ -->
+<!-- ===== ENDE ===== -->
 <section id="screen-end" class="screen">
   <div class="end-summary">
     <h2>Sitzung beendet</h2>
     <div class="big-num"><span id="end-good">0</span> / <span id="end-total">0</span></div>
     <p>richtig oder teilweise gewusst</p>
-    <p style="color:var(--muted);">
-      Falsche Fragen kommen früher wieder.
-    </p>
+    <p style="color:var(--muted);">Falsche Fragen kommen früher wieder.</p>
   </div>
   <button class="primary" id="btn-restart">Zurück zum Start</button>
 </section>
 
+<!-- ===== STATISTIK ===== -->
+<section id="screen-statistik" class="screen">
+  <h1>📊 Deine Statistik</h1>
+
+  <div class="stats">
+    <div class="stat"><div class="num" id="s-total">0</div><div class="lbl">Fragen total</div></div>
+    <div class="stat"><div class="num" id="s-seen">0</div><div class="lbl">Bearbeitet</div></div>
+    <div class="stat"><div class="num" id="s-mastered">0</div><div class="lbl">Sicher</div></div>
+  </div>
+
+  <h3>Themen-Fortschritt</h3>
+  <div id="stat-cats"></div>
+
+  <h3>🔴 Schwächste Fragen</h3>
+  <div id="stat-weak"></div>
+
+  <h3>⚪ Noch nie bearbeitet</h3>
+  <div id="stat-new"></div>
+
+  <button class="danger" id="btn-reset">⚠ Statistik zurücksetzen</button>
+</section>
+
 </main>
+
+<!-- Voice-Statusleiste -->
+<div class="voice-bar" id="voice-bar">
+  <div class="mic-icon" id="mic-icon">🎙</div>
+  <div class="voice-text" id="voice-text">
+    <strong>Voice aktiv.</strong> Sag „weiter", „antwort", „ja"…
+  </div>
+</div>
 
 <script>
 /* =========================================================
-   Daten & Speicher
+   Daten / Speicher
    ========================================================= */
 const STORAGE_KEY = "stephan-lernen-v1";
-let QUESTIONS = [];          // alle aus questions.json
-let CATEGORIES = [];         // unique
+let QUESTIONS = [];
+let CATEGORIES = [];
 let SELECTED_CATS = new Set();
-let MODE = "mixed";          // "mixed" | "due" | "listen"
-let STATE = loadState();     // { items: { [qid]: {seen, good, lastDue} } }
-
-let SESSION = null;          // { queue, idx, results }
+let MODE = "lernen";              // "lernen" | "test"
+let LERNEN_ORDER = "random";      // "random" | "sequential"
+let TEST_FILTER = "random";       // "random" | "due" | "weak"
+let STATE = loadState();
+let SESSION = null;
 
 function loadState() {
-  try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || { items: {} };
-  } catch { return { items: {} }; }
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || { items: {} }; }
+  catch { return { items: {} }; }
 }
-function saveState() {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(STATE));
-}
+function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify(STATE)); }
+function qid(q) { return q.kategorie + "|" + q.frage.slice(0, 80); }
 
-function qid(q) {
-  // stabile ID = Kategorie + erste 80 Zeichen Frage
-  return q.kategorie + "|" + q.frage.slice(0, 80);
+function getStats(q) {
+  return STATE.items[qid(q)] || { seen: 0, good: 0, right: 0, partial: 0, wrong: 0 };
 }
-
 function dueDate(item) {
-  // Spaced Repetition (sehr simpel):
-  // good=0: heute, good=1: morgen, good=2: in 3T, good=3: 7T, good=4+: 14T
   const intervals = [0, 1, 3, 7, 14, 30];
   const g = item.good || 0;
   const days = intervals[Math.min(g, intervals.length - 1)];
   return (item.lastSeen || 0) + days * 86400000;
 }
-
 function isDue(q) {
   const item = STATE.items[qid(q)];
   if (!item) return true;
   return Date.now() >= dueDate(item);
 }
+function weakScore(q) {
+  // hoeher = schwaecher = bevorzugen
+  const it = STATE.items[qid(q)];
+  if (!it) return 1;            // nie gesehen -> mittel
+  const total = (it.right || 0) + (it.partial || 0) + (it.wrong || 0);
+  if (total === 0) return 1;
+  return (it.wrong || 0) / total + (1 / (it.good + 1));
+}
 
-/* =========================================================
-   Daten laden
-   ========================================================= */
 async function loadQuestions() {
   const res = await fetch("questions.json");
   QUESTIONS = await res.json();
-  // Dubletten zusammenfassen (gleiche Frage in mehreren Dateien)
   const seen = new Map();
   for (const q of QUESTIONS) {
     const key = qid(q);
@@ -320,14 +517,56 @@ async function loadQuestions() {
 }
 
 /* =========================================================
-   Sprachausgabe (TTS)
+   Aussprache
+   ========================================================= */
+const ABBREV_MAP = {
+  "PYE": "P Y E", "PYP": "P Y P", "KSP": "K S P", "KSK": "K S K",
+  "KTG": "K T G", "KTP": "K T P", "PIR": "P I R", "PUR": "P U R",
+  "EPS": "E P S", "XPS": "X P S", "WDVS": "W D V S",
+  "KMF": "K M F", "DDH": "D D H", "DDM": "D D M",
+  "GEG": "G E G", "MBO": "M B O", "LBO": "L B O", "BIM": "B I M",
+  "CAD": "C A D", "BAFA": "B A F A", "KFW": "K F W", "RDN": "R D N",
+  "aRdT": "a R d T", "RWA": "R W A", "NRA": "N R A",
+  "PV": "P V", "WLG": "W L G", "GUV": "G U V",
+};
+function preprocessForSpeech(text) {
+  let t = text;
+  t = t.replace(/W\/\(m²\s*[Kk]\)/g, "Watt pro Quadratmeter Kelvin");
+  t = t.replace(/W\/\(m2\s*K\)/gi, "Watt pro Quadratmeter Kelvin");
+  t = t.replace(/W\/m²K/g, "Watt pro Quadratmeter Kelvin");
+  t = t.replace(/m²/g, "Quadratmeter");
+  t = t.replace(/m³/g, "Kubikmeter");
+  t = t.replace(/(\d+)\s*°\s*C/g, "$1 Grad Celsius");
+  t = t.replace(/(\d+)\s*°/g, "$1 Grad");
+  t = t.replace(/g\/m²/g, "Gramm pro Quadratmeter");
+  t = t.replace(/kg\/m²/g, "Kilogramm pro Quadratmeter");
+  t = t.replace(/(\d+)\s*mm\b/g, "$1 Millimeter");
+  t = t.replace(/(\d+)\s*cm\b/g, "$1 Zentimeter");
+  t = t.replace(/(\d+),(\d+)/g, "$1 Komma $2");
+  for (const [abbr, spelled] of Object.entries(ABBREV_MAP)) {
+    const escaped = abbr.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const re = new RegExp("\\b" + escaped + "\\b", "g");
+    t = t.replace(re, spelled);
+  }
+  t = t.replace(/\b([A-ZÄÖÜ]{2,6})\b/g, (m) => {
+    if (ABBREV_MAP[m]) return ABBREV_MAP[m];
+    return m.split("").join(" ");
+  });
+  t = t.replace(/\//g, " durch ");
+  t = t.replace(/\s+/g, " ").trim();
+  return t;
+}
+
+/* =========================================================
+   TTS
    ========================================================= */
 let GERMAN_VOICE = null;
 function pickGermanVoice() {
   const voices = speechSynthesis.getVoices();
-  // Bevorzugt: weibliche dt. Stimme mit "de-DE"
+  if (!voices.length) return;
   GERMAN_VOICE =
-    voices.find(v => v.lang === "de-DE" && /Anna|Petra|Helga|Marlene|Markus/i.test(v.name)) ||
+    voices.find(v => v.lang === "de-DE" && /Siri/i.test(v.name)) ||
+    voices.find(v => v.lang === "de-DE" && /Anna|Helena|Petra|Helga|Marlene/i.test(v.name)) ||
     voices.find(v => v.lang === "de-DE") ||
     voices.find(v => v.lang.startsWith("de")) ||
     null;
@@ -337,28 +576,165 @@ if (typeof speechSynthesis !== "undefined") {
   speechSynthesis.onvoiceschanged = pickGermanVoice;
 }
 
-function speak(text, { rate = 1.0, onEnd = null } = {}) {
-  if (!("speechSynthesis" in window)) {
-    console.warn("Keine TTS verfügbar.");
-    if (onEnd) onEnd();
-    return;
-  }
+let CURRENT_UTT = null;
+function speak(text, { rate = 1.0, onEnd = null, raw = false } = {}) {
+  if (!("speechSynthesis" in window)) { if (onEnd) onEnd(); return; }
   speechSynthesis.cancel();
-  const utt = new SpeechSynthesisUtterance(text);
+  const spoken = raw ? text : preprocessForSpeech(text);
+  const utt = new SpeechSynthesisUtterance(spoken);
   utt.lang = "de-DE";
   utt.rate = rate;
   utt.pitch = 1.0;
   if (GERMAN_VOICE) utt.voice = GERMAN_VOICE;
-  if (onEnd) utt.onend = onEnd;
+  if (onEnd) utt.onend = () => { if (CURRENT_UTT === utt) onEnd(); };
+  CURRENT_UTT = utt;
   speechSynthesis.speak(utt);
 }
-
 function stopSpeaking() {
   if ("speechSynthesis" in window) speechSynthesis.cancel();
+  CURRENT_UTT = null;
 }
 
 /* =========================================================
-   UI: Start-Screen
+   Spracherkennung
+   ========================================================= */
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+let recog = null;
+let recogActive = false;
+let voiceModeOn = false;
+let restartTimer = null;
+
+function buildRecognizer() {
+  if (!SR) return null;
+  const r = new SR();
+  r.lang = "de-DE";
+  r.interimResults = false;
+  r.continuous = false;
+  r.maxAlternatives = 3;
+  r.onresult = (ev) => {
+    const alts = [];
+    for (let i = 0; i < ev.results.length; i++) {
+      for (let j = 0; j < ev.results[i].length; j++) {
+        alts.push(ev.results[i][j].transcript.toLowerCase().trim());
+      }
+    }
+    handleVoiceCommand(alts);
+  };
+  r.onerror = () => {
+    setVoiceText('Hörte nichts. Sprich lauter oder sag „weiter", „antwort", „ja".');
+    scheduleRestart(800);
+  };
+  r.onend = () => {
+    recogActive = false;
+    setListening(false);
+    if (voiceModeOn) scheduleRestart(300);
+  };
+  r.onstart = () => {
+    recogActive = true;
+    setListening(true);
+  };
+  return r;
+}
+function startListening() {
+  if (!voiceModeOn) return;
+  if (!recog) recog = buildRecognizer();
+  if (!recog) return;
+  if (recogActive) return;
+  if (speechSynthesis.speaking) { scheduleRestart(400); return; }
+  try { recog.start(); }
+  catch { scheduleRestart(500); }
+}
+function stopListening() {
+  if (recog && recogActive) { try { recog.stop(); } catch {} }
+  recogActive = false;
+  setListening(false);
+  if (restartTimer) { clearTimeout(restartTimer); restartTimer = null; }
+}
+function scheduleRestart(ms) {
+  if (!voiceModeOn) return;
+  if (restartTimer) clearTimeout(restartTimer);
+  restartTimer = setTimeout(() => {
+    restartTimer = null;
+    if (voiceModeOn && !recogActive) startListening();
+  }, ms);
+}
+function setListening(on) {
+  document.getElementById("voice-bar").classList.toggle("listening", on);
+}
+function setVoiceText(html) {
+  document.getElementById("voice-text").innerHTML = html;
+}
+function showVoiceBar(on) {
+  document.getElementById("voice-bar").classList.toggle("visible", on);
+}
+function handleVoiceCommand(alts) {
+  setVoiceText(`Verstanden: <strong>"${alts[0] || "?"}"</strong>`);
+  const matches = (...words) => words.some(w => alts.some(a => a.includes(w)));
+
+  if (matches("weiter", "nächste", "nächster", "skip", "überspring")) return doNext();
+  if (matches("antwort", "lösung", "anzeigen", "lös", "zeig")) return doShowAnswer();
+  if (matches("nochmal", "wiederhol", "noch mal")) return doRepeat();
+  if (matches("ja", "wusste", "richtig", "gewusst", "korrekt")) return doJudge(2);
+  if (matches("teils", "teilweise", "halb", "mittel")) return doJudge(1);
+  if (matches("nein", "falsch", "wusste nicht", "keine ahnung")) return doJudge(0);
+  if (matches("pause", "stopp", "stop", "ende", "beenden", "abbrech")) return doEnd();
+
+  setVoiceText(`Nicht verstanden: „${alts[0] || ""}". Sag „weiter", „antwort", „ja", „teils", „nein", „nochmal".`);
+}
+
+/* =========================================================
+   Aktionen
+   ========================================================= */
+function doNext() { stopSpeaking(); SESSION.idx++; showQuestion(); }
+function doRepeat() {
+  const q = SESSION.queue[SESSION.idx];
+  if (!q) return;
+  if (document.getElementById("a-box").classList.contains("visible")) {
+    speak("Lösung: " + answersToText(q.antworten), { onEnd: onSpeakDone });
+  } else {
+    speak(q.frage, { onEnd: onSpeakDone });
+  }
+}
+function doShowAnswer() {
+  const q = SESSION.queue[SESSION.idx];
+  if (!q) return;
+  document.getElementById("a-box").classList.add("visible");
+  document.getElementById("phase-question").style.display = "none";
+  document.getElementById("phase-judge").style.display = "";
+  // Im Testmodus nach der Antwort die Bewertungsfrage stellen
+  if (MODE === "test") {
+    speak("Lösung: " + answersToText(q.antworten) + ". Wusstest du es?", {
+      onEnd: onSpeakDone,
+    });
+  } else {
+    speak("Lösung: " + answersToText(q.antworten), { onEnd: onSpeakDone });
+  }
+}
+function doJudge(judge) {
+  const q = SESSION.queue[SESSION.idx];
+  if (!q) return;
+  if (!document.getElementById("a-box").classList.contains("visible")) {
+    return doShowAnswer();
+  }
+  const id = qid(q);
+  const item = STATE.items[id] || { seen: 0, good: 0, right: 0, partial: 0, wrong: 0 };
+  item.seen = (item.seen || 0) + 1;
+  item.lastSeen = Date.now();
+  if (judge === 2) { item.good = (item.good || 0) + 1; item.right = (item.right || 0) + 1; }
+  else if (judge === 1) { item.good = Math.max(0, (item.good || 0)); item.partial = (item.partial || 0) + 1; }
+  else { item.good = Math.max(0, (item.good || 0) - 1); item.wrong = (item.wrong || 0) + 1; }
+  STATE.items[id] = item;
+  saveState();
+  if (judge === 2) SESSION.results.good++;
+  else if (judge === 1) SESSION.results.partial++;
+  else SESSION.results.bad++;
+  doNext();
+}
+function doEnd() { stopSpeaking(); endSession(); }
+function onSpeakDone() { if (voiceModeOn) scheduleRestart(250); }
+
+/* =========================================================
+   UI Start
    ========================================================= */
 function renderStartScreen() {
   document.getElementById("stat-total").textContent = QUESTIONS.length;
@@ -391,30 +767,30 @@ function renderStartScreen() {
 }
 
 document.getElementById("btn-all").onclick = () => {
-  SELECTED_CATS = new Set(CATEGORIES);
-  renderStartScreen();
+  SELECTED_CATS = new Set(CATEGORIES); renderStartScreen();
 };
 document.getElementById("btn-none").onclick = () => {
-  SELECTED_CATS = new Set();
-  renderStartScreen();
+  SELECTED_CATS = new Set(); renderStartScreen();
 };
 
 function setMode(m) {
   MODE = m;
-  for (const id of ["btn-mode-mixed", "btn-mode-due", "btn-mode-listen"]) {
-    const b = document.getElementById(id);
-    b.style.background = "";
-    b.style.color = "";
+  for (const card of document.querySelectorAll(".mode-card")) {
+    card.classList.toggle("active", card.dataset.mode === m);
   }
-  const map = { mixed: "btn-mode-mixed", due: "btn-mode-due", listen: "btn-mode-listen" };
-  const active = document.getElementById(map[m]);
-  active.style.background = "var(--accent)";
-  active.style.color = "#111";
+  document.getElementById("sub-lernen").style.display = (m === "lernen") ? "" : "none";
+  document.getElementById("sub-test").style.display = (m === "test") ? "" : "none";
+  document.getElementById("voice-help").style.display = (m === "test") ? "" : "none";
 }
-document.getElementById("btn-mode-mixed").onclick = () => setMode("mixed");
-document.getElementById("btn-mode-due").onclick = () => setMode("due");
-document.getElementById("btn-mode-listen").onclick = () => setMode("listen");
-setMode("mixed");
+for (const card of document.querySelectorAll(".mode-card")) {
+  card.addEventListener("click", () => setMode(card.dataset.mode));
+}
+setMode("lernen");
+
+document.querySelectorAll('input[name="ord-lernen"]').forEach(el =>
+  el.addEventListener("change", e => LERNEN_ORDER = e.target.value));
+document.querySelectorAll('input[name="ord-test"]').forEach(el =>
+  el.addEventListener("change", e => TEST_FILTER = e.target.value));
 
 /* =========================================================
    Sitzung starten
@@ -427,35 +803,68 @@ function shuffle(arr) {
   }
   return a;
 }
+function buildPool() {
+  let pool = QUESTIONS.filter(q => SELECTED_CATS.has(q.kategorie));
+  if (MODE === "lernen") {
+    if (LERNEN_ORDER === "random") return shuffle(pool);
+    // sequential: nach Kategorie und originaler Reihenfolge
+    pool.sort((a, b) => a.kategorie.localeCompare(b.kategorie));
+    return pool;
+  }
+  // test
+  if (TEST_FILTER === "due") pool = pool.filter(isDue);
+  if (TEST_FILTER === "weak") {
+    pool.sort((a, b) => weakScore(b) - weakScore(a));
+    // immer noch leichten Zufall, damit nicht stoisch dieselben kommen
+    return pool.slice(0, 60).sort(() => Math.random() - 0.5);
+  }
+  return shuffle(pool);
+}
 
 document.getElementById("btn-start").onclick = () => {
-  let pool = QUESTIONS.filter(q => SELECTED_CATS.has(q.kategorie));
+  if (SELECTED_CATS.size === 0) { alert("Bitte mindestens ein Thema wählen."); return; }
+  let pool = buildPool();
   if (pool.length === 0) {
-    alert("Bitte mindestens eine Kategorie auswählen.");
+    alert("Keine Fragen passend zu deiner Auswahl. Wähle „Zufällige Auswahl" oder mehr Themen.");
     return;
   }
-  if (MODE === "due") pool = pool.filter(isDue);
-  if (pool.length === 0) {
-    alert("Keine fälligen Fragen — wähle 'Gemischt'.");
-    return;
-  }
-  pool = shuffle(pool);
-  // max 30 pro Sitzung (überschaubar)
-  pool = pool.slice(0, 30);
+  pool = pool.slice(0, MODE === "lernen" ? pool.length : 30);
+  SESSION = {
+    queue: pool,
+    idx: 0,
+    results: { good: 0, partial: 0, bad: 0 },
+    mode: MODE,
+  };
 
-  SESSION = { queue: pool, idx: 0, results: { good: 0, partial: 0, bad: 0 } };
+  voiceModeOn = (MODE === "test");
+  if (voiceModeOn) {
+    if (!SR) {
+      alert("Dein Browser unterstützt keine Spracherkennung. Auf iPhone Safari nutzen.\nButtons funktionieren weiterhin.");
+      voiceModeOn = false;
+    } else {
+      showVoiceBar(true);
+      setVoiceText('<strong>Voice aktiv.</strong> Sag „weiter", „antwort", „ja"…');
+      if (navigator.mediaDevices?.getUserMedia) {
+        navigator.mediaDevices.getUserMedia({ audio: true })
+          .then(stream => stream.getTracks().forEach(t => t.stop()))
+          .catch(() => {});
+      }
+    }
+  } else {
+    showVoiceBar(false);
+  }
+
   showScreen("quiz");
   showQuestion();
 };
 
-/* =========================================================
-   Quiz-Logik
-   ========================================================= */
 function showScreen(name) {
   for (const s of document.querySelectorAll(".screen")) s.classList.remove("active");
   document.getElementById("screen-" + name).classList.add("active");
+  // Tabs nur sichtbar lassen, wenn auf Start oder Statistik
+  document.getElementById("tabs").style.display =
+    (name === "start" || name === "statistik") ? "" : "none";
 }
-
 function answersToText(answers) {
   return answers.map((a, i) => `${i + 1}. ${a}`).join(". ");
 }
@@ -469,7 +878,6 @@ function showQuestion() {
   document.getElementById("q-cat").textContent = q.kategorie;
   document.getElementById("q-text").textContent = q.frage;
 
-  // Antwort-Liste
   const ul = document.getElementById("a-list");
   ul.innerHTML = "";
   for (const a of q.antworten) {
@@ -481,93 +889,171 @@ function showQuestion() {
   document.getElementById("phase-question").style.display = "";
   document.getElementById("phase-judge").style.display = "none";
 
-  // Fortschritt
   const pct = (SESSION.idx / SESSION.queue.length) * 100;
   document.getElementById("progress-fill").style.width = pct + "%";
 
-  // Im Listen-Modus: alles am Stück vorlesen, dann automatisch weiter
-  if (MODE === "listen") {
+  if (SESSION.mode === "lernen") {
+    // Frage + Antwort am Stueck, dann automatisch weiter
     speak(q.frage + ". Lösung: " + answersToText(q.antworten), {
       onEnd: () => {
-        // Antwort einblenden und nach kurzer Pause zur nächsten Frage
         document.getElementById("a-box").classList.add("visible");
-        setTimeout(() => {
-          SESSION.idx++;
-          showQuestion();
-        }, 1500);
+        setTimeout(() => { SESSION.idx++; showQuestion(); }, 1500);
       },
     });
   } else {
-    // Quiz-Modus: nur Frage vorlesen
-    speak(q.frage);
+    // Testmodus
+    setVoiceText('<strong>Frage läuft…</strong> Danach: „antwort" oder „weiter".');
+    speak(q.frage, { onEnd: onSpeakDone });
   }
 }
 
-document.getElementById("btn-show").onclick = () => {
-  const q = SESSION.queue[SESSION.idx];
-  document.getElementById("a-box").classList.add("visible");
-  document.getElementById("phase-question").style.display = "none";
-  document.getElementById("phase-judge").style.display = "";
-  speak("Lösung: " + answersToText(q.antworten));
-};
-
-document.getElementById("btn-repeat").onclick = () => {
-  const q = SESSION.queue[SESSION.idx];
-  speak(q.frage);
-};
-
+document.getElementById("btn-show").onclick = doShowAnswer;
+document.getElementById("btn-repeat").onclick = doRepeat;
+document.getElementById("btn-skip").onclick = doNext;
 document.getElementById("btn-replay-answer").onclick = () => {
   const q = SESSION.queue[SESSION.idx];
-  speak("Lösung: " + answersToText(q.antworten));
+  if (q) speak("Lösung: " + answersToText(q.antworten), { onEnd: onSpeakDone });
 };
-
-document.getElementById("btn-skip").onclick = () => {
-  stopSpeaking();
-  SESSION.idx++;
-  showQuestion();
-};
-
-// Selbstbewertung
 for (const btn of document.querySelectorAll("[data-judge]")) {
-  btn.addEventListener("click", () => {
-    const judge = parseInt(btn.dataset.judge, 10); // 0=nein, 1=teils, 2=ja
-    const q = SESSION.queue[SESSION.idx];
-    const id = qid(q);
-    const item = STATE.items[id] || { seen: 0, good: 0 };
-    item.seen = (item.seen || 0) + 1;
-    item.lastSeen = Date.now();
-    if (judge === 2) item.good = (item.good || 0) + 1;
-    else if (judge === 1) item.good = Math.max(0, (item.good || 0));
-    else item.good = Math.max(0, (item.good || 0) - 1);
-    STATE.items[id] = item;
-    saveState();
-    if (judge === 2) SESSION.results.good++;
-    else if (judge === 1) SESSION.results.partial++;
-    else SESSION.results.bad++;
-    stopSpeaking();
-    SESSION.idx++;
-    showQuestion();
-  });
+  btn.addEventListener("click", () => doJudge(parseInt(btn.dataset.judge, 10)));
 }
-
-document.getElementById("btn-end").onclick = () => {
-  stopSpeaking();
-  endSession();
-};
+document.getElementById("btn-end").onclick = doEnd;
 
 function endSession() {
   stopSpeaking();
+  voiceModeOn = false;
+  stopListening();
+  showVoiceBar(false);
   if (!SESSION) return showScreen("start");
   document.getElementById("end-good").textContent =
     SESSION.results.good + SESSION.results.partial;
   document.getElementById("end-total").textContent = SESSION.queue.length;
   showScreen("end");
 }
-
 document.getElementById("btn-restart").onclick = () => {
   SESSION = null;
   renderStartScreen();
   showScreen("start");
+};
+
+/* =========================================================
+   Tabs
+   ========================================================= */
+for (const btn of document.querySelectorAll("#tabs button")) {
+  btn.addEventListener("click", () => {
+    if (SESSION) return; // waehrend Quiz nicht wechseln
+    document.querySelectorAll("#tabs button").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    const tab = btn.dataset.tab;
+    if (tab === "start") {
+      renderStartScreen();
+      showScreen("start");
+    } else {
+      renderStatistik();
+      showScreen("statistik");
+    }
+  });
+}
+
+/* =========================================================
+   Statistik
+   ========================================================= */
+function renderStatistik() {
+  const total = QUESTIONS.length;
+  const seen = QUESTIONS.filter(q => STATE.items[qid(q)]?.seen > 0).length;
+  const mastered = QUESTIONS.filter(q => (STATE.items[qid(q)]?.good || 0) >= 3).length;
+
+  document.getElementById("s-total").textContent = total;
+  document.getElementById("s-seen").textContent = seen;
+  document.getElementById("s-mastered").textContent = mastered;
+
+  // Pro-Kategorie-Fortschritt
+  const catBox = document.getElementById("stat-cats");
+  catBox.innerHTML = "";
+  for (const cat of CATEGORIES) {
+    const qs = QUESTIONS.filter(q => q.kategorie === cat);
+    const seenCount = qs.filter(q => STATE.items[qid(q)]?.seen > 0).length;
+    const goodCount = qs.filter(q => (STATE.items[qid(q)]?.good || 0) >= 2).length;
+    const total = qs.length;
+    const pct = total ? Math.round((goodCount / total) * 100) : 0;
+    const div = document.createElement("div");
+    div.className = "stat-cat";
+    div.innerHTML = `
+      <div class="top">
+        <div class="name">${cat}</div>
+        <div class="pct">${pct}%</div>
+      </div>
+      <div class="meta">${goodCount} von ${total} sicher · ${seenCount} bearbeitet</div>
+      <div class="pbar"><div class="fill" style="width:${pct}%"></div></div>
+    `;
+    catBox.appendChild(div);
+  }
+
+  // Schwaechste Fragen (oft falsch)
+  const weakBox = document.getElementById("stat-weak");
+  weakBox.innerHTML = "";
+  const weakList = QUESTIONS
+    .map(q => ({ q, it: STATE.items[qid(q)] }))
+    .filter(x => x.it && (x.it.wrong || 0) > 0)
+    .sort((a, b) => (b.it.wrong || 0) - (a.it.wrong || 0))
+    .slice(0, 10);
+  if (weakList.length === 0) {
+    weakBox.innerHTML = '<div class="empty">Noch keine falsch beantworteten Fragen.</div>';
+  } else {
+    for (const { q, it } of weakList) {
+      const total = (it.right || 0) + (it.partial || 0) + (it.wrong || 0);
+      const div = document.createElement("div");
+      div.className = "question-row";
+      div.innerHTML = `
+        <span class="badge bad">${it.wrong || 0}×✗</span>
+        <div class="text">
+          ${escapeHtml(q.frage.slice(0, 90))}${q.frage.length > 90 ? "…" : ""}
+          <br><small>${q.kategorie} · ${total} Versuche · ${it.right || 0}× ✓ ${it.partial || 0}× ~</small>
+        </div>
+      `;
+      weakBox.appendChild(div);
+    }
+  }
+
+  // Noch nie bearbeitet
+  const newBox = document.getElementById("stat-new");
+  newBox.innerHTML = "";
+  const newList = QUESTIONS.filter(q => !STATE.items[qid(q)]).slice(0, 10);
+  if (newList.length === 0) {
+    newBox.innerHTML = '<div class="empty">Du hast schon jede Frage mindestens einmal gesehen 🎉</div>';
+  } else {
+    for (const q of newList) {
+      const div = document.createElement("div");
+      div.className = "question-row";
+      div.innerHTML = `
+        <span class="badge new">neu</span>
+        <div class="text">
+          ${escapeHtml(q.frage.slice(0, 90))}${q.frage.length > 90 ? "…" : ""}
+          <br><small>${q.kategorie}</small>
+        </div>
+      `;
+      newBox.appendChild(div);
+    }
+    const remaining = QUESTIONS.filter(q => !STATE.items[qid(q)]).length - newList.length;
+    if (remaining > 0) {
+      const div = document.createElement("div");
+      div.className = "empty";
+      div.textContent = `+ ${remaining} weitere`;
+      newBox.appendChild(div);
+    }
+  }
+}
+
+function escapeHtml(s) {
+  return s.replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c]);
+}
+
+document.getElementById("btn-reset").onclick = () => {
+  if (!confirm("Wirklich alle Statistiken löschen? Das kann nicht rückgängig gemacht werden.")) return;
+  STATE = { items: {} };
+  saveState();
+  renderStatistik();
+  alert("Statistik wurde zurückgesetzt.");
 };
 
 /* =========================================================
@@ -579,10 +1065,9 @@ loadQuestions().then(() => {
   document.body.innerHTML = "<main><h1>Fehler beim Laden der Fragen</h1><p>" + err + "</p></main>";
 });
 
-// Service Worker fuer Offline-Modus
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("service-worker.js").catch(e => console.log("SW reg failed:", e));
+    navigator.serviceWorker.register("service-worker.js").catch(() => {});
   });
 }
 </script>
