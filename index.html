@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#1a1a1a">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon-192.png">
-<title>Meisterprüfung Dachdecker — Lernen</title>
+<title>Meisterprüfung Dachdecker Stephan</title>
 <style>
   :root {
     --bg: #1a1a1a;
@@ -315,11 +315,15 @@
 <div class="tabs" id="tabs">
   <button data-tab="start" class="active">Lernen</button>
   <button data-tab="statistik">Statistik</button>
+  <button data-tab="einstellungen" title="Einstellungen">⚙</button>
 </div>
+
+<!-- Diagnose-Banner falls Probleme -->
+<div id="diag-banner" style="display:none; background:#ef4444; color:#fff; padding:10px 14px; border-radius:8px; margin-bottom:12px; font-size:13px;"></div>
 
 <!-- ===== START ===== -->
 <section id="screen-start" class="screen active">
-  <h1>🛠 Meisterprüfung Dachdecker</h1>
+  <h1>🛠 Meisterprüfung Dachdecker Stephan</h1>
 
   <div class="stats">
     <div class="stat"><div class="num" id="stat-total">0</div><div class="lbl">Fragen</div></div>
@@ -449,6 +453,49 @@
   <button class="danger" id="btn-reset">⚠ Statistik zurücksetzen</button>
 </section>
 
+<!-- ===== EINSTELLUNGEN ===== -->
+<section id="screen-einstellungen" class="screen">
+  <h1>⚙ Einstellungen</h1>
+
+  <h3>Stimme</h3>
+  <div class="sub-opts">
+    <label style="font-size:13px; color:var(--muted); display:block; padding-bottom:6px;">Aktuelle Stimme:</label>
+    <div id="voice-current" style="font-weight:600; padding:6px 0;">—</div>
+    <select id="voice-select" style="width:100%; padding:10px; background:var(--surface-2); color:var(--text); border:1px solid var(--border); border-radius:8px; font-size:14px;"></select>
+    <button class="secondary" id="btn-test-voice" style="margin-top:8px;">🔊 Teststimme abspielen</button>
+  </div>
+
+  <h3>Sprechgeschwindigkeit</h3>
+  <div class="sub-opts">
+    <input type="range" id="rate-slider" min="0.7" max="1.4" step="0.05" value="1.0" style="width:100%;">
+    <div style="display:flex; justify-content:space-between; font-size:12px; color:var(--muted);">
+      <span>langsam</span><span id="rate-value">1.0×</span><span>schnell</span>
+    </div>
+  </div>
+
+  <h3>Daten</h3>
+  <button class="secondary" id="btn-clear-cache" style="margin-bottom:8px;">🔄 Cache leeren &amp; App neu laden</button>
+  <button class="secondary" id="btn-reload-questions" style="margin-bottom:8px;">📥 Fragen neu laden</button>
+  <button class="danger" id="btn-reset-2">⚠ Statistik zurücksetzen</button>
+
+  <h3>Diagnose</h3>
+  <div class="help" id="diag-info" style="font-family:monospace; font-size:11px;"></div>
+
+  <h3>App auf den Homescreen</h3>
+  <div class="help">
+    <strong>Safari (empfohlen):</strong><br>
+    1. Unten in der Mitte auf das <strong>Teilen-Symbol</strong> tippen (Quadrat mit Pfeil nach oben)<br>
+    2. Nach unten scrollen → <strong>„Zum Home-Bildschirm"</strong><br>
+    3. Name bestätigen → <strong>„Hinzufügen"</strong><br><br>
+
+    <strong>Chrome iPhone:</strong><br>
+    1. Oben rechts auf die <strong>3 Punkte</strong> tippen<br>
+    2. <strong>„Auf Startbildschirm"</strong><br><br>
+
+    <strong>Wichtig:</strong> Spracherkennung („weiter", „antwort") funktioniert auf iPhone nur in <strong>Safari</strong>, nicht in Chrome.
+  </div>
+</section>
+
 </main>
 
 <!-- Voice-Statusleiste -->
@@ -568,6 +615,11 @@ let GERMAN_VOICE = null;
 function pickGermanVoice() {
   const voices = speechSynthesis.getVoices();
   if (!voices.length) return;
+  // Erst: vom User explizit gewaehlte Stimme
+  if (typeof PREFERRED_VOICE_NAME !== "undefined" && PREFERRED_VOICE_NAME) {
+    const preferred = voices.find(v => v.name === PREFERRED_VOICE_NAME);
+    if (preferred) { GERMAN_VOICE = preferred; return; }
+  }
   GERMAN_VOICE =
     voices.find(v => v.lang === "de-DE" && /Siri/i.test(v.name)) ||
     voices.find(v => v.lang === "de-DE" && /Anna|Helena|Petra|Helga|Marlene/i.test(v.name)) ||
@@ -581,13 +633,13 @@ if (typeof speechSynthesis !== "undefined") {
 }
 
 let CURRENT_UTT = null;
-function speak(text, { rate = 1.0, onEnd = null, raw = false } = {}) {
+function speak(text, { rate = null, onEnd = null, raw = false } = {}) {
   if (!("speechSynthesis" in window)) { if (onEnd) onEnd(); return; }
   speechSynthesis.cancel();
   const spoken = raw ? text : preprocessForSpeech(text);
   const utt = new SpeechSynthesisUtterance(spoken);
   utt.lang = "de-DE";
-  utt.rate = rate;
+  utt.rate = rate || (typeof SPEECH_RATE !== "undefined" ? SPEECH_RATE : 1.0);
   utt.pitch = 1.0;
   if (GERMAN_VOICE) utt.voice = GERMAN_VOICE;
   if (onEnd) utt.onend = () => { if (CURRENT_UTT === utt) onEnd(); };
@@ -865,9 +917,8 @@ document.getElementById("btn-start").onclick = () => {
 function showScreen(name) {
   for (const s of document.querySelectorAll(".screen")) s.classList.remove("active");
   document.getElementById("screen-" + name).classList.add("active");
-  // Tabs nur sichtbar lassen, wenn auf Start oder Statistik
   document.getElementById("tabs").style.display =
-    (name === "start" || name === "statistik") ? "" : "none";
+    (name === "start" || name === "statistik" || name === "einstellungen") ? "" : "none";
 }
 function answersToText(answers) {
   return answers.map((a, i) => `${i + 1}. ${a}`).join(". ");
@@ -945,19 +996,109 @@ document.getElementById("btn-restart").onclick = () => {
    ========================================================= */
 for (const btn of document.querySelectorAll("#tabs button")) {
   btn.addEventListener("click", () => {
-    if (SESSION) return; // waehrend Quiz nicht wechseln
+    if (SESSION) return;
     document.querySelectorAll("#tabs button").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
     const tab = btn.dataset.tab;
-    if (tab === "start") {
-      renderStartScreen();
-      showScreen("start");
-    } else {
-      renderStatistik();
-      showScreen("statistik");
-    }
+    if (tab === "start") { renderStartScreen(); showScreen("start"); }
+    else if (tab === "statistik") { renderStatistik(); showScreen("statistik"); }
+    else if (tab === "einstellungen") { renderEinstellungen(); showScreen("einstellungen"); }
   });
 }
+
+/* =========================================================
+   Einstellungen
+   ========================================================= */
+let SETTINGS = JSON.parse(localStorage.getItem("stephan-settings") || "{}");
+let SPEECH_RATE = SETTINGS.rate || 1.0;
+let PREFERRED_VOICE_NAME = SETTINGS.voiceName || null;
+
+function saveSettings() {
+  SETTINGS.rate = SPEECH_RATE;
+  SETTINGS.voiceName = PREFERRED_VOICE_NAME;
+  localStorage.setItem("stephan-settings", JSON.stringify(SETTINGS));
+}
+
+function renderEinstellungen() {
+  // Voice-Liste fuellen
+  const sel = document.getElementById("voice-select");
+  sel.innerHTML = "";
+  const voices = (typeof speechSynthesis !== "undefined") ? speechSynthesis.getVoices() : [];
+  const dv = voices.filter(v => v.lang.startsWith("de"));
+  if (dv.length === 0) {
+    sel.innerHTML = '<option value="">(keine deutsche Stimme verfügbar)</option>';
+  } else {
+    sel.appendChild(new Option("Automatisch (beste deutsche Stimme)", ""));
+    for (const v of dv) {
+      const tag = /Siri/i.test(v.name) ? " ⭐" : "";
+      const opt = new Option(v.name + " (" + v.lang + ")" + tag, v.name);
+      if (v.name === PREFERRED_VOICE_NAME) opt.selected = true;
+      sel.appendChild(opt);
+    }
+  }
+  document.getElementById("voice-current").textContent =
+    GERMAN_VOICE ? GERMAN_VOICE.name + " (" + GERMAN_VOICE.lang + ")" : "(noch nicht geladen)";
+
+  // Rate-Slider
+  const slider = document.getElementById("rate-slider");
+  slider.value = SPEECH_RATE;
+  document.getElementById("rate-value").textContent = SPEECH_RATE.toFixed(2) + "×";
+
+  // Diagnose
+  const diag = [];
+  diag.push("Browser: " + navigator.userAgent.substring(0, 80));
+  diag.push("Fragen geladen: " + QUESTIONS.length);
+  diag.push("Kategorien: " + CATEGORIES.length);
+  diag.push("Sprachausgabe: " + (("speechSynthesis" in window) ? "✓" : "✗"));
+  diag.push("Spracherkennung: " + (SR ? "✓" : "✗ (nur in Safari iOS)"));
+  diag.push("Service Worker: " + (("serviceWorker" in navigator) ? "✓" : "✗"));
+  document.getElementById("diag-info").innerHTML = diag.join("<br>");
+}
+
+document.getElementById("voice-select").addEventListener("change", e => {
+  PREFERRED_VOICE_NAME = e.target.value || null;
+  saveSettings();
+  pickGermanVoice();
+  renderEinstellungen();
+});
+document.getElementById("rate-slider").addEventListener("input", e => {
+  SPEECH_RATE = parseFloat(e.target.value);
+  document.getElementById("rate-value").textContent = SPEECH_RATE.toFixed(2) + "×";
+  saveSettings();
+});
+document.getElementById("btn-test-voice").onclick = () => {
+  speak("Hallo Stephan, dies ist eine Teststimme für die Meisterprüfung.");
+};
+document.getElementById("btn-clear-cache").onclick = async () => {
+  if (!confirm("App-Cache leeren und neu laden?")) return;
+  try {
+    if ("caches" in window) {
+      const keys = await caches.keys();
+      await Promise.all(keys.map(k => caches.delete(k)));
+    }
+    if ("serviceWorker" in navigator) {
+      const regs = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(regs.map(r => r.unregister()));
+    }
+  } catch {}
+  location.reload(true);
+};
+document.getElementById("btn-reload-questions").onclick = async () => {
+  try {
+    await loadQuestions();
+    alert("Fragen neu geladen: " + QUESTIONS.length);
+    renderStartScreen();
+    renderEinstellungen();
+  } catch (e) {
+    alert("Fehler: " + e.message);
+  }
+};
+document.getElementById("btn-reset-2").onclick = () => {
+  if (!confirm("Wirklich alle Statistiken löschen?")) return;
+  STATE = { items: {} };
+  saveState();
+  alert("Statistik wurde zurückgesetzt.");
+};
 
 /* =========================================================
    Statistik
@@ -1063,18 +1204,35 @@ document.getElementById("btn-reset").onclick = () => {
 /* =========================================================
    Boot
    ========================================================= */
+// Globaler Fehlerfänger fuer Diagnose
+window.addEventListener("error", (e) => {
+  showDiagBanner("JavaScript-Fehler: " + (e.message || "?") + " (" + (e.filename || "") + ":" + (e.lineno || "") + ")");
+});
+window.addEventListener("unhandledrejection", (e) => {
+  showDiagBanner("Promise-Fehler: " + (e.reason && e.reason.message ? e.reason.message : e.reason));
+});
+function showDiagBanner(msg) {
+  const b = document.getElementById("diag-banner");
+  if (!b) return;
+  b.style.display = "block";
+  b.innerHTML = "⚠ " + msg + " <br><small>Geh in ⚙ Einstellungen → „Cache leeren & neu laden".</small>";
+}
+
 loadQuestions().then(() => {
   renderStartScreen();
 }).catch(err => {
-  document.body.innerHTML =
-    "<main><h1 style='color:#ef4444'>⚠ Fehler beim Laden der Fragen</h1>" +
-    "<p style='color:#f0f0f0'>" + (err && err.message ? err.message : err) + "</p>" +
-    "<p style='color:#999'>Prüfe, ob <code>questions.json</code> im selben Ordner liegt wie <code>index.html</code>. " +
-    "Im Browser unter <a href='questions.json' style='color:#f97316'>questions.json</a> nachsehen.</p></main>";
+  showDiagBanner("Fragen konnten nicht geladen werden: " + (err && err.message ? err.message : err));
+  // Trotzdem rendern, damit Tabs/Settings erreichbar sind
+  renderStartScreen();
 });
 
 if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
+  window.addEventListener("load", async () => {
+    // Alte Caches loeschen, damit beim Update nichts klemmt
+    try {
+      const keys = await caches.keys();
+      await Promise.all(keys.filter(k => k !== "meister-lernen-v6").map(k => caches.delete(k)));
+    } catch {}
     navigator.serviceWorker.register("service-worker.js").catch(() => {});
   });
 }

@@ -1,43 +1,26 @@
-/* Service Worker für Offline-Lernen */
-const CACHE = "meister-lernen-v4";
-const ASSETS = [
-  "./",
-  "./index.html",
-  "./manifest.json",
-  "./questions.json",
-  "./icon-192.png",
-  "./icon-512.png",
-];
+/* Service Worker — Network-First (kein hartnäckiges Caching) */
+const CACHE = "meister-lernen-v6";
 
 self.addEventListener("install", (e) => {
-  e.waitUntil(
-    caches.open(CACHE).then((c) => c.addAll(ASSETS).catch(() => {}))
-  );
   self.skipWaiting();
 });
 
 self.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys().then((keys) =>
-      Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))
-    )
+      Promise.all(keys.map((k) => caches.delete(k)))
+    ).then(() => self.clients.claim())
   );
-  self.clients.claim();
 });
 
+// Network-first: immer frisch laden, nur als Fallback aus Cache
 self.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET") return;
   e.respondWith(
-    caches.match(e.request).then((cached) => {
-      return (
-        cached ||
-        fetch(e.request).then((res) => {
-          // Cache neue Assets im Hintergrund
-          const copy = res.clone();
-          caches.open(CACHE).then((c) => c.put(e.request, copy)).catch(() => {});
-          return res;
-        }).catch(() => cached)
-      );
-    })
+    fetch(e.request).then((res) => {
+      const copy = res.clone();
+      caches.open(CACHE).then((c) => c.put(e.request, copy)).catch(() => {});
+      return res;
+    }).catch(() => caches.match(e.request))
   );
 });

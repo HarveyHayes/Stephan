@@ -1,6 +1,6 @@
 {
-  "name": "Meisterprüfung Dachdecker",
-  "short_name": "Meister-Lernen",
+  "name": "Meisterprüfung Dachdecker Stephan",
+  "short_name": "Meister Stephan",
   "description": "Lern-App für die Dachdecker-Meisterprüfung mit Sprachausgabe",
   "start_url": "./index.html",
   "scope": "./",
