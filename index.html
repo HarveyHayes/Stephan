@@ -881,7 +881,7 @@ document.getElementById("btn-start").onclick = () => {
   if (SELECTED_CATS.size === 0) { alert("Bitte mindestens ein Thema wählen."); return; }
   let pool = buildPool();
   if (pool.length === 0) {
-    alert("Keine Fragen passend zu deiner Auswahl. Wähle „Zufällige Auswahl" oder mehr Themen.");
+    alert('Keine Fragen passend zu deiner Auswahl. Wähle „Zufällige Auswahl" oder mehr Themen.');
     return;
   }
   pool = pool.slice(0, MODE === "lernen" ? pool.length : 30);
@@ -1215,7 +1215,7 @@ function showDiagBanner(msg) {
   const b = document.getElementById("diag-banner");
   if (!b) return;
   b.style.display = "block";
-  b.innerHTML = "⚠ " + msg + " <br><small>Geh in ⚙ Einstellungen → „Cache leeren & neu laden".</small>";
+  b.innerHTML = '⚠ ' + msg + ' <br><small>Geh in ⚙ Einstellungen → „Cache leeren & neu laden".</small>';
 }
 
 loadQuestions().then(() => {
