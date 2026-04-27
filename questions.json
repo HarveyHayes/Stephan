@@ -1,0 +1,2088 @@
+[
+  {
+    "kategorie": "Ausführungsgrundlagen",
+    "frage": "1) Ordnen Sie folgende Regelwerke nach ihrer rechtlichen Verbindlichkeit (höchste zuerst): DIN-Norm, Landesbauordnung, Fachregeln des DDH, Herstellerangaben, Werkvertrag",
+    "antworten": [
+      "1.Landesbauordnung (öffentliches Baurecht)",
+      "2.Werkvertrag (Leistungsbeschreibung)",
+      "3. Anerkannte Regeln der Technik",
+      "Fachregeln des DDH",
+      "einschlägige Din Normen",
+      "4.Herstellerangaben"
+    ]
+  },
+  {
+    "kategorie": "Ausführungsgrundlagen",
+    "frage": "2 ) Warum steht die Landesbauordnung über den DIN-Normen?",
+    "antworten": [
+      "Weil die Landesbauordnung gesetzlich verbindliches Recht ist",
+      "DIN- Normen sind private technische Regelwerke ohne Gesetzescharakter"
+    ]
+  },
+  {
+    "kategorie": "Ausführungsgrundlagen",
+    "frage": "Definieren Sie die anerkannten Regeln der Technik.",
+    "antworten": [
+      "aRdT= sind technische Regeln",
+      "die fachlich Richtig sind",
+      "sich in der Praxis bewährt haben",
+      "von der überwiegenden Fachwelt anerkannte werden ihnen zugänglich sind"
+    ]
+  },
+  {
+    "kategorie": "Ausführungsgrundlagen",
+    "frage": "Welche Bedeutung haben die Fachregeln des Deutschen Dachdeckerhandwerks?",
+    "antworten": [
+      "Sie gelten im Dachdecker Handwerk als angerkante Regeln der Technik und sind damit maßgeblich für die Beurteilung der Mangelfreiheit. Sie stellen den Mindestqualitätsstandart für Leistungen da"
+    ]
+  },
+  {
+    "kategorie": "Ausführungsgrundlagen",
+    "frage": "Ist eine Ausführung nach Herstellerangaben automatisch mangelfrei? Begründen Sie.",
+    "antworten": [
+      "Nein herstellerangaben sind keine anerkannten Regel der Technik",
+      "Sie sind nur dann zulässig, wenn sie den aRdT entsprechen oder vertraglich vereinbart wurden"
+    ]
+  },
+  {
+    "kategorie": "Ausführungsgrundlagen",
+    "frage": "Sind DIN-Normen gesetzlich bindend?",
+    "antworten": [
+      "Nein.",
+      "DIN- Normen sind keine Gesetzte, haben aber meist Vermutungswirkung für die aRdT"
+    ]
+  },
+  {
+    "kategorie": "Ausführungsgrundlagen",
+    "frage": "Unter welchen Voraussetzungen darf von einer DIN-Norm abgewichen werden?",
+    "antworten": [
+      "Gewärtige Technische Lösung",
+      "Fachlich begründet",
+      "Vertraglich vereinbart",
+      "Allerdings keine Abweichung vom öffentlich-rechtlichen Baurecht erlaubt"
+    ]
+  },
+  {
+    "kategorie": "Ausführungsgrundlagen",
+    "frage": "Nennen Sie drei für Dachdecker relevante Bereiche der Landesbauordnung.",
+    "antworten": [
+      "Brandschutz",
+      "Standsicherheit (z.b PV Anlagen)",
+      "Abstandsflächen",
+      "Durchdringungen von Dächern"
+    ]
+  },
+  {
+    "kategorie": "Ausführungsgrundlagen",
+    "frage": "Was ist zu tun, wenn eine Fachregel im Widerspruch zur LBO steht?",
+    "antworten": [
+      "Es gilt immer die LBO",
+      "Die Ausführung muss an die gesetzlichen Vorgaben angepasst werden"
+    ]
+  },
+  {
+    "kategorie": "Ausführungsgrundlagen",
+    "frage": "Ein Bauherr verlangt eine Dachneigung unterhalb der Fachregeln. Wie reagieren Sie richtig?",
+    "antworten": [
+      "Schriftlicher Bedenkenhinweis",
+      "Technische Risiken erläutern",
+      "Nur bei schriftlicher Zustimmung und ggf. Sondervereinbarung ausführen"
+    ]
+  },
+  {
+    "kategorie": "Ausführungsgrundlagen",
+    "frage": "Ist die Musterbauordnung oder die Landesbauordnung höhergestellt?",
+    "antworten": [
+      "Die MBO gilt als ein Rahmen und eine Ausführungsempfehlung Gesetzescharakter hat erst die LBO im jeweiligen Bundesland. Die MBO ist bei Unstimmigkeiten oder Gesetzeslücken zu Rate zu ziehen."
+    ]
+  },
+  {
+    "kategorie": "Ausführungsgrundlagen",
+    "frage": "Was versteht man unter einer Bauregelliste?",
+    "antworten": [
+      "Die Bauregelliste beinhalteten die Anforderungen für Bauprodukte und Bauarten.",
+      "Sie wurde im Jahr 2016 ersetzt durch die Muster-Verwaltungsvorschrift Technische Baubestimmungen"
+    ]
+  },
+  {
+    "kategorie": "Ausführungsgrundlagen",
+    "frage": "Welche Teile beinhaltet die Muster-Verwaltungsvorschrift Technische Baubestimmungen?",
+    "antworten": [
+      "Sie gliedert sich in vier teile auf",
+      "Teil A= beschreibt die Konkretisierung der Grundanforderungen an Bauwerke.",
+      "Teil B= sind Ergänzungen zu abschnitt A aufgeführt, die für Bauteile und Sonderkonstruktionen zu beachten sind",
+      "Teil C= sind die Regelungen für die Verwendung von Bauprodukten zusammengestellt, die nicht die CE- Kennzeichnung nach Bauproduktenverordung tragen und somit national geregelt sind",
+      "Teil D= listet Bauprodukte auf, für die kein bauaufsichtlicher Verwendbarkeitsnachweis erforderlich ist."
+    ]
+  },
+  {
+    "kategorie": "Ausführungsgrundlagen",
+    "frage": "Welche Unterpunkte beinhaltet die MVV TB Teil A?",
+    "antworten": [
+      "A1- mechanische Festigkeit und Standsicherheit",
+      "A2-Branschutz",
+      "A3-Hygiene, Gesundheit und Umweltschutz",
+      "A4- Sicherheit und Barrierefreiheit bei Nutzung",
+      "A5- Schallschutz",
+      "A6 Wärmeschutz"
+    ]
+  },
+  {
+    "kategorie": "Ausführungsgrundlagen",
+    "frage": "Nennen Sie die 3 Stufen der Ausführungsgrundlage.",
+    "antworten": [
+      "1.Stufe- Stand der Wissenschaft",
+      "2.Stufe -Stand der Technik",
+      "3.Stufe- Anerkannte Regeln der Technik"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „PYE\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Polymerbitumen mit thermoplastischen Elastomeren"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „PYP\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Polymerbitumen mit thermoplastischen Kunstoffen"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „KSP\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Kaltselbstklebende Polymerbitumenbahn"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „KSK\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Kaltselbstklebende Bitumen Dichtungsbahn"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „V (Zahl)\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Glasfaservlies"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „PV (Zahl)\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Trägereinlage Polyesterflies"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „G (Zahl)\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Glasgebeeinlage"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „R (Zahl)\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Rohfilzeinlage"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „Vcu\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Verbundträger aus Glasflies und Polyester-Kupferfolienverbund"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „Cu01\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Kupferverbundeinlage 1mm"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „KTG\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Kombinationsträgereinlage mit überwiegend Glasanteil8mind.120g/m2"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „KTP\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Kombinationsträgereinlage mit überwiegend Polyesteranteil"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „Al01\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Aluminiumeinlage 0,1mm"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „S (Zahl)\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Schweißbahn"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „DD\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Dachdichtungsbahn"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „Zahl\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Dicke der Bahn in mm"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „DU\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Bahnen für die Unterlage eienr mehrlagigen Abdichtung"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „DZ\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Bahnen als Zusatz oder Zwischenlage einer Mehrlagigen Abdichtung"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „DO\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Bahnen für die Oberlage einer Mehrlagigen Abdichtung"
+    ]
+  },
+  {
+    "kategorie": "Bitumen-Abkürzungen",
+    "frage": "Was bedeutet die Abkürzung „DE\" im Bereich Bitumen-Abkürzungen?",
+    "antworten": [
+      "Bahnen und flüssigkunstoff für einlagige Abdichtung"
+    ]
+  },
+  {
+    "kategorie": "Blitzschutz",
+    "frage": "Aus welchen 2 Oberkategorien setzt sich der Blitzschutz zusammen, und aus welchen Teilen bestehen sie?",
+    "antworten": [
+      "Äußerer Biltzschutz ( Biltzschutz/ Erdung)",
+      "Innerer Blitzschutz (Überspannung)"
+    ]
+  },
+  {
+    "kategorie": "Blitzschutz",
+    "frage": "Beschreibe die Funktion des Potentialausgleichs",
+    "antworten": [
+      "Ein guter innerer Blitzschutz erfordert einen ordnungsgemäßen Potentialausgleich. Das bedeutet, dass alle metallischen Teile im Gebäude miteinander verbunden sind, um Spannungsunterschiede zu minimieren. Dies vehindert, das Überspannung zwischen verschiedenen Teilen des Gebäudes auftreten"
+    ]
+  },
+  {
+    "kategorie": "Blitzschutz",
+    "frage": "Was bedeutet Trennung beim Inneren Blitzschutz?",
+    "antworten": [
+      "Separate Stromkreise: Empfindliche Geräte sollten auf separaten Stromkreisen liegen, um Überspannungen zu minimieren. Dies kann durch Verwendung von Steckdosenleisten mit integriertem Überspannungsschutz oder durch separate Stromkreise im Verteilerkasten erreicht werden."
+    ]
+  },
+  {
+    "kategorie": "Blitzschutz",
+    "frage": "Beschreibe Zweck und Funktion der Überspannungsschutzeinrichtung?",
+    "antworten": [
+      "Überspannungsableiter: Diese Geräte werden an den Strom- und Kommunikationsleitungen installiert, um Überspannungen zu begrenzen. Sie leiten den Blitzstrom sicher ab und schützen empfindliche Geräte wie Computer, Fernseher, Telefonanlagen usw. vor Schäden."
+    ]
+  },
+  {
+    "kategorie": "Blitzschutz",
+    "frage": "Woraus kann eine Fangvorrichtung bestehen?",
+    "antworten": [
+      "Fangstangen oder freistehende Masten",
+      "Gespannte Seile",
+      "Vermischte Leiter"
+    ]
+  },
+  {
+    "kategorie": "Blitzschutz",
+    "frage": "Mit welchen 3 Verfahren wird der Abstand der Fangvorrichtungen ermittelt?",
+    "antworten": [
+      "Blitzkugelvefahren = Hierbei wird die Position der Fangeinrichtung anhand der theoretischen Blitz Kugel bestimmt",
+      "Maschenvefahren",
+      "Schutzwinkelvefahren"
+    ]
+  },
+  {
+    "kategorie": "Blitzschutz",
+    "frage": "Beschreiben sie das Blitzkugelverfahren und wo man es anwenden kann.",
+    "antworten": [
+      "Das Biltzschutzvefahren ist einmaßgebliches verfahren zur Ermittlung von Eintritt stellen, die für einen direkten Blitzeinschlag in frage kommen. Es definiert den durch einen Blitz gefährdeten Bereich als Bergungsbereich für einer Kugel, deren Mittelpunkt die Spitze des Blitzes in der Phase vor dem Einschlag ist.",
+      "Diese Verfahren ist in der EN 62305-3 nomiert",
+      "Das Blitzkugelvefahren unterscheidet vier Blitzschutzklassen",
+      "Blitzschutzklasse 1= 20m Radius",
+      "Blitzschutzklasse 2= 30m Radius",
+      "Blitzschutzklasse 3 = 45 m Radius",
+      "Blitzschutzklasse 4= 60m Radius"
+    ]
+  },
+  {
+    "kategorie": "Blitzschutz",
+    "frage": "Beschreiben sie das Schutzwinkelverfahren und wo man es anwenden kann.",
+    "antworten": [
+      "Das Schutzwinkelverfahren ist ein Berechnungsverfahren, das dazu dient, den individuellen Gebäudeschutz vor Blitzeinschlägen und den daraus resultierenden Schäden zu planen und zu berechnen. Es wird im Rahmen des äußeren Blitzschutzes eingesetzt und ermöglicht die optimale Anordnung von Fangeinrichtungen, um die Wahrscheinlichkeit eines direkten Blitzeinschlags zu verringern.",
+      "Anwendungsbereiche: o Das Schutzwinkelverfahren eignet sich besonders für einfache oder kleine Gebäude sowie einzelne Gebäudeteile. o Es wird empfohlen, wenn bereits Fangstangen durch das Blitzkugelverfahren oder das Maschenverfahren platziert wurden und zusätzlicher Schutz erforderlich ist."
+    ]
+  },
+  {
+    "kategorie": "Blitzschutz",
+    "frage": "Beschreiben sie das Maschenweiteverfahren und wo es Anwendung findet.",
+    "antworten": [
+      "Das Maschenverfahren ist ein wichtiger Ansatz zur Berechnung und Planung des äußeren Blitzschutzes für Gebäude mit ebenen Flächen, insbesondere Flachdächern. Es ermöglicht die optimale Positionierung von Fangeinrichtungen, um einen bestmöglichen Schutz vor direkten Blitzeinschlägen zu gewährleisten.",
+      "o Das Maschenverfahren basiert auf einem Netzwerk von Fangleitungen, das auf den ebenen Dachflächen des Gebäudes installiert wird. o Diese Fangleitungen sind in der Lage, Blitze einzufangen und den Blitzstrom über verbundene Ableiter sicher in den Erdboden abzuleiten."
+    ]
+  },
+  {
+    "kategorie": "Blitzschutz",
+    "frage": "Welche Arten von Erdern gibt es? (Typ und Art)",
+    "antworten": [
+      "Typ A=Der Tiefenerder vom Typ A besteht aus einer vertikalen Metallstange, die tief in den Boden eingelassen wird. Min2,5 m unter die Erde empfohlen werden 9m",
+      "TypB= Ein Ringerder besteht aus einem überwiegend im Erdreich verlegten Flach- oder Rundleiter. o Idealerweise wird er im frostfreien Bereich in einer Tiefe von etwa 60 bis 80 Zentimetern verlegt. o Der Ringerder sollte ungefähr einen Meter vom Gebäude entfernt platziert werden."
+    ]
+  },
+  {
+    "kategorie": "Brandschutz",
+    "frage": "Was bedeuten die Begriffe NRA bzw. RWA?",
+    "antworten": [
+      "NRA= Natürlicher Rauchabzug",
+      "RWA= Rauchwärmeabzug",
+      "Rauch+ Wärmeabzug ( Alle Maßnahmen zum Abtransport von Rauch und Wärme)"
+    ]
+  },
+  {
+    "kategorie": "Brandschutz",
+    "frage": "Welche Auslösemöglichkeiten gibt es bei RWA Anlagen?",
+    "antworten": [
+      "Wärme: ein Röhrchen platzt bei ca. 78 Grad und sprengt die Kuppel auf",
+      "Optisch: wenn rauch durch eine Lichtschranke geht",
+      "Manuell: Per Knopfdruck",
+      "Brandmeldeanlage: Gekoppelt an Rauchmelder"
+    ]
+  },
+  {
+    "kategorie": "Brandschutz",
+    "frage": "Welche Mindestgrößen müssen Not-Ausstiegsfenster haben?",
+    "antworten": [
+      "1,08m² Allerdings Ausstiegsfläche nicht Fenstergröße 90cmx120cm",
+      "Sie müssen in einer Höhe von 0,90m-1,20m eingebaut werden wenn diese höher sind muss ein nicht verschiebbares Podest davor gebaut werden"
+    ]
+  },
+  {
+    "kategorie": "Brandschutz",
+    "frage": "Wie weit sollten sich Durchdringungen der Dachhaut vom Grenzbereich befinden, bezogen auf den Brandschutz am Steildach?",
+    "antworten": [
+      "1,25m"
+    ]
+  },
+  {
+    "kategorie": "Brandschutz",
+    "frage": "Wie muss eine Brandwand bei einer Ziegeleindeckung in einem Reihenhaus ausgeführt werden? Gebäudehöhe <7m, wenige Wohnparteien.",
+    "antworten": [
+      "In diesem Fall muss die Brandwand bis unter die Dachhaut geführt werden",
+      "Dort dann mit nicht brennbaren Materialien ausgeführt werden und sogar ein gemörtelt werden damit unter den ziegeln kein Brandüberschlag passieren kann"
+    ]
+  },
+  {
+    "kategorie": "Brandschutz",
+    "frage": "Wie hoch muss eine Brandmauer bei einer weichen Bedachung über die Oberkante der Eindeckung herausragen?",
+    "antworten": [
+      "Bei einer weichen Bedachung 50cm"
+    ]
+  },
+  {
+    "kategorie": "Brandschutz",
+    "frage": "Wie hoch muss eine Brandmauer bei einer harten Bedachung mit einer mittleren Gebäudehöhe (15m) und vielen Wohnparteien über die Oberkante der Eindeckung herausragen?",
+    "antworten": [
+      "In diesem Falle 30cm"
+    ]
+  },
+  {
+    "kategorie": "Brandschutz",
+    "frage": "Welche Brandreaktionsklassen gibt es und wie unterscheiden sie sich?",
+    "antworten": [
+      "A1 nicht brennbar",
+      "A2 nicht brennbar",
+      "B1 Schwer entflammbar",
+      "B2 Normal entflammbar",
+      "B3 leicht entflammbar"
+    ]
+  },
+  {
+    "kategorie": "Brandschutz",
+    "frage": "Welche Feuerwiderstandsklassen gibt es?",
+    "antworten": [
+      "F0 0min Feuerwiderstandsdauer",
+      "F30 30min Feuerwiderstandsdauer",
+      "F60 60 min Feuerwiderstandsauer",
+      "F90 90min Feuerwiderstandsdauer",
+      "F120 120 min Feuerwiderstandsdauer",
+      "F180 180 min Feuerwiderstandsdauer"
+    ]
+  },
+  {
+    "kategorie": "Brandschutz",
+    "frage": "Gegen was müssen Dächer widerstandsfähig sein und wer gibt dies vor?",
+    "antworten": [
+      "Muss gegen Flugfeuer und strahlende Wärme beständig sein.",
+      "Wird von der LBO (Landesbauordnung) vorgegeben"
+    ]
+  },
+  {
+    "kategorie": "Dachdetails Verbindungsmittel",
+    "frage": "Wie weit soll eine Dacheindeckung aus Dachziegeln / -steinen maximal in eine hoch hängende Dachrinne ragen, um eine ordnungsgemäße Dachentwässerung noch sicherzustellen?",
+    "antworten": [
+      "Die Vorderkante der Dacheindeckung ist so festzulegen dass die Entwässerung in die Rinne sichergestellt ist.",
+      "Bei Hochhängenden Rinnen soll die Dacheindeckung nicht mehr als 1/3 der Rinnenbreite waagerecht gemessen in die Rinne ragen.",
+      "Bei tiefhängenden Rinnen ist die Dacheindeckung i.d.r zurückzusetzten"
+    ]
+  },
+  {
+    "kategorie": "Dachdetails Verbindungsmittel",
+    "frage": "Wie ist zu verfahren, wenn eine Dacheindeckung bündig, oder mit weniger als 5cm überstand über die Traufkonstruktion gedeckt wird?",
+    "antworten": [
+      "Wird die Dacheindeckung bündig oder mit weniger als 5cm Überstand über die Traufkonstruktion gedeckt, ist ein Traufblech zum Schutz der Holzkonstruktion erforderlich."
+    ]
+  },
+  {
+    "kategorie": "Dachdetails Verbindungsmittel",
+    "frage": "Welche Forderung wird bezüglich der Befestigung von Ortgangsziegeln / steinen gestellt?",
+    "antworten": [
+      "Alle Dachziegel/steine an Ortgangkanten, außer der Deckschicht bei der Kronendeckung, sind an der Unterkonstruktion im Überdeckungsbereich gemäß Fachregeln zu befestigen. Die Forderung ist erfüllt wenn jeder Dachziegel/stein am Ortgang mit mindestens einer Holzschraube Durchmesser 4,5 und einer Einschraubtiefe von 24mm in Nadelholz befestigt wird. Andere Befestigungsmittel sind nachzuweisen."
+    ]
+  },
+  {
+    "kategorie": "Dachdetails Verbindungsmittel",
+    "frage": "!!!Prüfung die Nr.4!!!! Sie planen am Ortgang einen freien Überstand der Tragelatten von 25cm. Ist dieser Überstand ohne weitere konstruktive Maßnahmen zulässig?",
+    "antworten": [
+      "Der Freie Überstand von Traglatten über die Außenkante Auflager darf nicht mehr als 30cm betragen und richtet sich nach den Anforderungen und Dachlattenquerschnitten. Größere Überstände erfordern zusatzmaßnahmen"
+    ]
+  },
+  {
+    "kategorie": "Dachdetails Verbindungsmittel",
+    "frage": "Was ist hinsichtlich der Überdeckung untereinander bei konischen Firstziegeln / -steinen zu beachten?",
+    "antworten": [
+      "Konische Firstziegel/steine sind untereinander mit einer Überdeckung von mind. 4cm unter Berücksichtigung der Wetterrichtung zu decken.",
+      "Verfalzte Firstziegel/steine haben eine vorgegebene Überdeckung"
+    ]
+  },
+  {
+    "kategorie": "Dachdetails Verbindungsmittel",
+    "frage": "Welche Maßnahme können Sie ergreifen, um bei einer Biberschwanzdeckung das abfließende Niederschlagswasser daran zu hindern, an der Gratlatte einzutreten?",
+    "antworten": [
+      "Zur Sicherung gegen eindringendes Wasser sind Dachziegel/steine mit schmaler Füge an der Grattlatte anzuarbeiten. Gratausspitzer sollen abfließendes Wasser auf die Dachfläche leiten( z.b Wasser abweisender Schnitt insbesondere Bei der Bieberschwanzdeckung)"
+    ]
+  },
+  {
+    "kategorie": "Dachdetails Verbindungsmittel",
+    "frage": "Beschreiben Sie, was man unter einem Dachknick versteht und welche 2 Arten hier allgemein unterschieden werden?",
+    "antworten": [
+      "Der Dachknick ist der Übergang zweier verschieden geneigter Dachflächen. hierbei unterscheidet man zwischen dem Übergang von einer unteren steilen zur oberen flachen Dachneigung (Mansarddachknick und von einer unteren flachen zur oberen steilen Dachneigung (Schleppdachknick)"
+    ]
+  },
+  {
+    "kategorie": "Dachdetails Verbindungsmittel",
+    "frage": "Nennen Sie die Mindesteindringtiefen von Verbindungsmitteln in Holz für:",
+    "antworten": [
+      "glattschaftige Nägel und Klammern =12 x d",
+      "profilierte Nägel (Rillennägeln)= 8 x d",
+      "Schrauben = 6 x d"
+    ]
+  },
+  {
+    "kategorie": "Dachdetails Verbindungsmittel",
+    "frage": "Nennen Sie die Bedingungen, die Bauteile erfüllen müssen, um bei der Mindesteindringtiefe angerechnet werden zu können. Prüfung!!",
+    "antworten": [
+      "Für die Mindesteindringtiefen können Bauteile aus Holz und Holzwerkstoffen angerechnet werden, wenn diese",
+      "Eine Rohdichte ≥350kg/m³ und",
+      "Holzbauteile eine Dicke ≥24mmhaben und",
+      "Holzwerkstoffe eine Dicke ≥22mm haben und",
+      "Die Bauteile einzeln ausreuchend befestigt sind.",
+      "Andernfalls ist die Verbindungsmittellänge um die Dicke dieses Bauteil zu erhöhen"
+    ]
+  },
+  {
+    "kategorie": "Dachdetails Verbindungsmittel",
+    "frage": "Bis zu welcher Gebäudehöhe gelten die im Regelwerk enthaltenen Angaben zu erforderlichen Abmessungen von Bauteilen und deren Befestigung? Wie ist bei höheren Gebäuden zu verfahren?",
+    "antworten": [
+      "Die Angaben zu erforderlichen Abmessung von Bauteilen und deren Befestigung der Abschnitte gelten für Gebäude bis 25m. Bei höheren Gebäuden ist die Befestigung nach Technischen Baubestimmungen nachzuweisen ."
+    ]
+  },
+  {
+    "kategorie": "Dämmung",
+    "frage": "Nennen Sie die 3 Anwendungsgebiete für Wärmedämmstoffe nach DIN.",
+    "antworten": [
+      "Decke / Dach",
+      "Wand",
+      "Perimeterdämmung"
+    ]
+  },
+  {
+    "kategorie": "Dämmung",
+    "frage": "Nennen Sie 5 Produkteigenschaften für Wärmedämmstoffe nach DIN.",
+    "antworten": [
+      "Druckeigenschaft",
+      "Wasseraufnahme",
+      "Zugfestigkeit",
+      "Schalltechnische Eigenschaft",
+      "Verformung"
+    ]
+  },
+  {
+    "kategorie": "Dämmung",
+    "frage": "Welche Kriterien zur Beurteilung der Einsatzfähigkeit werden für die Wahl eines Wärmedämmstoffes herangezogen?",
+    "antworten": [
+      "Konstruktive Erfordernisse",
+      "Biophysikalische Randbedigungen",
+      "Dämmwirkung",
+      "Herkunft des Ausgangsmaterials",
+      "Primäenergiebedarf",
+      "Kosten",
+      "Art der Wärme und Schallübertragung"
+    ]
+  },
+  {
+    "kategorie": "Dämmung",
+    "frage": "Nennen Sie 5 organische Wärmedämmstoffe.",
+    "antworten": [
+      "Holzwolle",
+      "Kokosfaser",
+      "Cellulosefaser",
+      "PUR Hartschaum ( Polyurethan Hartschaum)",
+      "Korkplatten",
+      "EPS (expandiertem Polystyrol)",
+      "XPS (Extrudiertes Polystyrol)"
+    ]
+  },
+  {
+    "kategorie": "Dämmung",
+    "frage": "Nennen Sie 5 anorganische Wärmedämmstoffe.",
+    "antworten": [
+      "KMF",
+      "Perlite",
+      "Schaumglas",
+      "Aerogel",
+      "Vakumpanele"
+    ]
+  },
+  {
+    "kategorie": "Dämmung",
+    "frage": "Nennen Sie 4 Materialien, die für ein WDVS verwendet werden können.",
+    "antworten": [
+      "Holzfaser",
+      "Steinwolle",
+      "EPS (expandiertem Polystyrol)",
+      "PIR- Hartschaum"
+    ]
+  },
+  {
+    "kategorie": "Dämmung",
+    "frage": "Was versteht man unter dem „Nullsteuersatz“ in Verbindung mit einer Photovoltaik Anlage?",
+    "antworten": [
+      "Seit dem 1 Januar 2023 unterliegt die Lieferung und Installation bestimmter Photovoltaikanlagen bei der Umsatzsteuer einem neu eingeführtem Nullsteuersatz.",
+      "Der Anwendungsbereich umfasst Solarmodule einschließlich der für den Betrieb einer PV Anlage wesentlich Komponenten und Speicher.",
+      "Neben Leistungen wie Gerüstbau und Elektroarbeiten, die zusammen mit der Installation der Photovoltaikanlage von einem Anbieter einhaltliche Leistungen ausgeführt werden ( auch unter Einschaltung von Subunternehmern) unterliegt im Leistungsverhältnis zwischen dem Anbieter und dem Betreiber der Anlage Nullsteuerstufe wenn sie ausschließlich der Errichtung der PV Anlange dienen. Werden diese Leistungen dagegen einzeln von Betreiber beauftragt der die Anlage selbst aufstellt sind sie nicht begünstigt und unterliegen dem Regelsteuersatz von 19%"
+    ]
+  },
+  {
+    "kategorie": "Dämmung",
+    "frage": "Kommt bei der Montage einer PV Anlage auf einem Sanierungsbedürftigen Dach der Nullsteuersatz zum tragen und wenn ja, für welche Arbeiten?",
+    "antworten": [
+      "Der Nullstersatz kommt für die Errichtung der PV Anlage und alle für diese Errichtung benötigten Arbeiten zum Tragen.",
+      "Muss z.b aus Steuersatz veranschlagt. Prinzipiell werden Komplettpunkte Steuerbegünstig. Bei Indachanlagen wird die Unterkonstruktion extra für die PV Anlage ertüchtigt und erneuert. Durch diese Erneuerung der Dachhaut können Dämmmaßnahmen anfallen, welche dann unter Umständen gesamt unter dem Nullstersatz fallen können.",
+      "Hier ist die Gesetzeslage nicht komplett klar und es empfiehlt sich dringend eine indivduelle Anfrage"
+    ]
+  },
+  {
+    "kategorie": "Dämmung",
+    "frage": "Was versteht man unter dem „Raupeneffekt“?",
+    "antworten": [
+      "Das ist das Wandern der Photovoltaik Anlage durch die Längen Ausdehnung und wieder zusammen ziehen des Materials in Richtung Dach Tiefpunkt ( Atika) bei Aufgelegten und nicht fest montierten Anlagen"
+    ]
+  },
+  {
+    "kategorie": "Dämmung",
+    "frage": "In Verbindung mit einer Photovoltaikanlage sind die Begriffe Azimutwinkel und Elevationswinkel wichtige Faktoren. Wofür stehen diese beiden Begriffe und welche Winkel bezeichnet man als ideale Einstellung?",
+    "antworten": [
+      "Azimutwinkel= ist die Ausrichtung in Himmelsrichtung 0 Grad ist hier ideal",
+      "Elevationswinkel= beschreibt die Modulneigung und ist ideal zwischen 29 Grad bis 34 Grad"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "Rechtliche Vorschriften beim Einsatz von Drohnen Welche Drohnenkategorie wird beim Einsatz für Dachinspektionen in der Regel verwendet?",
+    "antworten": [
+      "Offen"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "Speziell Zertifiziert Ab welcher Drohnenmasse ist eine Registrierung beim LuftfahrtBundesamt erforderlich (Stand 2024)?",
+    "antworten": [
+      "Ab 250 g"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "B) Ab 500 g C) Ab 2 kg Welche Altersgrenze gilt mindestens für den Betrieb von Drohnen der offenen Kategorie A1 und A3? 14 Jahre",
+    "antworten": [
+      "B) 16 Jahre"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "C) 18 Jahre Welche maximale Flughöhe über Grund ist in der offenen Kategorie zulässig? A) 100 Meter",
+    "antworten": [
+      "B) 120 Meter"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "C) 150 Meter Welche Kennzeichnung muss an einer Drohne über 250 g angebracht sein? CE-Zertifikat Herstelleretikett",
+    "antworten": [
+      "UAS-Betreiber-ID (eID)"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "Wann ist ein EU-Kompetenznachweis („kleiner Drohnenführerschein“) erforderlich? Für alle Drohnen unter 250 g",
+    "antworten": [
+      "Für Drohnen ab 250 g in A1/A3"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "Nur für gewerbliche Nutzung Welche Regel gilt beim Überfliegen von unbeteiligten Personen? Ist jederzeit erlaubt Nur mit Zustimmung der Personen",
+    "antworten": [
+      "Muss vermieden werden"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "Wer ist bei einem Unfall mit der Drohne haftbar? Der Hersteller",
+    "antworten": [
+      "Der Steuerer/Betriebsverantwortliche"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "Die Versicherung Technische Gegebenheiten Welche Sensoren nutzen Inspektionsdrohnen typischerweise zur Dachkontrolle? Temperatursensoren",
+    "antworten": [
+      "GPS und Kamerasysteme"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "Mikrosensoren Wie lange beträgt die durchschnittliche Flugzeit einer handelsüblichen Inspektionsdrohne? 10–15 Minuten",
+    "antworten": [
+      "20–30 Minuten"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "C) Über 1 Stunde Was ist beim Einsatz von Drohnen in der Nähe von Hochspannungsleitungen zu beachten? Keine Einschränkungen",
+    "antworten": [
+      "Abstand von mindestens 50 m einhalten"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "Nur mit Ausnahmegenehmigung erlaubt Wozu dient die \"Return-to-Home\"-Funktion bei einer Drohne? Startet eine neue Mission automatisch Sendet Daten an den Hersteller",
+    "antworten": [
+      "Bringt die Drohne zum Startpunkt zurück"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "Was muss vor jedem Drohnenflug zwingend überprüft werden? Zustand des Gebäudes",
+    "antworten": [
+      "Wetterbedingungen und Akkustand"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "Anzahl der Passanten Wo darf mit der Drohne grundsätzlich nicht geflogen werden?",
+    "antworten": [
+      "In der Nähe von Flughäfen",
+      "Über Menschenansammlungen",
+      "In der Nähe von Krankenhäusern und anderen Gebäuden des öffentlichen",
+      "Dienstes (Polizei, Militär u.ä.)",
+      "Wohngebiete ohne Genehmigung",
+      "Autobahnen und Flüsse"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "Datenschutz & Gesundheitsschutz Darf eine Drohne bei Dachinspektionen benachbarte Grundstücke filmen? Ja, ohne Einschränkungen",
+    "antworten": [
+      "Nur mit Einwilligung der Betroffenen"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "Nur bei gewerblichem Einsatz Welche Regel gilt beim Speichern von Bildmaterial von Personen? Keine Einschränkungen",
+    "antworten": [
+      "Speicherung nur mit Datenschutzrechtlicher Grundlage"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "Speicherung nur bei öffentlichem Interesse Welche Maßnahmen dienen dem Gesundheitsschutz des Steuerers? Tragen eines Helms und Sichtschutzbrille Schulung im Umgang mit Funksignalen",
+    "antworten": [
+      "Pausenregelung, ergonomischer Arbeitsplatz, Wetterbedingungen beachten"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "Welche Anforderungen gelten an das Speichern von Videodaten gemäß DSGVO? Unbegrenzte Speicherung erlaubt Aufbewahrung bis zu 6 Monate",
+    "antworten": [
+      "Datenminimierung und Speicherbegrenzung"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "Wie kann man unbeteiligte Personen vor der Sichtbarkeit durch Drohnen schützen? Durch Infrarotaufnahmen Durch Abdeckung der Kamera",
+    "antworten": [
+      "Durch Flugverbotszonen und gezielte Flugplanung"
+    ]
+  },
+  {
+    "kategorie": "Drohne",
+    "frage": "Was muss laut Arbeitsschutz beachtet werden, wenn man vom Dach aus mit Drohne fliegt? Keine Absturzsicherung nötig Nur Handschuhe tragen",
+    "antworten": [
+      "Persönliche Schutzausrüstung (PSA) verwenden"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 10",
+    "frage": "Wie breit muss der Kiesstreifen sein, den Sie bei einem Gründach zum Brandschutz ausbilden müssen?",
+    "antworten": [
+      "Antwort: Min.50cm"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 10",
+    "frage": "Welche Arten von Gründachaufbauten kennen Sie?",
+    "antworten": [
+      "Antwort: extensive und intensive Dachbegrünung"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 10",
+    "frage": "Was versteht man unter einem Retentionsdach?",
+    "antworten": [
+      "Der Begriff Retentionsdach oder Retentionsgründach bezeichnet eine extensiver oder intensive Dachbegrünung mit einem Retentionsraum oberhalb der Dachabdichtung und unterhalb der dem sonst üblichen Gründachaufbau. Er besteht aus etwa 8cmbis 16cm hohen Kunstoffelementen mit einem höher gelegenen Dachaufbau, in dem sich Niederschlagswasser anstauen und innerhalb von 48 Stunden gedrosselt wieder ableiten lässt"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 10",
+    "frage": "Wie viele Windlastzonen unterscheiden wir in Deutschland und welche ist die leichteste / schlimmste?",
+    "antworten": [
+      "Antwort: 4 verschiedene Windzonen 1 die leichteste und 4 sie Schlimmste"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 10",
+    "frage": "Definieren Sie den Begriff „S10“.",
+    "antworten": [
+      "Antwort: S= Visuelle Sortierung 10= Festigkeitsklasse/ Biegespannung des Holzes in dem fall von 10N/mm*2"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 10",
+    "frage": "Wie müssen Kaminmündungen für feste Brennstoffe mit einer Fertigstellung nach dem 31.12.2021 aus dem Dach geführt werden?",
+    "antworten": [
+      "Antwort:Sie müssen Firstnah angeordnet werden und diesen um 40 cm überragen"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 10",
+    "frage": "Ab wieviel ° Dachneigung dürfen Sie standardmäßig Dachfenster im Steildach einbauen?",
+    "antworten": [
+      "Antwort: Ohne weiter Maßnahmen ab 15 Grad DN"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 10",
+    "frage": "Worauf sollten Sie den Kunden hinweisen, wenn Sie eine Terrasse mit Bangkirai oder Bambus Belag verkleiden?",
+    "antworten": [
+      "Antwort: Speziell Bangkirai und Bambus sind keine Barfußterassen. Wenn Splitter in den Körper gelangen, können diese zu einer Sepsis führen."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 10",
+    "frage": "Nennen Sie 3 der Ihnen bekannten Trockenholzinsekten, die Ihnen bei der Gebäudesanierung begegnen können.",
+    "antworten": [
+      "Antwort: Hausbockkäfer, Termiten, Pochkäfer"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 10",
+    "frage": "10.Welche 2 Herstellungsverfahren kennen Sie für Holzschindeln?",
+    "antworten": [
+      "Antwort: 1.gespaltene Holzschindel",
+      "2. gesägte Holzschindel"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 10",
+    "frage": "Warum muss bei einer Holzschindeldeckung der Belüftungsraum bei gesägten Schindeln höher sein als bei gespaltenen?",
+    "antworten": [
+      "Antwort: Bei gesägten Holzschindeln werden die Fasern zerstört, was zu einer besseren Wasseraufnahme führt. Dies führt im Gegensatz zu den gespaltenen Schindeln, wo die Fasern weitgehend ganz bleiben zu einer höheren Feutebelastung",
+      "Und benötigt deswegen eine höhere Hinterlüftung."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 10",
+    "frage": "Beschreiben Sie den historischen Hintergrund des Feierabendziegels.",
+    "antworten": [
+      "Laut Historie wurde der Feierabendziegel als letzter Ziegel der Produktion gefertigt und hier durfte das Werk bzw. der Arbeiter sich verewigen",
+      "Traditionell wurde dieser in Firstnähe oder sogar als letzter Ziegel verlegt."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 10",
+    "frage": "Beschreiben Sie, wie Sie in einem Satteldach Dachhaken als Anschlagpunkte setzen würden bei 40° DN, 12m Sparrenlänge und 12m Trauflänge.",
+    "antworten": [
+      "Sicherheitsdachharken sind immer nach Herstellervorschriften bzw. auf dem Sparren zu setzten. Im Steildach werden die Dachharken in Sparrenflucht bei 2,5- 5m Abstand zur Traufe und untereinander gesetzt. Der Abstand zum First beträgt 1-2m Vom Ortgang wird ein Abstand 2,5-5m gefordert, in Traufflucht max. 5m auseinander. Ein Zugangshaken sollte max. 1m oberhalb der Traufe sitzen"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 10",
+    "frage": "Wo endet der Kompetenzbereich eines Dachdeckers, bezogen auf die Dachentwässerung?",
+    "antworten": [
+      "Der Kompetenzbereich endet bei inliegender Entwässerung an der Unterkannte Deckenkonstruktion.",
+      "Bei der außenliegender Entwässerung beim Übergang zum Erdreich"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 10",
+    "frage": "Was versteht man unter einer Kaskadenentwässerung und dürfen Sie solch eine Entwässerung ausführen?",
+    "antworten": [
+      "Als Kaskadenentwässerung versteht man eine Entwässerung auf tieferliegende Gebäude bzw. in eine vorhandene Entwässerungsleitung. Wenn man sicherstellen kann, dass die Entwässerung weiterhin funktioniert, darf man solch eine Art der Entwässerung ausführen."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 8",
+    "frage": "Wieviel wiegt ca. 1m² einer 5cm dicken Kiesschüttung?",
+    "antworten": [
+      "Ca. 90Kg"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 8",
+    "frage": "Nennen Sie 6 Schadstoffe, die Ihnen bei einer Gebäudesanierung begegnen können.",
+    "antworten": [
+      "Asbest",
+      "Blei",
+      "Schimmelpilz",
+      "Staub",
+      "Alte Dämmung",
+      "PCB"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 8",
+    "frage": "Nennen Sie 3 Arten der Sonneneinstrahlung:",
+    "antworten": [
+      "Direkte",
+      "Diffuse",
+      "Reflektierende"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 8",
+    "frage": "Nennen Sie 3 Anwendungsgebiete der Solarthermie:",
+    "antworten": [
+      "Trinkwasser",
+      "Heizwasser",
+      "Schwimmbäder"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 8",
+    "frage": "Ab wann gilt im Allgemeinen ein Dämmstoff als trittfest?",
+    "antworten": [
+      "Ab einer Druckbelastbarkeit von 150kPa ( 153kg pro m2)"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 8",
+    "frage": "In welchen Fällen muss die GEG nicht eingehalten werden?",
+    "antworten": [
+      "Im Deckmalschutz",
+      "wenn der Bauherr das Dämmen übernimmt",
+      "bei Ausnahmegenehmigungen",
+      "Bei Befreiungen und bei sonstigen Gründen",
+      "Unterhalb der Bagatellgrenze (10%) und bei Nicht Wohngebäuden"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 8",
+    "frage": "Was ist Kapillarität?",
+    "antworten": [
+      "Wasser steigt in dünnen Röhren nach oben. Dies geschieht durch ein Zusammenspiel von Kohäsion und Adhäsion"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 8",
+    "frage": "Was ist Mergel?",
+    "antworten": [
+      "Mergel ist ein Gemisch aus Ton und Kalk. Es ist ein wichtiger Bestanteil der Zementherstellung."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 8",
+    "frage": "Wie wird die sich bildende Schutzschicht von Zink genannt?",
+    "antworten": [
+      "Zinkcarbonat"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 8",
+    "frage": "Erklären Sie, was die Masse eines Körpers ist? Ist eine Größe für die Art und Anzahl der in ihm enthaltenen Teilchen Was ist eine Solarkonstante? Die Sonneneinstrahlung vor Eintritt in die Atmosphäre. Sie beträgt 1350 Watt/ m2 Wie wird für den Menschen die thermische Behaglichkeit definiert? Zwischen 19 Grad und 22 Grad Raumlufttempertur ind einer relativen Luftfeuchte von 30%-70% Was versteht man unter einem SD-Wert?",
+    "antworten": [
+      "Der SD- Wert ist ein Maß für den Wiederstand, ein Bauteil oder eine Bauteilschicht dem Durchgang von Wasserdampf entgegensetzt. Er wird als äquivalente Luftschichtdicke bezeichnet und angegeben in Metern.",
+      "Der SD- Wert einer Bauteilschicht ist somit der Diffusionswiederstand der entsprechend dicken ( Vergleichs-) Luftschicht",
+      "Er wird errechnet aus der Sichtdicke der Bauteilschicht und der Wasserdampfdiffusionswiederstandzahl (µ) des Stoffes",
+      "SD=µ x d",
+      "µ ist hierbei der Dimensionslose Faktor, der ausdrückt, um wie viel Mal der Diffusionwiederstand des Stoffes höher ist als von Luft",
+      "µLuft = 1"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 8",
+    "frage": "Welche 5 Hauptunterscheidungen kann man beim SD-Wert treffen?",
+    "antworten": [
+      "Diffusionsoffen= ( 0 - 0,5m)",
+      "Diffusionsbremsend = ( 0,5 - 10m)",
+      "Diffusionhemmend = (10 – 100m)",
+      "Diffusionssperrrend = ( 100- 1500m)",
+      "Diffusionsdicht =(>1500m )"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 8",
+    "frage": "Wie ermittelt man bei einem belüfteten Flachdach die Größe des Belüftungsquerschnittes?",
+    "antworten": [
+      "Bei DN ≤ 5Grad min 5cm. Jeder Einzelfall muss berechnet werden"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 8",
+    "frage": "Nennen Sie 3 übliche Kupferlegierungen und Ihre Hauptbestandteile:",
+    "antworten": [
+      "CU/ZN – Kupfer/Zink- Messing",
+      "CU/SN- Kupfer/ Zinn- Bronze",
+      "CU/SN/AG – Kupfer / Zinn / Silber – Hartlot"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 8",
+    "frage": "Laut Wärmeschutz gibt es eine obere Temperaturgrenze für Wohnräume. Wie hoch ist diese?",
+    "antworten": [
+      "25- 27 Grad je nach Gebiet in Deutschland"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 8",
+    "frage": "Welche Besonderheit gibt es bei S10er Hölzern bezüglich ihrer Dicke?",
+    "antworten": [
+      "Sie sind überproportioniert geschnitten, um nach Austrocknen ( Darrgewicht) die richtige Dicke zu haben. Ssteht dabei für die visuelle Sotierung und 10 für 10N /mm2 Festigkeit"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 8",
+    "frage": "Erläutern Sie die Ausführung eines 1,20m langen firstseitigen Anschlusses. (Kaminkehle)",
+    "antworten": [
+      "Firstseitige Anschlüsse werden als unterliegende Anschlüsse je nach Dachneigung flächig oder vertieft ausgeführt.",
+      "Bei Längen ab 1,0m sollte die Ausführung mit Gefälle bzw. mit Sattel oder Keil erfolgen,",
+      "damit das Wasser zu einer Seite sicher abgeleitet werden kann.",
+      "( Schweinsrücken)"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 8",
+    "frage": "Warum können durch Konvektion (Leckagen in der Dampfsperre) größere Bauschäden entstehen als durch Diffusion?",
+    "antworten": [
+      "Konvektion (hier das Durchströmen der Bauteilschicht mit Luft) findet statt, wenn sich z.b. Leckagen in der Gebäudehülle befinden. Die Luft kann ungehindert in das Bauteil eindringen und der mitgeführte Feuchtegehalt kondensiert beim Abkühlen der Temperatur im Bauteil. Hierbei wird natürlich wesentlich mehr Luft und dadurch Wasserdampf durchgelassen als bei der Diffusion"
+    ]
+  },
+  {
+    "kategorie": "Flachdach neu",
+    "frage": "Differenzieren Sie zwischen den Begriffen Inspektion, Instandhaltung, Instandsetzung.",
+    "antworten": [
+      "Inspektion: Die Inspektion ist die Festellung des Zustandes der Abdichtung nach Augenschein einschließlich der an und Abschlüsse sowie Durchdringungen. Inspektionen sollen jährlich erfolgen.",
+      "Instandhaltung: Maßnahmen zur Festellung und Beurteilung des Zustandes sowie zur Bewahrung und Wiederherstellung der Funktionsfähigkeit",
+      "Instandsetzung: Maßnahmen zur wiederherstellung der Funktionsfähigkeit"
+    ]
+  },
+  {
+    "kategorie": "Flachdach neu",
+    "frage": "Wie definiert das Regelwerk eine vollflächige Verklebung unter Bitumenbahnen?",
+    "antworten": [
+      "Vollflächige Verklebung/ Verschweisung Verbindung zwischen 2 Schichten mit Klebstoffen, Klebestoffschichten oder aufgeschmolzene Bitumendeckschichten, die durch Baustellenbedingungen einzelne geringfügige Hohlstellen nicht ausgeschlossen werden können durch z.b Unebenheiten."
+    ]
+  },
+  {
+    "kategorie": "Flachdach neu",
+    "frage": "Wie groß darf die rechnerische Durchbiegung bei Stahltrapezprofilen als Unterkonstruktion höchstens sein?",
+    "antworten": [
+      "Die rechnerische Durchbiegung der Stahltrapetprofile darf höchstens 1/300 und bei gefällelosen Fläche höstens 1/500 der Stützweite (zwischen den Bindern und Pfetten) nicht überschreiten. Bei Gefällenlosen Flächen muss mit Wassersaclbildung"
+    ]
+  },
+  {
+    "kategorie": "Flachdach neu",
+    "frage": "Unterscheiden Sie zwischen Linienbefestigung und Linearer Befestigung.",
+    "antworten": [
+      "Linienbefestigung: Können mit Metallbändern, Porflen aus Metall oder Verbundblech ausgeführt werden. Diese sollte mit min. 3 Befestigern pro Meter mit der tragenden Konstruktion verbunden werden.",
+      "Lineare Befestigung: sind in Reihe angeordnet punktweise Einzelbefestigungen. Diese sollten mit min. 3 Befestigungselemente pro Meter ausgeführt werden."
+    ]
+  },
+  {
+    "kategorie": "Flachdach neu",
+    "frage": "Wie muss ein Befestigungsmittel für die Befestigung einer Bitumenbahn in Schalung mindestens beschaffen sein?",
+    "antworten": [
+      "Sicherung durch Mechanische Befestigung",
+      "Für die Befestigung von Bitumenbahnen auf Schalung sind Befestigungselemente oder Korrosionsgeschütze Stifte nach DIN EN 14592 mit extragroßem Flachkopf Kopfdurchmesser min 9mm oder Größer die mindestens 25mm lang, bei dickeren Bahnen oder Mehrfach überdeckungen endsprechend länger sein müssen.",
+      "Der Schaft von Befestigungensmitteln aus Kupfer oder Edelstahll aufgeraut oder geharzt sein"
+    ]
+  },
+  {
+    "kategorie": "Flachdach neu",
+    "frage": "Bitte vervollständigen Sie die Tabelle bezüglich der Befestigerabstände von Randhölzern im Flachdachbereich. Wie ist mit An-/ und Abschlüssen und Kehlen bei einlagigen bituminösen Abdichtungen zu verfahren?",
+    "antworten": [
+      "An-und Abschlüsse sind bei Mehrlagigen und einlagigen Abdichtungen mindestens zweilagig auszuführen. Bei einlagigen Abdichtungen sind auch Kehlen mindestens zweilagig asuzuführen"
+    ]
+  },
+  {
+    "kategorie": "Flachdach neu",
+    "frage": "Was sagt das Regelwerk bezüglich des Kapillarschnittes (Schrägschnittes) in bituminösen Abdichtungslagen?",
+    "antworten": [
+      "Bei Polymerbitumen-Schweißbahnen in der oberlage sollte und bei einlagigen Abdichtungen muss im Eckbereich der Quernaht an der unterdeckenden Bahn ein Schrägschnitt angeordnet werden."
+    ]
+  },
+  {
+    "kategorie": "Flachdach neu",
+    "frage": "Wie breit müssen Übergänge von Flüssigkunststoff auf geeignete Bitumenbahnen min. ausgebildet werden?",
+    "antworten": [
+      "Gehen Flüssigkunstoffe auf Bahnförmige Abdichtungen über, muss die Überlappungsbreite mindestens 100mm betragen. Die Verträglichkeit des Flüssigkunstoff und der Bahnförmigen Abdichtung sowie die dauerhafte Wasserdichte Verbindung muss von den Herstellern bestätigt sein"
+    ]
+  },
+  {
+    "kategorie": "Flachdach neu",
+    "frage": "Welche Anschlusshöhe ist für Türanschlüsse und Einbauteile gefordert?",
+    "antworten": [
+      "15 cm oder Sonderkonstruktionen bei Türanschlüssen ab oderkante Wasserführenden Schichten."
+    ]
+  },
+  {
+    "kategorie": "Wasserdampf",
+    "frage": "Durch welche Faktoren wird die Raumluft eines Gebäudes mit Wasserdampf angereichert?",
+    "antworten": [
+      "Die Raumluft in einem Gebäude kann durch kann durch verschiedenen Faktoren mit Wasserdampf angereichert werden. Hier sind einige Möglichkeiten:",
+      "Atmung und Transpiration: Menschen und Haustiere atmen aus und geben Wasserdampf ab. Pflanzen transpirieren ebenfalls, was zur Luftfeuchtigkeit beiträgt",
+      "2.Kochen und Duschen: Beim kochen und Duschen ensteht Wasserdampf,",
+      "der dir Raumluft anreichert",
+      "3.Verdunstung von Wasserbehältern: Wenn Sie offene Wasserbehälter ( wie Zimmerpflanzen oder Luftbefeuchter haben, verdunstet das Wasser und erhöht die Luftfeuchtigkeit",
+      "4. Luftdichtheit des Gebäudes: Ein gut abgedichtetes Gebäude hält die Luftfeuchtigkeit besser im Inneren.",
+      "5.Wetterbedingungen: Die Außenluftfeuchtigkeit beeinflusst die Raumluft. An regnerischen Tagen kann die Luftfeuchtigkeit höher sein.",
+      "6.Heizung und Klimaanlagen: Die Art der Heizung oder Klimaanlage kann die Luftfeuchtigkeit beeinflussen. Ein Luftbefeuchter kann in trockenen Klimazonen helfen",
+      "Aber Achtung, dass zu hohe Luftfeuchtigkeit auch Probleme wie Schimmel verursachen kann. Es ist wichtig, ein gesundes Gleichgewicht zu finden"
+    ]
+  },
+  {
+    "kategorie": "Wasserdampf",
+    "frage": "Unter welchen Umständen kommt Wasser in welchen Aggregatszuständen vor und was sind die Fixpunkte dafür?",
+    "antworten": [
+      "Wasser kann drei verschiedene Aggregatzustände vorkommen: fest (Eis), flüssig (Wasser) und gasförmig (Wasserdampf). Die Fixpunkte, bei denen Wasser zwischen diesen Zuständen wechselt sind",
+      "Schmelzpunkt (Eis →Wasser): Dies ist der Tempertaurpunkt, bei dem Eis zu flüssigem Wasser schmilzt Der Schmelztpunkt von Wasser beträgt 0 Grad",
+      "2.Siedepunkt (Wasser → Wasserdampf ) Beim Erhitzen verdampft flüssiges Wasser und geht in den gasförmigen Zustand über. Der Siedepunkt von reinem Wasser liegt bei 100 Grad",
+      "Diese Fixpunkte sind charakteristisch für Wasser und können je nach Druck und Temperatur ändern"
+    ]
+  },
+  {
+    "kategorie": "Wasserdampf",
+    "frage": "Beschreiben sie den Begriff maximale Luftfeuchte.",
+    "antworten": [
+      "Die maximale Luftfeuchte ist der Punkt, an dem die Luft gesättigt ist und keine weiteren Wassermoleküle aufnehmen kann Dieser Wert hängt von der Temperatur ab: Je wärmer die Luft, desto mehr Feuchtigkeit kann sie aufnehmen"
+    ]
+  },
+  {
+    "kategorie": "Wasserdampf",
+    "frage": "Beschreiben sie den Begriff absolute Luftfeuchte.",
+    "antworten": [
+      "Die absolute Luftfeuchtigkeit bezieht sich auf die tatsächliche Menge an Wasserdampf in der Luft gemessen in Gramm pro Kubikmeter Luft. Anders ausgedrückt ist es die Massse des Wasserdampfes, die in einem bestimmten Raumvolumen vorhanden ist."
+    ]
+  },
+  {
+    "kategorie": "Wasserdampf",
+    "frage": "Beschreiben sie den Begriff relative Luftfeuchte.",
+    "antworten": [
+      "Die relative Luftfeuchtigkeit beschreibt das Verhältnis zwischen der tatsächlichen Menge an Wasserdampf in der Luft und der maximalen Menge, die die Luft bei einer bestimmten Temperatur aufnehmen kann. Sie wir in Prozent ausgedrückt. Wenn die relative Luftfeuchte 100% beträg, ist die Luft gesättigt und kann keinen weiteren Wasserdampf aufnehmen. Niedrige Werte bedeutet, dass die Luft weniger feucht ist."
+    ]
+  },
+  {
+    "kategorie": "Wasserdampf",
+    "frage": "Was ist Diffusion, bezogen auf unsere Arbeit als Dachdecker?",
+    "antworten": [
+      "Diffusion beschreibt die spontane Bewegung von Teilchen (z. b Moleküle)",
+      "Von einem Bereich mit höherer Konzentration zu einem Bereich mit niedriger Konzentration. Dies geschieht, bis ein Gleichgewicht erreicht ist",
+      "In Bezug auf ihre Arbeit als Dachdecker könnte Diffusion folgende Auswirkung haben",
+      "Dampfsperre und Feuchtigkeitsschutz :Diffusion kann dazuführen, das Wasserdampf durch Materialien wie Dachdämmung",
+      "2.Materialauswahl: Bei der Auswahl von Dachmaterialien sollten die Diffusionseigenschaften berücksichtigt werden. Einige Materialien sind weniger durchlässig für Wasserdampf als andere.",
+      "3.Belüftung: Durch eine gute Belüftung können Sie die Diffusion von Feuchtigkeit aus dem Innenraum des Gebäudes nach außen begrenzen"
+    ]
+  },
+  {
+    "kategorie": "Wasserdampf",
+    "frage": "Was ist der Wasserdampfsättigungsdruck?",
+    "antworten": [
+      "Luft kann bei gegebener Temperatur eine bestimmte maximale Menge Wasser aufnehmen",
+      "Dieser Sättigungswassergehalt (maximale Luftfeuchte) begründet nun aufgrund seines Gewichtes einen entsprechenden wassersättigungsdruck (Ps)",
+      "Dieser Sättigungsdruck in Pascal ist genau wie der Sättigwassergehalt in g/m₂ charakteristische Größe von Luft mit einer gegebenen Temperatur"
+    ]
+  },
+  {
+    "kategorie": "Wasserdampf",
+    "frage": "Was ist der Wasserdampfteildruck, wie lautet seine Einheit und wie wird er errechnet?",
+    "antworten": [
+      "Der Wasserdampfteildruck ist der Anteil des Luftdrucks, der allein durch Wasserdampf in der Luft verursacht wird, gemessen in Pascal (Pa)",
+      "Er entsteht durch die relative Luftfeuchtigkeit und die Temperatur und ist die treibende Kraft für die Wasserdampfdiffusion von Bereichen mit höherem zu denen mit niedrigerem Druck, z.b aus warme Innenräumen nach draußen im Winter. Wenn der Wasserdampfteildruck den Sättigungsdruck erreicht, kann es zur Bildung von Tauwasser kommen."
+    ]
+  },
+  {
+    "kategorie": "Wasserdampf",
+    "frage": "Was ist ein Dampfdruckgefälle?",
+    "antworten": [
+      "Das Gefälle zwischen unterschiedlich hohem p i und pa strebt genau wie das Temperaturgefälle nach Ausgleich",
+      "Dampfdruckgefälle von innen nach außen p i ˃ p a",
+      "Innen ist p höher als außen. Ein typisches Winter Gefälle. Niedrige Außentemperaturen bedingen zwangsläufig einen geringeren Wasserdampfteildruck",
+      "2.Dampfdruckgefälle von außen nach innen p i ˂ p a",
+      "Nun ist der Wasserdampfteildruck der Außenluft größer. Dieser Fall tritt in der Regel nur im Sommer bei deutlich höheren Außentempertauren auf"
+    ]
+  },
+  {
+    "kategorie": "Wärme 2",
+    "frage": "In welche Richtung fließt der Wärmestrom?",
+    "antworten": [
+      "Der Wärmestrom fließt immer von einem Bereich mit hoher Temperatur zu einem Bereich mit niedriger Temperatur. Dieses Phänomen folgt dem Wärmegradienten, der die Temperaturdifferenz zwischen zwei Punkten beschreibt. Mathematisch ausgedrückt, ist der Wärmestrom (Q) proportional zum Temperaturunterschied (∆T)und der Fläche (A) , durch die die Wärme übertragen wird, und umgekehrt proportional zur Materialdicke (d),durch die die Wärme fließt"
+    ]
+  },
+  {
+    "kategorie": "Wärme 2",
+    "frage": "Wie kann die Ausbreitung von Wärme erfolgen?",
+    "antworten": [
+      "Wärmestrahlung",
+      "Wärmeleitung ( Transmission)",
+      "Wärmemitführung (Konvektion)"
+    ]
+  },
+  {
+    "kategorie": "Wärme 2",
+    "frage": "Was ist Wärme? Wie wirkt sich die Erwärmung eines Körpers auf seine Moleküle aus?",
+    "antworten": [
+      "Wärme ist eine Form von Energie, genauer gesagt die Bewegungsenergie jener kleinen Teile ( Moleküle, Atome), aus denen Körper sich zusammensetzen. Je schneller diese kleinen teilchen sich hin und her bewegen, desto wärmer ist der Körper. Die Wärme gibt an, wie viel thermische Energie von einem Körper auf einen anderen Körper übertragen wird."
+    ]
+  },
+  {
+    "kategorie": "Wärme 2",
+    "frage": "Beschreiben sie die Transmission (Wärmeleitung)!",
+    "antworten": [
+      "Bei der Wärmeleitung (Transmission) erfolgt der Temperaturausgleich durch die Weitergabe der wärme in einem Stoff von Molekül, ohne das diese ihren Ort wechseln.",
+      "Die Wärme wird als Schwingungsenergie von den bei der Wärmequelle liegende und stark schwingenden Molekülen an benachtbarte, schwächer schwingende Moleküle weitergegeben."
+    ]
+  },
+  {
+    "kategorie": "Wärme 2",
+    "frage": "Kann sich Wärmestrahlung auch im Vakuum ausbreiten? (Erklärung)",
+    "antworten": [
+      "Ja sie Wärmestrahlung kann sich in einem Vakuum ausbreiten",
+      "Jede Art von elektromagnetischer Wellen kann sich ohne ein Medium ( durch das Vakuum) fortbewegen. DA es sich bei Wärmestrahlung um eine solche elektromagnetische Welle handelt, kann sie sich durch das Vakuum bewegen (weshalb beispielsweise die Erde von der Sonne erwärmt wird)"
+    ]
+  },
+  {
+    "kategorie": "Wärme 2",
+    "frage": "Nennen Sie die Vor- und Nachteile von Strahlungswärme!",
+    "antworten": [
+      "Die Wärme wird als sehr behaglich empfunden",
+      "Die Raumluft wird sanft erwärmt und verteilt, die Luftfeuchtigkeit bleibt annähernd gleich und entsteht kaum Verwirbelungen in der Luft",
+      "Die Raumlufttemperatur wir bei Strahlungswärme höher empfunden als sie tatsächlich ist, da die Wärme direkt auf den Körper übertragen wird. Die Temperatur im Raum kann um bis zu 2Grad reduziert werden. Jeder abgesenkte Grad spart 6% Heizkosten im Jahr",
+      "Strahlungswärme wird im Vergleich zu Konvektionswärme angenehmer"
+    ]
+  },
+  {
+    "kategorie": "Wärme 2",
+    "frage": "Beschreiben sie die Wärmemitführung (Konvektion)",
+    "antworten": [
+      "Im Gegensatz zur Wärmestrahlung ist die Konvektion nur in Gasen oder Flüssigkeit möglich. Werden Gase z.b Luft oder Flüssigkeiten z.b. Wasser im Heizungssystem erwärmt, dehnen sich diese aus.",
+      "Sie werden durch ihre geringere Dichte leichter und steigen nach oben während kältere und damit schwerere Wasser-bzw Luftmengen an ihre Stelle treten.",
+      "Es ensteht eine Strömung die die Wärme von der Wärmequelle wegführt und an weniger wärme Stoffe, wie Mauerwerk, Beton, Luft etc. wieder abgibt."
+    ]
+  },
+  {
+    "kategorie": "Wärme 2,2",
+    "frage": "Was versteht man in der Physik unter dem absoluten Nullpunkt?",
+    "antworten": [
+      "Der absolute Nullpunkt bezeichnet den unteren Grenzwert für die Temperatur, also die tiefst mögliche Temperatur, die nur theoretisch erreicht und nicht unterschritten werden kann. Dieser absolute Nullpunkt definiert den Ursprung der absoluten Temperaturskala und wird als 0 Kelvin festgelegt, das ist gleich -273,15 Grad Celsius"
+    ]
+  },
+  {
+    "kategorie": "Wärme 2,2",
+    "frage": "Was versteht man unter einer Wärmebrücke?",
+    "antworten": [
+      "Eine Wärmebrücke ist ein Bereich in Bauteilen eines Gebäues, der Wärme besser leitet und damit Wärme schneller nach außen transportiert, als es durch die angrenzenden Bauteile passiert. Dadurch kühlt das entsprechende Bauteil (z.B. eine Raumecke) schneller aus und erfährt somit eine tiefere Temperatur als die Umgebung. Wärmebrücken können zu Schimmelbildung Tauwasserausfall und erhöhtem Heizwärmebedarf führen.",
+      "Es gibt materialbedingte ( durch die verwendeten Materialien)",
+      "Und geometrische wärmebrücken (wenn die Innenoberfläche ungleich der Außenoberfläche ist). Letztere treten beispielweise bei Hausaußenecken, Dachgauben und Erkern auf."
+    ]
+  },
+  {
+    "kategorie": "Wärme 2,2",
+    "frage": "In welcher Richtung fließt der Wärmestrom?",
+    "antworten": [
+      "Der Wärmestrom fließt immer von einem Bereich mit höherer Temperatur zu einem Bereich mit niedrigerer Temperatur. Dieses Phänomen folgt dem Wärmegradienten, der die Temperaturdifferenz",
+      "Zwischen zwei punkten beschreibt."
+    ]
+  },
+  {
+    "kategorie": "Wärme 2,2",
+    "frage": "Wie kann die Ausbreitung von Wärme erfolgen?",
+    "antworten": [
+      "Wärmestrahlung",
+      "Wärmeleitung (Transmission)",
+      "Wärmemitführung (Konvektion)"
+    ]
+  },
+  {
+    "kategorie": "Wärme 2,2",
+    "frage": "Was ist Wärme? Wie wirkt sich die Erwärmung eines Körpers auf seine Moleküle aus?",
+    "antworten": [
+      "Wärme ist eine Form von Energie, genauer gesagt die Bewegungsenergie jener kleinen Teile ( Moleküle, Atome) aus denen Körper sich zusammensetzten. Je schneller diese kleinen Teilchen sich hin und her bewegen, desto wärmer ist der Körper. Die Wärme gibt an, wie viel thermische Energie von einem Körper auf einen anderen Körper übertragen wird. Die Einheit der Wärme Joule."
+    ]
+  },
+  {
+    "kategorie": "Wärme 2,2",
+    "frage": "Welche gesetzlichen Einheiten der Temperatur kennen sie? Beschreiben sie deren Unterschied!",
+    "antworten": [
+      "Es gibt Grad Celsius und Klevin. C ist eingeteilt wie in 2 beschrieben . K geht davon aus das sich der Nullpunkt (0 Grad C) bei 273,15 Kelvin befindet und hat nur positive Zahlen."
+    ]
+  },
+  {
+    "kategorie": "Wärme 2,2",
+    "frage": "Beschreiben sie die Transmission (Wärmeleitung)!",
+    "antworten": [
+      "Wärmeleitung- auch Wärmediffusion oder Konduktion genannt- ist ein Mechanismus zum Transport von thermischer Energie. Wärme fließt dabei- gemäß dem zweiten Hauptsatz der Thermodynamik- immer nur in Richtung geringerer Temperatur."
+    ]
+  },
+  {
+    "kategorie": "Wärme 2,2",
+    "frage": "Kann sich Wärmestrahlung auch im Vakuum ausbreiten? (Erklärung)",
+    "antworten": [
+      "Ja die Wärmestrahlung kann sich auch in einem Vakuum ausbreiten.",
+      "Jede Art von elektromagnetischer Wellen kann sich ohne ein Medium ( (durch das Vakuum) fortbewegen. Da es sich bei Wärmestrahlung um eine",
+      "solche elektromagnetische Welle handelt, kann sie sich durch das Vakuum bewegen (weshalb beispielsweise die Erde von der Sonne erwärmt wird)."
+    ]
+  },
+  {
+    "kategorie": "Wärmeschutzbegriffe",
+    "frage": "Was ist der Wärmedurchgangswiederstand ? Wie wird er berechnet?",
+    "antworten": [
+      "Das ist der Wiederstand der der Wärme entgegengesetzt wird bezogen auf die gesamte Bauteilschicht.",
+      "Er errechnet sich aus der Bauteildicke in Meter geteilt durch die Wärmeleitzahl.",
+      "Er ist die Summe aus allen Wärmedurchlasswiederständen und RSI+RSE.",
+      "Auch genannten RT Wert",
+      "Angegeben in w/ m₂ k"
+    ]
+  },
+  {
+    "kategorie": "Wärmeschutzbegriffe",
+    "frage": "Was ist die Wärmedurchgangszahl (U-Wert)",
+    "antworten": [
+      "Der U-Wert ist der Kehrwert von Rt.",
+      "Ist ein Maß für die Wärmedurchlässigkeit eines Bauteils, ausgedrückt in Wattsekunden die bei 1kDifferenz durch 1m₂ des Bauteils strömt",
+      "U=1/RT",
+      "Angegeben in w/m₂k"
+    ]
+  },
+  {
+    "kategorie": "Wärmeschutzbegriffe",
+    "frage": "Was ist der Wärmeübergangswiederstand (Rsi / Rse) ?",
+    "antworten": [
+      "Das sind die Widerstände, die beim Übergang der Wärme auftreten,",
+      "Rsi ist von der Innenraumluft ins Bauteil und Rse beim Austritt aus dem Bauteil.",
+      "Einheit: m₂k/w"
+    ]
+  },
+  {
+    "kategorie": "Wärmeschutzbegriffe",
+    "frage": "Erklären sie die Begriffe maximale Luftfeuchtigkeit, absolute Luftfeuchtigkeit und relative Luftfeuchtigkeit?",
+    "antworten": [
+      "Man versteht unter Luftfeuchtigkeit den Wasserdampfgehalt in der Luft. Hierzu unterscheidet man zwischen der relativen und der absoluten Luftfeuchte.",
+      "Der tatsächliche vorhandene Anteil an Wasserdampf in der Luft wird als absolute Luftfeuchte bezeichnet.",
+      "Setz man die absolute Luftfeuchte in das Verhältnis zur maximal möglichen Luftfeuchte so erhält man die relative Luftfeuchte in Prozent.",
+      "Die maximale Luftfeuchtigkeit beschreibt den maximal Luftfeuchte beschreibt den maximalen Wert an Feuchtigkeit den die Luft Aufnehmen kann, die 100% Sättigung der Luft"
+    ]
+  },
+  {
+    "kategorie": "Wärmeschutzbegriffe",
+    "frage": "Was versteht man unter einem SD-Wert? Wie wird er errechnet und wie lautet seine Einheit?",
+    "antworten": [
+      "Der SD-Wert ( Wasserdampfdiffudionsäquivalente Luftschichtdicke ) beschreibt die Dicke einer ruhenden Luftschicht, die den gleichen Wiederstand gegenüber der Wasserdampfdiffusion hat wie die betrachtete Bauschicht. Dieser Wert steht für den Wasserdampfdiffusionwiederstand eines Baustoffes in Beziehung zur Luft.",
+      "Bauteildicke (m)x Diffusionswiederstandszahl (µ) mü",
+      "Der SD-Wert wird in Meter (m) angegeben"
+    ]
+  },
+  {
+    "kategorie": "Wärmeschutzbegriffe",
+    "frage": "Was ist der Wärmedurchlasswiederstand? Wie wird er berechnet und wie lautet seine Einheit?",
+    "antworten": [
+      "Der Wärmedurchlasswiederstand beschreibt den Wiederstand, den ein Material/ Baustoff bzw. Bauteil dem Wärmestrom entgegenstellt. Er wird berechnet, indem die Dicke der jeweiligen Schicht d (m) durch den Bemessungswert der Wärmeleitfähigkeit der jeweiligen Schicht (Lambda) in (W/mk) dividiert wird.",
+      "Einheit: (m₂ K/W)",
+      "Berechnung: R= d/ Lambda (m₂K/W)"
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Welche Gesetze und Vorgaben müssen Sie bei der Gebäudesanierung beachten?",
+    "antworten": [
+      "MBO= Musterbauordnung",
+      "LBO= Landesbauordnung",
+      "GEG= Gebäude Energie Gesetzt",
+      "DIN 4108= eine deutsche Normreihe die sich mit dem Wärmeschutz und der Energieeinsparung in Gebäuden gefasst"
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Welche Bedingungen müssen Sie erfüllen, wenn Sie nachträglich ein Dachgeschoss ausbauen möchten?",
+    "antworten": [
+      "Das Vorhaben muss beantragt und genehmigt werden (Nutzungsänderung).",
+      "Es muss 1/8 der Grundfläche als Fensterfläche vorhanden sein- Fenster nicht nur auf der Nordseite. Es müssen 2 Flucht und Rettungswege vorhanden sein. Mindestens die Hälfte der vorhandenen Grundfläche muss min. 2,20 Deckenhöhe haben Fenster die als Rettungswege nach §33 Absatz 2 Satz 2 dienen müssen im Lichten mindenstens 0,90m x1.20m groß und nicht höher als 1,20m über dem Fußboden oberkante eingebaut sein."
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Welche U-Werte müssen die Bauteile aufweisen, mit denen Sie in Berührung kommen?",
+    "antworten": [
+      "Flachdach: 0,20W/(m²k)",
+      "Fassade: 0,24W/(m²k)",
+      "Steildach: 0,24W/(m²k)",
+      "Gaubendeckel: 0,24W/(m²k)",
+      "Dachfenster: 1,40W/(m²k)"
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Können Sie dem Kunden pauschal berechnen, wieviel Dämmung er bei einer WLG von 035 benötigt, um nach GEG 2023 im Steildachbereich zu dämmen? Gegen was müssen Dächer widerstandsfähig sein und wer gibt dies vor?",
+    "antworten": [
+      "Die LBO gibt vor das Dächer gegen Flugfeuer und Strahlende wärme Widerstandsfähig sein müssen."
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Ab wann zählt ein Gebäude zu einem Wohngebäude?",
+    "antworten": [
+      "Wenn das Gebäude min.4 Monate auf min. 19 Grad beheizt oder eben bewohnt wird."
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Welche Ersatzmaßnahme können Sie bei einem ungenutzten Speicherraum anbieten, anstatt das Dach zu dämmen?",
+    "antworten": [
+      "Dämmung der obersten Geschossdecke. Hier sind Forderungen erfüllt, wenn ein U-Wert von 0,24W/(m²k) erreicht ist oder wenn dies nicht möglich ist der zur Verfügung stehende Platz mit einer Dämmung WLG 035 ausgedämmt wurden. Bei Einblasdämmung ist eine WLG 045 gestattet"
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Erklären Sie folgende Abkürzungen: KFW, GEG, LBO, MBO, CAD, BIM, BAFA",
+    "antworten": [
+      "KFW: Kreditanstalt für Wiederaufbau",
+      "LBO: Landesbauordnung",
+      "MBO: Musterbauordnung",
+      "CAD: Computer Aided Design",
+      "BIM: Building informatio Modeling",
+      "BATA: Bundesamt für Wirtschaft und Ausfuhrkontrolle"
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Was versteht man unter dem Begriff Handwerk 4.0?",
+    "antworten": [
+      "Hinter dem Bergriff Handerwerk 4.0 steht eine von Deutschland ins Leben gerufene Kampagne die die Digitalisierung in Industier und Handwerk symbolisiert 4.0 steht dabei für die 4 Revolution."
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Welche Möglichkeiten haben Sie digitale Prozesse in Ihrem Unternehmen zu etablieren?",
+    "antworten": [
+      "Drohnenaufnahmen",
+      "CAD Zeichnung",
+      "Gebäudesanner,",
+      "Digitale Kalkulation und Steuererfassung",
+      "Repotzzettel Digital",
+      "Bautagebuch Digital"
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Wann und Wie kommen Sie bereits heute mit dem Thema BIM in Berührung?",
+    "antworten": [
+      "Seit Januar 2023 ist BIM ein Mindeststandard für Bundesbauten geworden"
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Ab wann müssen Sie bei einer Sanierung nach GEG arbeiten?",
+    "antworten": [
+      "Wenn <10% eines Bauteils saniert werden, muss min der der vorherige standard wiederhergestellt werden.",
+      "Wenn >10% eines Bauteils saniert werden, muss diese min.GEG ausgeführt werden"
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Ab wann gilt ein Dachraum als begehbar?",
+    "antworten": [
+      "Wenn eine Eintrittsöffnung von min. 60cm x80cm vorhanden ist."
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Erklären Sie was man unter „wirtschaftlich vertretbar“ im Zusammenhang mit dem GEG versteht.",
+    "antworten": [
+      "Die Anforderungen nach GEG müssen dem Stand der Technik erfüllbar und vertretbar sein. Anforderungen und Pflichten gelten als Wirtschaftlich vertretbar, wenn generell die erforderlichen Aufwendungen innerhalb der üblichen Nutzungsdauer durch die eintretenden Einsparungen erwirtschaftet werden können."
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "In welchen Fällen muss das GEG nicht eingehalten werden?",
+    "antworten": [
+      "Im Denkmalschutz",
+      "Wenn der Bauherr das Dämmen selber übernimmt",
+      "Bei Ausnahmegenehmigungen",
+      "Bei Befreiung",
+      "Bei sonstigen Gründen"
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Auf welche Gebäudetypen ist das GEG anzuwenden ?",
+    "antworten": [
+      "Das GEG ist auf Gebäude anzuwenden die unter Einsatz von Energie beheizt oder gekühlt werden."
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Ist eine Befreiung vom GEG möglich (§102 GEG)",
+    "antworten": [
+      "Ja, grundzetzlich ist auch eine befreigung von den Auflagen in folgenden Fällen möglich:",
+      "Die Ziele des Gesetzten werden durch andere Maßnahmen erreicht.",
+      "Die Anforderungen führen im Einzelfall zu unbilliger Härte"
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Welche Anforderungen werden an zu errichtende Gebäude gestellt? (§10ff. GEG)",
+    "antworten": [
+      "Nach den technischen Baubestimmungen der Länder",
+      "( hier DIN 41-08-2) ist zur Vermeidung von Schimmelpilz und Tauwasserbildung an den Innenoberflächen von Außenbauteilen die beheizt Räume gegen die Außenluft abgrenzen, ein Mindestwärmeschutz dieser Bauteile mit einer flächeinbezogenen Masse von",
+      "mindestens 100kg/m³ ein Wärmedurchlasswiederstand von 1,2w (m²K)",
+      "kleiner 100kg/m³ ein Wärme durchlasswiederstand von 1,75W (m²K)",
+      "erforderlich. Daher empfiehlt sich die Anwendunng dieser Werte auch für bestehende Bauteile, die beheizte oder gekühlte Räume gegen die Außenluft oder niedriger temperierte Räume abgrenzen."
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "4.Welche Nachrüstpflichten sind für Eigentümer vorgeschrieben? (§47 GEG)",
+    "antworten": [
+      "Eigentümer eines Wohngebäudes, das mindestens vier Monate auf Innentemperatur von mind. 19 Grad C beheizt wird, müssen dafür sorgen, dass oberste Geschossdecken so gedämmt sin, dass der Wärmedurchgangskoeffizient 0,24 W(m²K) nicht überschreitet. Alternativ kann das darüber liegende Dach gedämmt werden."
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Gilt die sog. Bagatelle-Regelung auch für das GEG und welche Anforderungen sind dann einzuhalten? In welchen Fällen sind Energieausweise auszustellen? (§79GEG)",
+    "antworten": [
+      "Die Gültigkeit des Ausweises beträgt 10 Jahre. Der Eneräußern , Vergieausweis ist auszustellen bei:",
+      "Neubau eines Gebäudes",
+      "Im Zuge energetischer Sanierung, bei der Einhaltung der rechnerisch ermittelten Werte durch Bilanzierung nachgewiesen wird",
+      "Im Falle von Veräußern, Vermieten, Verpachten oder Verleasen",
+      "Aussteller von Engerieausweisen sind verpflichtet, Kopien der von ihnen ausgestellten Engergieausweisen zwei Jahre ab dem Ausstellungsdatum aufzubewahren, um die Durchführung von Stichprobenkontrollen und Bußgeldverfahren zu ermöglichen."
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Welche Gebäude sind von der Ausstellung eines Engergieausweises Ausgenommen?",
+    "antworten": [
+      "Ausgenommen sind Baudenkmäler und kleine Gebäude mit einer Nutzfläche unter 50m²"
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "8.Dürfen Dachdecker Engerieausweise ausstellen?",
+    "antworten": [
+      "Ja dürfen sie, sofern diese die entsprechende Schulung gemäß Anlage 11GEG absolviert haben."
+    ]
+  },
+  {
+    "kategorie": "GEG",
+    "frage": "Wer ist für die Einhaltung des GEG verantwortlich? (§8GEG)",
+    "antworten": [
+      "Für die Einhaltung der Vorschriften ist der Bauherr oder Eigentümer verantwortlich. Gleichermaßen sind im Rahmen ihres jeweiligen Wirkungskreises auch die Personen (z.b Dachdecker für ihre spezifischen Tätigkeiten verantwortlich, die im Auftrag des Eigentümers oder Bauherrn bei der Errichtung oder Änderungen von Gebäuden tätig ist"
+    ]
+  },
+  {
+    "kategorie": "Kehlen",
+    "frage": "1a) Wenn Sie das dargestellte Dach in altdeutsche Deckung eindecken möchten, welche Deckrichtungen würden die einzelnen Flächen erhalten?",
+    "antworten": [
+      "1.Linksdeckung",
+      "2.Linksdeckeung",
+      "3.Linksdeckung",
+      "4.Rechtsdeckung",
+      "5.Rechtsdeckung",
+      "6.Rechtsdeckung"
+    ]
+  },
+  {
+    "kategorie": "Kehlen",
+    "frage": "1b) Welche (eingebundenen) Kehlen würden Sie hier anwenden?",
+    "antworten": [
+      "Von 4 zu 1",
+      "und",
+      "von 2 zu 4",
+      "Von der neben Kehle in die Hauptkehle"
+    ]
+  },
+  {
+    "kategorie": "Kehlen",
+    "frage": "1c) Welche Firstseiten erhalten Überstand?",
+    "antworten": [
+      "Dachfläche 6 und 2"
+    ]
+  },
+  {
+    "kategorie": "Kehlen",
+    "frage": "2a) Welche Kehle wird auf untenstehender Zeichnung dargestellt?",
+    "antworten": [
+      "Eine Linke Kehle vom Wasserstein aus gedeckt mit Schwärmern unregelmäßig eingebunden (Sattelkehle)"
+    ]
+  },
+  {
+    "kategorie": "Kehlen",
+    "frage": "2b) Auf welchem Formstein beginnt die Kehle?",
+    "antworten": [
+      "vom Wasserstein"
+    ]
+  },
+  {
+    "kategorie": "Kehlen",
+    "frage": "2c) Wie würden Sie die Einbindung bezeichnen?",
+    "antworten": [
+      "Unregelmäßig mit Schwärmern eigebunden"
+    ]
+  },
+  {
+    "kategorie": "Kehlen",
+    "frage": "2d) Wie nennt sich das letzte Kehlgebinde?",
+    "antworten": [
+      "Krangengebinde"
+    ]
+  },
+  {
+    "kategorie": "Kehlen",
+    "frage": "2e) Wie nennen sich die letzten verkürzten Kehlgebinde?",
+    "antworten": [
+      "Ausspitzer"
+    ]
+  },
+  {
+    "kategorie": "Kehlen",
+    "frage": "Nennen Sie drei Grundsätze, die bei der Beurteilung von Deckrichtung von Hauptkehlen, Anwendung finden.",
+    "antworten": [
+      "Von Flach zu Steil",
+      "Von klein zu Groß",
+      "Von der Sattelfläche in die Hauptfläche"
+    ]
+  },
+  {
+    "kategorie": "Kehlen",
+    "frage": "Auf welche Maße können Sie standardmäßig Biberschwanzziegel schmälern?",
+    "antworten": [
+      "1/2",
+      "3/4",
+      "7/8"
+    ]
+  },
+  {
+    "kategorie": "Kehlen",
+    "frage": "Wieviel muss die 4. Kehlschicht noch die erste Kehlschicht mindestens überdecken?",
+    "antworten": [
+      "1cm"
+    ]
+  },
+  {
+    "kategorie": "Kehlen",
+    "frage": "Wie definiert das Regelwerk eine Kreuzfuge im Bereich einer Biberschwanzkehle?",
+    "antworten": [
+      "Eine Kreuzfuge ist dann gegeben, wenn die allseitge Über-unterdeckung weniger als 2 cm beträgt"
+    ]
+  },
+  {
+    "kategorie": "Puren",
+    "frage": "Was versteht man unter Wärme-Transmission?",
+    "antworten": [
+      "Ist die Wärmeübertagung von einem Teilchen zu nächsten instoffen. Geschieht durch das Schwingen der Teilchen Bsp. Löffel in der heißen Suppe"
+    ]
+  },
+  {
+    "kategorie": "Puren",
+    "frage": "Nennen Sie 4 Gründe für den Einbau einer Wärmedämmung!",
+    "antworten": [
+      "Vorschrift",
+      "Werterhaltung",
+      "CO2 verringern",
+      "Engergiekosten einsparen",
+      "Wohnklima Gesundheit"
+    ]
+  },
+  {
+    "kategorie": "Puren",
+    "frage": "Es gibt verschiedene Arten von Wärmebrücken Wo entstehen a.) geometrisch bedingte Wärmebrücken und b.) wie wirkt man diesen Wärmebrücken entgegen?",
+    "antworten": [
+      "a)Geometrische bedingte Wärmebrücken entstehen dort wo die Wärmeaufnehmende Innenoberfläche kleiner als die Wärmeabgebende Außenoberfläche ist. Das ist beispielweise an Gebäudekanten und ausgeprägter noch -an Gebäudeecken der Fall.",
+      "b) Geometrische Wärmebrücken können nicht vollständig vermieden werden. Ein gute Wärmedämmung der Außenwand reduziert jedoch ihre Auswirkung entscheidet."
+    ]
+  },
+  {
+    "kategorie": "Puren",
+    "frage": "Nennen Sie 3 Vorteile einer Aufdachdämmung!",
+    "antworten": [
+      "Durchgehende Wärmedämmung",
+      "Schnell und einfach",
+      "Wärmedämmungs Dicke frei wählbar",
+      "Kein Materialwechsel",
+      "Lückenfrei Dämmung möglich"
+    ]
+  },
+  {
+    "kategorie": "Puren",
+    "frage": "Was versteht man unter PUR?",
+    "antworten": [
+      "PUR ist die Abkürzung für Polyunthan.",
+      "Es ist ein Material für die Herstellung von Dämmstoffen. Die Ausgangsstoffe für PUR sind Erdöl und nachwachsende Rohstoffe. PUR Hartschaum ensteht durch chemische Reaktion flüssiger Grundstoffe unter Zusatz von Treibmittel."
+    ]
+  },
+  {
+    "kategorie": "Puren",
+    "frage": "Was versteht man unter einer Luftdichtheitsschicht?",
+    "antworten": [
+      "Eine Luftdichtschicht hat die Aufgabe Luftströmung (Konvektion)zu verhindern bzw.zu kontrollieren Nähte und Stöße müssen luftdicht geschlossen sein. Luftdichte Produkte müssen auch an Anschlüssen, Abschlüssen und Durchdringungen Luftdichtangeschlossen werden. Sie kann auch zeitgleich als Dampfbremse fungieren"
+    ]
+  },
+  {
+    "kategorie": "Puren",
+    "frage": "Wo sollte eine Luftdichtheitsschicht liegen?",
+    "antworten": [
+      "Unterhalb bzw. zwischen der Wärmedämmung, um ein durchfeuchten durch Wasserdampfdiffusion auszuschließen"
+    ]
+  },
+  {
+    "kategorie": "Puren",
+    "frage": "Von wem wird eine Luftdichtheitsschicht gefordert?",
+    "antworten": [
+      "von der DIN 4108-7",
+      "von der GEG",
+      "von den Fachregeln des ZvDH"
+    ]
+  },
+  {
+    "kategorie": "Puren",
+    "frage": "Wie viele Energieeffizienzklassen gibt es und wie lauten diese?",
+    "antworten": [
+      "A-H und A+ insgesamt 9 Stück"
+    ]
+  },
+  {
+    "kategorie": "Puren",
+    "frage": "Was ist beim Einbau zusätzlicher Wärmedämmschichten über einer Luftdichtheitsschicht bezüglich alter, vorhandener Wärmedämmung zu beachten?",
+    "antworten": [
+      "Beim Eibau zusätzlicher Wärmedämmschichten zu einer Vorhandenen Schicht ist drauf zu achten das sich max.20% des gesamten Wärmedurchlass Widerstandes unterhalb der Dampfbremse befinden"
+    ]
+  },
+  {
+    "kategorie": "Puren",
+    "frage": "Nennen Sie 3 Vorteile einer Dämmung aus Polyurethan!",
+    "antworten": [
+      "Leichtes Gewicht",
+      "unverottbar",
+      "Hohe Dämmleistung",
+      "Allergiker freundlich",
+      "Schlechtes Brand verhalten",
+      "Ökologisch"
+    ]
+  },
+  {
+    "kategorie": "Puren",
+    "frage": "Was versteht man unter einem Blower-Door-Test? Was sagt Ihnen der Begriff „n50-Wert“ in diesem Zusammenhang?",
+    "antworten": [
+      "Mit dem Differenzdruck Messverfahren (auch Blower- Door-Test9 wird die Luftdichtheit eines Gebäudes gemessen. Das Verfahren dient dazu Leckagen in der Gebäudehülle zu bestimmen. Der N50 heißt so wegen 50 Pascal Druckdifferenz. Dieser Wert gibt an wie oft innerhalb einer Stunde die im Raum befindliche Luft komplett ausgetauscht wird. Liegt dieser Wert für die jeweiligen Gebäudetypen oberhalb der jeweiligen Höchstwert (Gebäude ohne Lüftungsanlage 3,0 / Gebäude mit Lüftungsanlage 1,5 / Gebäude nach Passivhaus Standard 0,6), ist von entsprechenden Leckagen in der Luftdichten ebene auszugehen."
+    ]
+  },
+  {
+    "kategorie": "Puren",
+    "frage": "Gibt es gesetzliche Regelungen für eine Winddichtheitsschicht?",
+    "antworten": [
+      "Nein gibt es nicht."
+    ]
+  },
+  {
+    "kategorie": "Puren",
+    "frage": "Was versteht man unter einer Winddichtheitsschicht und wo liegt diese?",
+    "antworten": [
+      "Die Winddichtheitschicht liegt auf der Außenseite der Dämmung und soll das auskühlen der Wärmedämmung verhindern.",
+      "Des Weiteren dient sie als Behelfsadichtungtdeckung und schützt natürlich die Wärmedämmung vor Feuchtigkeit (Unterspannbahn)."
+    ]
+  },
+  {
+    "kategorie": "Puren",
+    "frage": "Was ist unter Konvektion durch Leckagen zu verstehen?",
+    "antworten": [
+      "Bei der Wärmeströmmung (Konvektion) wandert die Energie von einer höheren Temperatur mit erwärmtem Material zu einem Ort niedriger Temperatur.",
+      "Der Energie Transport ist im Gegensatz zur Wärmeleitung mit einem Materialtransport",
+      "Verbunden.",
+      "Durch Leckagen in der Dampfsperre kann der Wasserdampf in die Dämmung gelangen und dort die Bausubstanz schädigen, den Dämmwert senken und Svhimmel fördern."
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Deckung\" im Bereich RDN?",
+    "antworten": [
+      "RDN in ° DN"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Altdeutsche Deckung\" im Bereich RDN?",
+    "antworten": [
+      "25"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Altdeutsche Doppeldeckung\" im Bereich RDN?",
+    "antworten": [
+      "22"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Deutsche Deckung\" im Bereich RDN?",
+    "antworten": [
+      "25"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Rechteck Doppeldeckung\" im Bereich RDN?",
+    "antworten": [
+      "22"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Schuppendeckung\" im Bereich RDN?",
+    "antworten": [
+      "25"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Spitzwinkeldeckung\" im Bereich RDN?",
+    "antworten": [
+      "30"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Deutsche Deckung\" im Bereich RDN?",
+    "antworten": [
+      "25"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Doppeldeckung\" im Bereich RDN?",
+    "antworten": [
+      "22"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Spitzschablonendeckung\" im Bereich RDN?",
+    "antworten": [
+      "30"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Waagerechte Deckung\" im Bereich RDN?",
+    "antworten": [
+      "30"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Waagerechte Deckung auf Latten\" im Bereich RDN?",
+    "antworten": [
+      "26"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Rhombusdeckung\" im Bereich RDN?",
+    "antworten": [
+      "30"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Wellplatten\" im Bereich RDN?",
+    "antworten": [
+      "9-20"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Winkelstehfalz\" im Bereich RDN?",
+    "antworten": [
+      "25"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Winkelstehfalz bei erhöhten Anforderungen (Schnee, exponierte Lage etc.)\" im Bereich RDN?",
+    "antworten": [
+      "35"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Doppelstehfalz\" im Bereich RDN?",
+    "antworten": [
+      "7"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Leistenfalzdeckung deutsche Art\" im Bereich RDN?",
+    "antworten": [
+      "7"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Leistenfalzdeckung belgische Art\" im Bereich RDN?",
+    "antworten": [
+      "25"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Bleideckungen\" im Bereich RDN?",
+    "antworten": [
+      "10"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Deckung\" im Bereich RDN?",
+    "antworten": [
+      "RDN in ° DN"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Trapezprofile\" im Bereich RDN?",
+    "antworten": [
+      "22"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Rollnahtgeschweißte Edelstahldeckung\" im Bereich RDN?",
+    "antworten": [
+      "0"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Flachdachziegel\" im Bereich RDN?",
+    "antworten": [
+      "22"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Biberschwanz Doppel- / Kronendeckung\" im Bereich RDN?",
+    "antworten": [
+      "30"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Biberschwanz einfach Deckung\" im Bereich RDN?",
+    "antworten": [
+      "40"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Krempziegel\" im Bereich RDN?",
+    "antworten": [
+      "35"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Hohlpfanne Aufschnittdeckung\" im Bereich RDN?",
+    "antworten": [
+      "35"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Hohlpfanne Vorschnittdeckung\" im Bereich RDN?",
+    "antworten": [
+      "40"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Mönch und Nonne\" im Bereich RDN?",
+    "antworten": [
+      "40"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Doppelmulde / Rheinland\" im Bereich RDN?",
+    "antworten": [
+      "25"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Dachsteine hohe Seitenfalz\" im Bereich RDN?",
+    "antworten": [
+      "22"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Dachsteine tiefe Seitenfalz\" im Bereich RDN?",
+    "antworten": [
+      "25"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Was bedeutet die Abkürzung „Bitumenschindel\" im Bereich RDN?",
+    "antworten": [
+      "15-30 Grad je nach Form"
+    ]
+  },
+  {
+    "kategorie": "Umweltschutz",
+    "frage": "Wann wurde die Fachinformation zum Umweltschutz ins Regelwerk aufgenommen und wo?",
+    "antworten": [
+      "Fachinformationen Umweltschutz Ausgabe November 2018 Zufinden unter Hinweisen"
+    ]
+  },
+  {
+    "kategorie": "Umweltschutz",
+    "frage": "Welche Tiere zählen laut dem Regelwerk zu den Stechimmen?",
+    "antworten": [
+      "Wespen, Bienen, Hummeln, Hornissen"
+    ]
+  },
+  {
+    "kategorie": "Umweltschutz",
+    "frage": "Wofür steht die Abkürzung BNatSchG?",
+    "antworten": [
+      "Bundesnaturschutzgesetzt"
+    ]
+  },
+  {
+    "kategorie": "Umweltschutz",
+    "frage": "Was ist sinngemäß laut §44 BNatSchG verboten?",
+    "antworten": [
+      "Tiere zu töten",
+      "Tiere zu verletzten",
+      "Tiere zu stören"
+    ]
+  },
+  {
+    "kategorie": "Umweltschutz",
+    "frage": "Mit welchen, laut Regelwerk, schützenswerten Tieren kommt der Dachdecker bei Sanierungsarbeiten häufiger in Kontakt?",
+    "antworten": [
+      "Stechimmen und Vögeln",
+      "Mauersegler",
+      "Amseln",
+      "Dohlen",
+      "Mehlschwalben"
+    ]
+  },
+  {
+    "kategorie": "Umweltschutz",
+    "frage": "Wie sieht ein perfekter Spalt für Fledermäuse aus?",
+    "antworten": [
+      "2,4cm breit und genügend Raum"
+    ]
+  },
+  {
+    "kategorie": "Umweltschutz",
+    "frage": "Nennen Sie 3 alternative Nistplätze, die Sie für Fledermäuse schaffen können.",
+    "antworten": [
+      "Nistkästen in Fassaden,",
+      "Kaminverkleidung als Sommer quotier,",
+      "Fledermaus Dachziegel"
+    ]
+  },
+  {
+    "kategorie": "Umweltschutz",
+    "frage": "Was ist ein „Kotbrett“ und was ist bei der Montage eines solchen zu beachten?",
+    "antworten": [
+      "Ein Kotbrett verhindert das Kot von z.b Schwalben beim Nisten an die Hauswand gelangt zu beachten ist dabei das es 50cm unterhalb des Nistplatztes hängt"
+    ]
+  },
+  {
+    "kategorie": "Umweltschutz",
+    "frage": "Dürfen Sie ein leeres Amselnest entfernen?",
+    "antworten": [
+      "Ja wenn es unbewohnt wirkt, Amseln bauen jede Brut neu"
+    ]
+  },
+  {
+    "kategorie": "Umweltschutz",
+    "frage": "Was ist ein Dohlen Gitter und wofür wird es genutzt?",
+    "antworten": [
+      "Ein Dohlen Gitter ist ein Spezielles Gitter, welches man auf den Kamin Kopf setzt. Es ist nach den Vögeln benannt, weil besonders Dohlen öfters im Kaminköpfen nisten. Kommt es durch so ein Nest oder einen festsitzenden Vogel zu einer Verstopfung kann es im Wohngebäude zu einer Kohlenmonoxid Vergiftung führen."
+    ]
+  }
+]
