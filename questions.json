@@ -1771,240 +1771,285 @@
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Deckung\" im Bereich RDN?",
+    "frage": "Was versteht man unter dem Begriff Regeldachneigung (RDN)?",
     "antworten": [
-      "RDN in ° DN"
+      "Die Regeldachneigung ist die niedrigste Dachneigung, bei der sich eine Dachdeckung erfahrungsgemäß langfristig als regensicher bewährt hat.",
+      "Sie ist im Regelwerk des Zentralverbandes des Deutschen Dachdeckerhandwerks (ZVDH) für jede Deckungsart festgelegt.",
+      "Bei Unterschreitung sind Zusatzmaßnahmen (z. B. wasserdichtes Unterdach) erforderlich."
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Altdeutsche Deckung\" im Bereich RDN?",
+    "frage": "Was versteht man unter dem Begriff Mindestdachneigung (MDN)?",
     "antworten": [
-      "25"
+      "Die Mindestdachneigung ist die untere Grenze der Dachneigung, die nicht weiter unterschritten werden darf.",
+      "Sie liegt in der Regel 10° unter der Regeldachneigung.",
+      "Eine Unterschreitung der RDN bis zur MDN ist nur mit zusätzlichen Maßnahmen (z. B. wasserdichtem Unterdach) zulässig.",
+      "Eine Unterschreitung der MDN ist auch mit Zusatzmaßnahmen nicht zulässig."
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Altdeutsche Doppeldeckung\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Altdeutsche Deckung (Schiefer)?",
     "antworten": [
-      "22"
+      "RDN: 25°",
+      "MDN: 25°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Deutsche Deckung\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Altdeutsche Doppeldeckung (Schiefer)?",
     "antworten": [
-      "25"
+      "RDN: 22°",
+      "MDN: 22°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Rechteck Doppeldeckung\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Deutsche Deckung (Schiefer)?",
     "antworten": [
-      "22"
+      "RDN: 25°",
+      "MDN: 25°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Schuppendeckung\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Rechteck-Doppeldeckung (Schiefer)?",
     "antworten": [
-      "25"
+      "RDN: 22°",
+      "MDN: 22° (mit wasserdichtem Unterdach 12°)"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Spitzwinkeldeckung\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Schuppendeckung (Schiefer)?",
     "antworten": [
-      "30"
+      "RDN: 25°",
+      "MDN: 25°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Deutsche Deckung\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Spitzwinkeldeckung (Schiefer)?",
     "antworten": [
-      "25"
+      "RDN: 30°",
+      "MDN: 30° (mit wasserdichtem Unterdach 20°)"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Doppeldeckung\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Rhombusdeckung (Schiefer)?",
     "antworten": [
-      "22"
+      "RDN: 30°",
+      "MDN: 30° (mit wasserdichtem Unterdach 20°)"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Spitzschablonendeckung\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Deutsche Deckung (Faserzement)?",
     "antworten": [
-      "30"
+      "RDN: 25°",
+      "MDN: 25°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Waagerechte Deckung\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Doppeldeckung (Faserzement)?",
     "antworten": [
-      "30"
+      "RDN: 22°",
+      "MDN: 22° (mit wasserdichtem Unterdach 12°)"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Waagerechte Deckung auf Latten\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Spitzschablonendeckung (Faserzement)?",
     "antworten": [
-      "26"
+      "RDN: 30°",
+      "MDN: 30° (mit wasserdichtem Unterdach 20°)"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Rhombusdeckung\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Waagerechte Deckung (Faserzement)?",
     "antworten": [
-      "30"
+      "RDN: 30°",
+      "MDN: 30°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Wellplatten\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Waagerechte Deckung auf Latten (Faserzement)?",
     "antworten": [
-      "9-20"
+      "RDN: 26°",
+      "MDN: 16°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Winkelstehfalz\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Rhombusdeckung (Faserzement)?",
     "antworten": [
-      "25"
+      "RDN: 30°",
+      "MDN: 30° (mit wasserdichtem Unterdach 20°)"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Winkelstehfalz bei erhöhten Anforderungen (Schnee, exponierte Lage etc.)\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Wellplatten (Faserzement)?",
     "antworten": [
-      "35"
+      "RDN: 9°–20°",
+      "MDN: 5°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Doppelstehfalz\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Winkelstehfalz (Metall)?",
     "antworten": [
-      "7"
+      "RDN: 25°",
+      "MDN: 25°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Leistenfalzdeckung deutsche Art\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Winkelstehfalz bei erhöhten Anforderungen (Schnee, exponierte Lage) (Metall)?",
     "antworten": [
-      "7"
+      "RDN: 35°",
+      "MDN: 35°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Leistenfalzdeckung belgische Art\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Doppelstehfalz (Metall)?",
     "antworten": [
-      "25"
+      "RDN: 7°",
+      "MDN: 3°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Bleideckungen\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Leistenfalzdeckung deutsche Art (Metall)?",
     "antworten": [
-      "10"
+      "RDN: 7°",
+      "MDN: 7°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Deckung\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Leistenfalzdeckung belgische Art (Metall)?",
     "antworten": [
-      "RDN in ° DN"
+      "RDN: 25°",
+      "MDN: 25°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Trapezprofile\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Bleideckungen (Metall)?",
     "antworten": [
-      "22"
+      "RDN: 10°",
+      "MDN: 10°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Rollnahtgeschweißte Edelstahldeckung\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Trapezprofile (Metall)?",
     "antworten": [
-      "0"
+      "RDN: 22°",
+      "MDN: 3°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Flachdachziegel\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Rollnahtgeschweißte Edelstahldeckung (Metall)?",
     "antworten": [
-      "22"
+      "RDN: 0°",
+      "MDN: 0°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Biberschwanz Doppel- / Kronendeckung\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Flachdachziegel (Ziegel)?",
     "antworten": [
-      "30"
+      "RDN: 22°",
+      "MDN: 10°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Biberschwanz einfach Deckung\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Biberschwanz Doppel- bzw. Kronendeckung (Ziegel)?",
     "antworten": [
-      "40"
+      "RDN: 30°",
+      "MDN: 10°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Krempziegel\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Biberschwanz einfache Deckung (Ziegel)?",
     "antworten": [
-      "35"
+      "RDN: 40°",
+      "MDN: 10°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Hohlpfanne Aufschnittdeckung\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Krempziegel (Ziegel)?",
     "antworten": [
-      "35"
+      "RDN: 35°",
+      "MDN: 10°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Hohlpfanne Vorschnittdeckung\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Hohlpfanne Aufschnittdeckung (Ziegel)?",
     "antworten": [
-      "40"
+      "RDN: 35°",
+      "MDN: 10°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Mönch und Nonne\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Hohlpfanne Vorschnittdeckung (Ziegel)?",
     "antworten": [
-      "40"
+      "RDN: 40°",
+      "MDN: 10°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Doppelmulde / Rheinland\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Mönch und Nonne (Ziegel)?",
     "antworten": [
-      "25"
+      "RDN: 40°",
+      "MDN: 10°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Dachsteine hohe Seitenfalz\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Doppelmulde / Rheinland (Ziegel)?",
     "antworten": [
-      "22"
+      "RDN: 25°",
+      "MDN: 10°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Dachsteine tiefe Seitenfalz\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Hohe Seitenfalz (Betondachsteine)?",
     "antworten": [
-      "25"
+      "RDN: 22°",
+      "MDN: 10°"
     ]
   },
   {
     "kategorie": "RDN",
-    "frage": "Was bedeutet die Abkürzung „Bitumenschindel\" im Bereich RDN?",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Tiefe Seitenfalz (Betondachsteine)?",
     "antworten": [
-      "15-30 Grad je nach Form"
+      "RDN: 25°",
+      "MDN: 10°"
+    ]
+  },
+  {
+    "kategorie": "RDN",
+    "frage": "Welche Regeldachneigung (RDN) und welche Mindestdachneigung (MDN) hat die Bitumenschindel (Bitumen)?",
+    "antworten": [
+      "RDN: 15°–30° (je nach Form)",
+      "MDN: 15°"
     ]
   },
   {

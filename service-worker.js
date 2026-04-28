@@ -1,5 +1,5 @@
 /* Service Worker — Network-First (kein hartnäckiges Caching) */
-const CACHE = "meister-lernen-v6";
+const CACHE = "meister-lernen-v7";
 
 self.addEventListener("install", (e) => {
   self.skipWaiting();

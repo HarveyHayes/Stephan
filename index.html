@@ -328,7 +328,7 @@
   <div class="stats">
     <div class="stat"><div class="num" id="stat-total">0</div><div class="lbl">Fragen</div></div>
     <div class="stat"><div class="num" id="stat-known">0</div><div class="lbl">Gewusst</div></div>
-    <div class="stat"><div class="num" id="stat-due">0</div><div class="lbl">Fällig</div></div>
+    <div class="stat" title="Anzahl Fragen, die heute zur Wiederholung anstehen (Spaced Repetition)."><div class="num" id="stat-due">0</div><div class="lbl">Heute fällig</div></div>
   </div>
 
   <h3>Modus</h3>
@@ -352,7 +352,8 @@
   <!-- Testmodus-Optionen -->
   <div class="sub-opts" id="sub-test" style="display:none;">
     <label><input type="radio" name="ord-test" value="random" checked> Zufällige Auswahl</label>
-    <label><input type="radio" name="ord-test" value="due"> Nur fällige (Spaced Repetition)</label>
+    <label><input type="radio" name="ord-test" value="sequential"> In Reihenfolge der Themen</label>
+    <label><input type="radio" name="ord-test" value="due"> Nur fällige Fragen (Spaced Repetition)</label>
     <label><input type="radio" name="ord-test" value="weak"> Bevorzugt schwache Fragen</label>
   </div>
 
@@ -516,7 +517,7 @@ let CATEGORIES = [];
 let SELECTED_CATS = new Set();
 let MODE = "lernen";              // "lernen" | "test"
 let LERNEN_ORDER = "random";      // "random" | "sequential"
-let TEST_FILTER = "random";       // "random" | "due" | "weak"
+let TEST_FILTER = "random";       // "random" | "sequential" | "due" | "weak"
 let STATE = loadState();
 let SESSION = null;
 
@@ -611,6 +612,17 @@ function preprocessForSpeech(text) {
 /* =========================================================
    TTS
    ========================================================= */
+// Settings frueh laden, damit pickGermanVoice() die User-Wahl
+// kennt, bevor der erste TTS-Aufruf passiert.
+let SETTINGS = JSON.parse(localStorage.getItem("stephan-settings") || "{}");
+let SPEECH_RATE = SETTINGS.rate || 1.0;
+let PREFERRED_VOICE_NAME = SETTINGS.voiceName || null;
+function saveSettings() {
+  SETTINGS.rate = SPEECH_RATE;
+  SETTINGS.voiceName = PREFERRED_VOICE_NAME;
+  localStorage.setItem("stephan-settings", JSON.stringify(SETTINGS));
+}
+
 let GERMAN_VOICE = null;
 function pickGermanVoice() {
   const voices = speechSynthesis.getVoices();
@@ -629,7 +641,15 @@ function pickGermanVoice() {
 }
 if (typeof speechSynthesis !== "undefined") {
   pickGermanVoice();
-  speechSynthesis.onvoiceschanged = pickGermanVoice;
+  speechSynthesis.onvoiceschanged = () => {
+    pickGermanVoice();
+    // Falls die Einstellungen-Seite gerade offen ist, neu rendern,
+    // damit "Aktuelle Stimme" die echte Auswahl zeigt (nicht Anna-Fallback).
+    const screenEinst = document.getElementById("screen-einstellungen");
+    if (screenEinst && screenEinst.classList.contains("active")) {
+      try { renderEinstellungen(); } catch (e) {}
+    }
+  };
 }
 
 let CURRENT_UTT = null;
@@ -874,6 +894,11 @@ function buildPool() {
     // immer noch leichten Zufall, damit nicht stoisch dieselben kommen
     return pool.slice(0, 60).sort(() => Math.random() - 0.5);
   }
+  if (TEST_FILTER === "sequential") {
+    // In Reihenfolge der Themen, innerhalb des Themas Originalreihenfolge
+    pool.sort((a, b) => a.kategorie.localeCompare(b.kategorie));
+    return pool;
+  }
   return shuffle(pool);
 }
 
@@ -1008,17 +1033,9 @@ for (const btn of document.querySelectorAll("#tabs button")) {
 
 /* =========================================================
    Einstellungen
+   (SETTINGS, SPEECH_RATE, PREFERRED_VOICE_NAME, saveSettings
+    sind weiter oben definiert, bevor pickGermanVoice laeuft)
    ========================================================= */
-let SETTINGS = JSON.parse(localStorage.getItem("stephan-settings") || "{}");
-let SPEECH_RATE = SETTINGS.rate || 1.0;
-let PREFERRED_VOICE_NAME = SETTINGS.voiceName || null;
-
-function saveSettings() {
-  SETTINGS.rate = SPEECH_RATE;
-  SETTINGS.voiceName = PREFERRED_VOICE_NAME;
-  localStorage.setItem("stephan-settings", JSON.stringify(SETTINGS));
-}
-
 function renderEinstellungen() {
   // Voice-Liste fuellen
   const sel = document.getElementById("voice-select");
@@ -1231,7 +1248,7 @@ if ("serviceWorker" in navigator) {
     // Alte Caches loeschen, damit beim Update nichts klemmt
     try {
       const keys = await caches.keys();
-      await Promise.all(keys.filter(k => k !== "meister-lernen-v6").map(k => caches.delete(k)));
+      await Promise.all(keys.filter(k => k !== "meister-lernen-v7").map(k => caches.delete(k)));
     } catch {}
     navigator.serviceWorker.register("service-worker.js").catch(() => {});
   });
