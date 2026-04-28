@@ -366,13 +366,15 @@
   </div>
   <div class="cat-list" id="cat-list"></div>
 
-  <div class="help" id="voice-help" style="display:none;">
-    <strong>🎙 Sprachbefehle (Testmodus):</strong><br>
-    <code>antwort</code> Lösung anhören ·
-    <code>weiter</code> nächste Frage ·
-    <code>nochmal</code> wiederholen ·
-    <code>ja</code> / <code>teils</code> / <code>nein</code> bewerten ·
-    <code>stopp</code> beenden
+  <div class="help" id="voice-help">
+    <strong>🎙 Sprachbefehle (Lern- & Testmodus):</strong><br>
+    <code>weiter</code> / <code>nächste Frage</code> ·
+    <code>lösung</code> / <code>antwort</code> ·
+    <code>wiederhole</code> / <code>nochmal</code> ·
+    <code>zufällig</code> / <code>teste mich</code> ·
+    <code>von vorn</code> / <code>neustart</code> ·
+    <code>stopp</code><br>
+    <em>Nur Testmodus:</em> <code>ja</code> / <code>teils</code> / <code>nein</code> zum Bewerten.
     <br><br>
     Beim ersten Start einmal <strong>auf den Bildschirm tippen</strong>,
     damit das Mikrofon freigegeben wird (iOS-Vorgabe). Danach hands-free.
@@ -464,6 +466,14 @@
     <div id="voice-current" style="font-weight:600; padding:6px 0;">—</div>
     <select id="voice-select" style="width:100%; padding:10px; background:var(--surface-2); color:var(--text); border:1px solid var(--border); border-radius:8px; font-size:14px;"></select>
     <button class="secondary" id="btn-test-voice" style="margin-top:8px;">🔊 Teststimme abspielen</button>
+    <button class="secondary" id="btn-reload-voices" style="margin-top:8px;">🔁 Stimmen neu laden (für Siri/Premium)</button>
+    <div class="help" style="margin-top:8px; font-size:12px;">
+      <strong>iPhone: So bekommst du die Siri-Stimme:</strong><br>
+      1. iPhone-Einstellungen → <strong>Bedienungshilfen</strong> → <strong>Gesprochene Inhalte</strong> → <strong>Stimmen</strong> → <strong>Deutsch</strong><br>
+      2. Eine Stimme mit „<strong>(Siri)</strong>" oder „<strong>Premium</strong>" antippen und herunterladen (Wolken-Icon).<br>
+      3. Zurück zur App, hier auf <strong>„🔁 Stimmen neu laden"</strong> tippen.<br>
+      4. In der Liste oben die Siri/Premium-Stimme auswählen (mit ⭐ markiert).
+    </div>
   </div>
 
   <h3>Sprechgeschwindigkeit</h3>
@@ -627,16 +637,30 @@ let GERMAN_VOICE = null;
 function pickGermanVoice() {
   const voices = speechSynthesis.getVoices();
   if (!voices.length) return;
-  // Erst: vom User explizit gewaehlte Stimme
-  if (typeof PREFERRED_VOICE_NAME !== "undefined" && PREFERRED_VOICE_NAME) {
+  // 1) Explizite User-Wahl gewinnt immer
+  if (PREFERRED_VOICE_NAME) {
     const preferred = voices.find(v => v.name === PREFERRED_VOICE_NAME);
     if (preferred) { GERMAN_VOICE = preferred; return; }
   }
-  GERMAN_VOICE =
-    voices.find(v => v.lang === "de-DE" && /Siri/i.test(v.name)) ||
-    voices.find(v => v.lang === "de-DE" && /Anna|Helena|Petra|Helga|Marlene/i.test(v.name)) ||
-    voices.find(v => v.lang === "de-DE") ||
-    voices.find(v => v.lang.startsWith("de")) ||
+  // 2) Sonst: deutsche Stimmen nach Qualitaet sortieren.
+  //    iOS Premium-/Siri-Stimmen erkennen wir am Namen ("Siri", "Premium",
+  //    "Enhanced") oder an v.localService === false (Cloud/Premium).
+  //    iOS markiert Anna als "default" — das ist die Basis-Stimme,
+  //    nicht die Siri-Stimme.
+  const de = voices.filter(v => /^de(-|_)/i.test(v.lang) || v.lang === "de");
+  function score(v) {
+    let s = 0;
+    if (/Siri/i.test(v.name)) s += 100;
+    if (/Premium/i.test(v.name)) s += 50;
+    if (/Enhanced/i.test(v.name)) s += 30;
+    if (v.localService === false) s += 20; // Cloud-Stimmen sind meist hoeherwertig
+    if (/Anna|Helena|Petra|Helga|Marlene|Markus/i.test(v.name)) s += 5;
+    if (/^de-DE$/i.test(v.lang)) s += 2;
+    return s;
+  }
+  de.sort((a, b) => score(b) - score(a));
+  GERMAN_VOICE = de[0] ||
+    voices.find(v => v.lang && v.lang.toLowerCase().startsWith("de")) ||
     null;
 }
 if (typeof speechSynthesis !== "undefined") {
@@ -747,21 +771,43 @@ function handleVoiceCommand(alts) {
   setVoiceText(`Verstanden: <strong>"${alts[0] || "?"}"</strong>`);
   const matches = (...words) => words.some(w => alts.some(a => a.includes(w)));
 
-  if (matches("weiter", "nächste", "nächster", "skip", "überspring")) return doNext();
-  if (matches("antwort", "lösung", "anzeigen", "lös", "zeig")) return doShowAnswer();
-  if (matches("nochmal", "wiederhol", "noch mal")) return doRepeat();
-  if (matches("ja", "wusste", "richtig", "gewusst", "korrekt")) return doJudge(2);
-  if (matches("teils", "teilweise", "halb", "mittel")) return doJudge(1);
-  if (matches("nein", "falsch", "wusste nicht", "keine ahnung")) return doJudge(0);
+  // Reihenfolge wichtig: spezifischere Phrasen zuerst.
+  if (matches("zufällig", "random", "teste mich", "frag mich")) return doRandomQuestion();
+  if (matches("von neu", "von vorne", "neu start", "neustart", "von vorn")) return doRestart();
+  if (matches("weiter", "nächste", "nächster", "skip", "überspring", "nächste frage")) return doNext();
+  if (matches("antwort", "lösung", "lös", "zeig", "anzeigen", "auflösen", "auflösung")) return doShowAnswer();
+  if (matches("wiederhol", "nochmal", "noch mal", "noch einmal", "frage wiederholen")) return doRepeat();
+  // Bewertungen nur im Testmodus
+  if (MODE === "test") {
+    if (matches("ja", "wusste", "richtig", "gewusst", "korrekt")) return doJudge(2);
+    if (matches("teils", "teilweise", "halb", "mittel")) return doJudge(1);
+    if (matches("nein", "falsch", "wusste nicht", "keine ahnung")) return doJudge(0);
+  }
   if (matches("pause", "stopp", "stop", "ende", "beenden", "abbrech")) return doEnd();
 
-  setVoiceText(`Nicht verstanden: „${alts[0] || ""}". Sag „weiter", „antwort", „ja", „teils", „nein", „nochmal".`);
+  setVoiceText(`Nicht verstanden: „${alts[0] || ""}". Sag „weiter", „lösung", „wiederhole", „zufällig", „neu starten", „stopp".`);
 }
 
 /* =========================================================
    Aktionen
    ========================================================= */
 function doNext() { stopSpeaking(); SESSION.idx++; showQuestion(); }
+function doRestart() {
+  // Aktuelle Session von vorn beginnen
+  stopSpeaking();
+  if (!SESSION) return;
+  SESSION.idx = 0;
+  setVoiceText("Beginne von vorn.");
+  showQuestion();
+}
+function doRandomQuestion() {
+  // Zu einer zufaelligen Frage in der aktuellen Queue springen
+  stopSpeaking();
+  if (!SESSION || !SESSION.queue.length) return;
+  SESSION.idx = Math.floor(Math.random() * SESSION.queue.length);
+  setVoiceText("Zufällige Frage.");
+  showQuestion();
+}
 function doRepeat() {
   const q = SESSION.queue[SESSION.idx];
   if (!q) return;
@@ -856,7 +902,7 @@ function setMode(m) {
   }
   document.getElementById("sub-lernen").style.display = (m === "lernen") ? "" : "none";
   document.getElementById("sub-test").style.display = (m === "test") ? "" : "none";
-  document.getElementById("voice-help").style.display = (m === "test") ? "" : "none";
+  document.getElementById("voice-help").style.display = "";
 }
 for (const card of document.querySelectorAll(".mode-card")) {
   card.addEventListener("click", () => setMode(card.dataset.mode));
@@ -917,22 +963,24 @@ document.getElementById("btn-start").onclick = () => {
     mode: MODE,
   };
 
-  voiceModeOn = (MODE === "test");
+  // Voice in beiden Modi aktiv (sofern verfuegbar)
+  voiceModeOn = !!SR;
   if (voiceModeOn) {
-    if (!SR) {
-      alert("Dein Browser unterstützt keine Spracherkennung. Auf iPhone Safari nutzen.\nButtons funktionieren weiterhin.");
-      voiceModeOn = false;
-    } else {
-      showVoiceBar(true);
-      setVoiceText('<strong>Voice aktiv.</strong> Sag „weiter", „antwort", „ja"…');
-      if (navigator.mediaDevices?.getUserMedia) {
-        navigator.mediaDevices.getUserMedia({ audio: true })
-          .then(stream => stream.getTracks().forEach(t => t.stop()))
-          .catch(() => {});
-      }
+    showVoiceBar(true);
+    const hint = (MODE === "test")
+      ? '<strong>Voice aktiv.</strong> Sag „weiter", „lösung", „ja", „teils", „nein", „wiederhole", „zufällig".'
+      : '<strong>Voice aktiv.</strong> Sag „weiter", „lösung", „wiederhole", „zufällig", „von vorn", „stopp".';
+    setVoiceText(hint);
+    if (navigator.mediaDevices?.getUserMedia) {
+      navigator.mediaDevices.getUserMedia({ audio: true })
+        .then(stream => stream.getTracks().forEach(t => t.stop()))
+        .catch(() => {});
     }
   } else {
     showVoiceBar(false);
+    if (MODE === "test") {
+      alert("Dein Browser unterstützt keine Spracherkennung. Auf iPhone Safari nutzen.\nButtons funktionieren weiterhin.");
+    }
   }
 
   showScreen("quiz");
@@ -1041,13 +1089,22 @@ function renderEinstellungen() {
   const sel = document.getElementById("voice-select");
   sel.innerHTML = "";
   const voices = (typeof speechSynthesis !== "undefined") ? speechSynthesis.getVoices() : [];
-  const dv = voices.filter(v => v.lang.startsWith("de"));
+  const dv = voices.filter(v => /^de(-|_)/i.test(v.lang) || v.lang === "de");
   if (dv.length === 0) {
-    sel.innerHTML = '<option value="">(keine deutsche Stimme verfügbar)</option>';
+    sel.innerHTML = '<option value="">(keine deutsche Stimme verfügbar — auf „🔁 Stimmen neu laden" tippen)</option>';
   } else {
+    // Sortieren: Siri/Premium/Enhanced zuerst
+    dv.sort((a, b) => {
+      const sa = (/Siri/i.test(a.name)?100:0) + (/Premium/i.test(a.name)?50:0) + (/Enhanced/i.test(a.name)?30:0);
+      const sb = (/Siri/i.test(b.name)?100:0) + (/Premium/i.test(b.name)?50:0) + (/Enhanced/i.test(b.name)?30:0);
+      return sb - sa;
+    });
     sel.appendChild(new Option("Automatisch (beste deutsche Stimme)", ""));
     for (const v of dv) {
-      const tag = /Siri/i.test(v.name) ? " ⭐" : "";
+      let tag = "";
+      if (/Siri/i.test(v.name)) tag = " ⭐ Siri";
+      else if (/Premium/i.test(v.name)) tag = " ⭐ Premium";
+      else if (/Enhanced/i.test(v.name)) tag = " ✨ Enhanced";
       const opt = new Option(v.name + " (" + v.lang + ")" + tag, v.name);
       if (v.name === PREFERRED_VOICE_NAME) opt.selected = true;
       sel.appendChild(opt);
@@ -1085,6 +1142,20 @@ document.getElementById("rate-slider").addEventListener("input", e => {
 });
 document.getElementById("btn-test-voice").onclick = () => {
   speak("Hallo Stephan, dies ist eine Teststimme für die Meisterprüfung.");
+};
+document.getElementById("btn-reload-voices").onclick = () => {
+  // iOS-Trick: kurzer Speak triggert das Laden der Premium/Siri-Stimmen.
+  // Dann pickGermanVoice + Liste neu rendern.
+  try {
+    const u = new SpeechSynthesisUtterance(" ");
+    u.volume = 0;
+    u.lang = "de-DE";
+    speechSynthesis.speak(u);
+  } catch (e) {}
+  setTimeout(() => {
+    pickGermanVoice();
+    renderEinstellungen();
+  }, 400);
 };
 document.getElementById("btn-clear-cache").onclick = async () => {
   if (!confirm("App-Cache leeren und neu laden?")) return;
@@ -1248,7 +1319,7 @@ if ("serviceWorker" in navigator) {
     // Alte Caches loeschen, damit beim Update nichts klemmt
     try {
       const keys = await caches.keys();
-      await Promise.all(keys.filter(k => k !== "meister-lernen-v7").map(k => caches.delete(k)));
+      await Promise.all(keys.filter(k => k !== "meister-lernen-v8").map(k => caches.delete(k)));
     } catch {}
     navigator.serviceWorker.register("service-worker.js").catch(() => {});
   });
