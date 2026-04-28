@@ -325,7 +325,7 @@
 <section id="screen-start" class="screen active">
   <h1>🛠 Meisterprüfung Dachdecker Stephan</h1>
   <div style="text-align:center; font-size:11px; color:var(--muted); margin-top:-8px; margin-bottom:8px;">
-    Version <span id="app-version">v9</span>
+    Version <span id="app-version">v10</span>
   </div>
 
   <div class="stats">
@@ -469,14 +469,6 @@
     <div id="voice-current" style="font-weight:600; padding:6px 0;">—</div>
     <select id="voice-select" style="width:100%; padding:10px; background:var(--surface-2); color:var(--text); border:1px solid var(--border); border-radius:8px; font-size:14px;"></select>
     <button class="secondary" id="btn-test-voice" style="margin-top:8px;">🔊 Teststimme abspielen</button>
-    <button class="secondary" id="btn-reload-voices" style="margin-top:8px;">🔁 Stimmen neu laden (für Siri/Premium)</button>
-    <div class="help" style="margin-top:8px; font-size:12px;">
-      <strong>iPhone: So bekommst du die Siri-Stimme:</strong><br>
-      1. iPhone-Einstellungen → <strong>Bedienungshilfen</strong> → <strong>Gesprochene Inhalte</strong> → <strong>Stimmen</strong> → <strong>Deutsch</strong><br>
-      2. Eine Stimme mit „<strong>(Siri)</strong>" oder „<strong>Premium</strong>" antippen und herunterladen (Wolken-Icon).<br>
-      3. Zurück zur App, hier auf <strong>„🔁 Stimmen neu laden"</strong> tippen.<br>
-      4. In der Liste oben die Siri/Premium-Stimme auswählen (mit ⭐ markiert).
-    </div>
   </div>
 
   <h3>Sprechgeschwindigkeit</h3>
@@ -539,7 +531,15 @@ function loadState() {
   catch { return { items: {} }; }
 }
 function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify(STATE)); }
-function qid(q) { return q.kategorie + "|" + q.frage.slice(0, 80); }
+function qid(q) {
+  // Stabiler Hash ueber kategorie + komplette Frage. Frueher: slice(0,80),
+  // was bei langen, im Praefix identischen Fragen (z.B. RDN-Tabelle) zu
+  // Kollisionen fuehrte und Fragen verschluckt hat.
+  const s = q.kategorie + "|" + q.frage;
+  let h = 5381;
+  for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0;
+  return q.kategorie + "#" + (h >>> 0).toString(36);
+}
 
 function getStats(q) {
   return STATE.items[qid(q)] || { seen: 0, good: 0, right: 0, partial: 0, wrong: 0 };
@@ -640,29 +640,14 @@ let GERMAN_VOICE = null;
 function pickGermanVoice() {
   const voices = speechSynthesis.getVoices();
   if (!voices.length) return;
-  // 1) Explizite User-Wahl gewinnt immer
+  // Explizite User-Wahl gewinnt
   if (PREFERRED_VOICE_NAME) {
     const preferred = voices.find(v => v.name === PREFERRED_VOICE_NAME);
     if (preferred) { GERMAN_VOICE = preferred; return; }
   }
-  // 2) Sonst: deutsche Stimmen nach Qualitaet sortieren.
-  //    iOS Premium-/Siri-Stimmen erkennen wir am Namen ("Siri", "Premium",
-  //    "Enhanced") oder an v.localService === false (Cloud/Premium).
-  //    iOS markiert Anna als "default" — das ist die Basis-Stimme,
-  //    nicht die Siri-Stimme.
-  const de = voices.filter(v => /^de(-|_)/i.test(v.lang) || v.lang === "de");
-  function score(v) {
-    let s = 0;
-    if (/Siri/i.test(v.name)) s += 100;
-    if (/Premium/i.test(v.name)) s += 50;
-    if (/Enhanced/i.test(v.name)) s += 30;
-    if (v.localService === false) s += 20; // Cloud-Stimmen sind meist hoeherwertig
-    if (/Anna|Helena|Petra|Helga|Marlene|Markus/i.test(v.name)) s += 5;
-    if (/^de-DE$/i.test(v.lang)) s += 2;
-    return s;
-  }
-  de.sort((a, b) => score(b) - score(a));
-  GERMAN_VOICE = de[0] ||
+  // Sonst: erste deutsche Stimme. Auf iOS Safari ist das idR Anna.
+  GERMAN_VOICE =
+    voices.find(v => /^de(-|_)DE/i.test(v.lang)) ||
     voices.find(v => v.lang && v.lang.toLowerCase().startsWith("de")) ||
     null;
 }
@@ -1094,21 +1079,11 @@ function renderEinstellungen() {
   const voices = (typeof speechSynthesis !== "undefined") ? speechSynthesis.getVoices() : [];
   const dv = voices.filter(v => /^de(-|_)/i.test(v.lang) || v.lang === "de");
   if (dv.length === 0) {
-    sel.innerHTML = '<option value="">(keine deutsche Stimme verfügbar — auf „🔁 Stimmen neu laden" tippen)</option>';
+    sel.innerHTML = '<option value="">(keine deutsche Stimme verfügbar)</option>';
   } else {
-    // Sortieren: Siri/Premium/Enhanced zuerst
-    dv.sort((a, b) => {
-      const sa = (/Siri/i.test(a.name)?100:0) + (/Premium/i.test(a.name)?50:0) + (/Enhanced/i.test(a.name)?30:0);
-      const sb = (/Siri/i.test(b.name)?100:0) + (/Premium/i.test(b.name)?50:0) + (/Enhanced/i.test(b.name)?30:0);
-      return sb - sa;
-    });
     sel.appendChild(new Option("Automatisch (beste deutsche Stimme)", ""));
     for (const v of dv) {
-      let tag = "";
-      if (/Siri/i.test(v.name)) tag = " ⭐ Siri";
-      else if (/Premium/i.test(v.name)) tag = " ⭐ Premium";
-      else if (/Enhanced/i.test(v.name)) tag = " ✨ Enhanced";
-      const opt = new Option(v.name + " (" + v.lang + ")" + tag, v.name);
+      const opt = new Option(v.name + " (" + v.lang + ")", v.name);
       if (v.name === PREFERRED_VOICE_NAME) opt.selected = true;
       sel.appendChild(opt);
     }
@@ -1123,29 +1098,14 @@ function renderEinstellungen() {
 
   // Diagnose
   const diag = [];
-  diag.push("App-Version: v9");
+  diag.push("App-Version: v10");
   diag.push("Browser: " + navigator.userAgent.substring(0, 80));
   diag.push("Fragen geladen: " + QUESTIONS.length);
   diag.push("Kategorien: " + CATEGORIES.length);
   diag.push("Sprachausgabe: " + (("speechSynthesis" in window) ? "✓" : "✗"));
   diag.push("Spracherkennung: " + (SR ? "✓" : "✗ (nur in Safari iOS)"));
   diag.push("Service Worker: " + (("serviceWorker" in navigator) ? "✓" : "✗"));
-  diag.push("Aktive Stimme: " + (GERMAN_VOICE ? GERMAN_VOICE.name + " / " + GERMAN_VOICE.lang + (GERMAN_VOICE.localService===false?" (Cloud)":" (lokal)") : "—"));
-  diag.push("");
-  diag.push("<b>Alle deutschen Stimmen vom Gerät (" + dv.length + "):</b>");
-  if (dv.length === 0) {
-    diag.push('  (keine — auf "🔁 Stimmen neu laden" tippen)');
-  } else {
-    for (const v of dv) {
-      const flags = [];
-      if (/Siri/i.test(v.name)) flags.push("Siri");
-      if (/Premium/i.test(v.name)) flags.push("Premium");
-      if (/Enhanced/i.test(v.name)) flags.push("Enhanced");
-      if (v.localService === false) flags.push("Cloud");
-      if (v.default) flags.push("default");
-      diag.push("  • " + v.name + " [" + v.lang + "]" + (flags.length ? " — " + flags.join(", ") : ""));
-    }
-  }
+  diag.push("Aktive Stimme: " + (GERMAN_VOICE ? GERMAN_VOICE.name + " / " + GERMAN_VOICE.lang : "—"));
   document.getElementById("diag-info").innerHTML = diag.join("<br>");
 }
 
@@ -1162,29 +1122,6 @@ document.getElementById("rate-slider").addEventListener("input", e => {
 });
 document.getElementById("btn-test-voice").onclick = () => {
   speak("Hallo Stephan, dies ist eine Teststimme für die Meisterprüfung.");
-};
-document.getElementById("btn-reload-voices").onclick = () => {
-  // iOS-Trick: kurzer hoerbarer Speak in der User-Geste triggert das
-  // Laden der Premium/Siri-Stimmen. Mehrfach pollen, bis die Liste waechst.
-  try {
-    speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance("Stimme");
-    u.lang = "de-DE";
-    u.volume = 0.01;
-    u.rate = 2.0;
-    speechSynthesis.speak(u);
-  } catch (e) {}
-  let beforeCount = (speechSynthesis.getVoices() || []).length;
-  let tries = 0;
-  const poll = setInterval(() => {
-    tries++;
-    const now = (speechSynthesis.getVoices() || []).length;
-    if (now > beforeCount || tries > 12) {
-      clearInterval(poll);
-      pickGermanVoice();
-      renderEinstellungen();
-    }
-  }, 250);
 };
 document.getElementById("btn-clear-cache").onclick = async () => {
   if (!confirm("App-Cache leeren und neu laden? (Hard-Reset)")) return;
@@ -1354,7 +1291,7 @@ if ("serviceWorker" in navigator) {
     // Alte Caches loeschen, damit beim Update nichts klemmt
     try {
       const keys = await caches.keys();
-      await Promise.all(keys.filter(k => k !== "meister-lernen-v9").map(k => caches.delete(k)));
+      await Promise.all(keys.filter(k => k !== "meister-lernen-v10").map(k => caches.delete(k)));
     } catch {}
     try {
       const reg = await navigator.serviceWorker.register("service-worker.js");
