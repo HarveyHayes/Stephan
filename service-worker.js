@@ -1,5 +1,5 @@
 /* Service Worker — Network-First mit Hard-Refresh fuer kritische Dateien */
-const CACHE = "meister-lernen-v10";
+const CACHE = "meister-lernen-v11";
 
 // Diese Dateien NIE aus Cache liefern, wenn Netz verfuegbar ist.
 // (Sie aendern sich beim Deploy und muessen frisch sein.)

@@ -325,7 +325,7 @@
 <section id="screen-start" class="screen active">
   <h1>🛠 Meisterprüfung Dachdecker Stephan</h1>
   <div style="text-align:center; font-size:11px; color:var(--muted); margin-top:-8px; margin-bottom:8px;">
-    Version <span id="app-version">v10</span>
+    Version <span id="app-version">v11</span>
   </div>
 
   <div class="stats">
@@ -1098,7 +1098,7 @@ function renderEinstellungen() {
 
   // Diagnose
   const diag = [];
-  diag.push("App-Version: v10");
+  diag.push("App-Version: v11");
   diag.push("Browser: " + navigator.userAgent.substring(0, 80));
   diag.push("Fragen geladen: " + QUESTIONS.length);
   diag.push("Kategorien: " + CATEGORIES.length);
@@ -1291,7 +1291,7 @@ if ("serviceWorker" in navigator) {
     // Alte Caches loeschen, damit beim Update nichts klemmt
     try {
       const keys = await caches.keys();
-      await Promise.all(keys.filter(k => k !== "meister-lernen-v10").map(k => caches.delete(k)));
+      await Promise.all(keys.filter(k => k !== "meister-lernen-v11").map(k => caches.delete(k)));
     } catch {}
     try {
       const reg = await navigator.serviceWorker.register("service-worker.js");

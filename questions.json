@@ -2129,5 +2129,848 @@
     "antworten": [
       "Ein Dohlen Gitter ist ein Spezielles Gitter, welches man auf den Kamin Kopf setzt. Es ist nach den Vögeln benannt, weil besonders Dohlen öfters im Kaminköpfen nisten. Kommt es durch so ein Nest oder einen festsitzenden Vogel zu einer Verstopfung kann es im Wohngebäude zu einer Kohlenmonoxid Vergiftung führen."
     ]
+  },
+  {
+    "kategorie": "Sicherheitszeichen",
+    "frage": "Wozu dient das Anbringen von Sicherheitszeichen?",
+    "antworten": [
+      "Gefahren zu vermeiden,",
+      "auf Risiken hinzuweisen und",
+      "sicheres Verhalten vorzuschreiben."
+    ]
+  },
+  {
+    "kategorie": "Sicherheitszeichen",
+    "frage": "Welche Arten von Sicherheitszeichen gibt es?",
+    "antworten": [
+      "Verbotszeichen (z. B. Rauchen verboten)",
+      "Gebotszeichen (z. B. Schutzhelm tragen)",
+      "Warnzeichen (z. B. Achtung Gefahr)",
+      "Rettungszeichen (z. B. Notausgang)",
+      "Brandschutzzeichen (z. B. Feuerlöscher)"
+    ]
+  },
+  {
+    "kategorie": "Sicherheitszeichen",
+    "frage": "Wann müssen Sicherheitszeichen angebracht werden?",
+    "antworten": [
+      "Wenn Gefährdungen nicht durch andere Maßnahmen (technisch/organisatorisch) vermieden werden können."
+    ]
+  },
+  {
+    "kategorie": "Sicherheitszeichen",
+    "frage": "Wann muss eine Betriebliche Unterweisung stattfinden?",
+    "antworten": [
+      "Vor Aufnahme der Tätigkeit",
+      "Bei Veränderungen im Arbeitsbereich",
+      "Bei neuen Arbeitsmitteln oder Verfahren",
+      "Nach Unfällen oder besonderen Anlässen"
+    ]
+  },
+  {
+    "kategorie": "Sicherheitszeichen",
+    "frage": "In welchem Intervall sollten die Beschäftigten mind. Unterwiesen werden?",
+    "antworten": [
+      "Mindestens einmal jährlich"
+    ]
+  },
+  {
+    "kategorie": "Sicherheitszeichen",
+    "frage": "Was wird durch eine Gelb-schwarz gestreifte Sicherheitsmarkierung gekennzeichnet?",
+    "antworten": [
+      "Gefahrenstellen oder Hindernisse (z. B. Kanten, Stolperstellen)"
+    ]
+  },
+  {
+    "kategorie": "Sicherheitszeichen",
+    "frage": "Wo wird festgelegt in welchen abständen die Wirksamkeit der Sicherkennzeichnungen kontrolliert wird?",
+    "antworten": [
+      "In der Gefährdungsbeurteilung des Unternehmens"
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Was ist ein Vertrag?",
+    "antworten": [
+      "Ein Vertrag ist ein Rechtsgeschäft, das durch zwei übereinstimmende Willenserklärungen (Angebot und Annahme) zustande kommt."
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Wie lange ist die regelmäßige Verjährungsfrist?",
+    "antworten": [
+      "3 Jahre (§ 195 BGB"
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Wann beginnt die regelmäßige Verjährungsfrist?",
+    "antworten": [
+      "Am Ende des Jahres, in dem der Anspruch entstanden ist und",
+      "der Gläubiger Kenntnis erlangt hat (oder ohne grobe Fahrlässigkeit hätte erlangen müssen) (§ 199 BGB)"
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Wann hat der Verbraucher ein Widerrufsrecht?",
+    "antworten": [
+      "Bei Verbraucherverträgen, insbesondere Fernabsatzverträgen (z. B. Online-Kauf) und außerhalb von Geschäftsräumen geschlossenen Verträgen."
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Wann beginnt die Widerrufsfrist bei einem Verbrauchervertrag?",
+    "antworten": [
+      "Grundsätzlich mit Vertragsschluss, bei Waren aber erst mit Erhalt der Ware."
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Wann erlischt das Widerrufsrecht bei einem Verbrauchervertrag?",
+    "antworten": [
+      "Nach 14 Tagen regulär",
+      "Spätestens nach 12 Monaten und 14 Tagen, wenn keine Belehrung erfolgt ist",
+      "Vorzeitig z. B. bei vollständig erbrachten Dienstleistungen (mit Zustimmung)"
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Was geschieht, wenn nach einem Widerruf die Rückgewähr einer Leistung ihrer Natur nach ausgeschlossen ist?",
+    "antworten": [
+      "Dann ist Wertersatz zu leisten (§ 357 BGB)."
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Was sind die vertragstypischen Pflichten eines Kaufvertrages?",
+    "antworten": [
+      "Verkäufer: Übergabe und Übereignung der mangelfreien Sache",
+      "Käufer: Zahlung des Kaufpreises und Abnahme"
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Was ist ein Sachmangel?",
+    "antworten": [
+      "Wenn die Ist-Beschaffenheit von der vereinbarten oder üblichen Soll-Beschaffenheit abweicht (§ 434 BGB)."
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Was ist ein Rechtsmangel?",
+    "antworten": [
+      "Wenn Dritte Rechte an der Sache geltend machen können (§ 435 BGB)."
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Wann Verjähren Mängelansprüche aus dem Werkvertrag für Bauwerke?",
+    "antworten": [
+      "In 5 Jahren (§ 634a BGB)"
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Welche Rechte hat der Käufer, wenn eine Sache einen Mangel hat?",
+    "antworten": [
+      "Nacherfüllung (Reparatur oder Ersatz)",
+      "Rücktritt oder Minderung",
+      "Schadensersatz"
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Was ist, wenn die mangelhafte Sache eingebaut wurde?",
+    "antworten": [
+      "Der Verkäufer muss auch Ausbau- und Einbaukosten tragen (§ 439 Abs. 3 BGB)."
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": " Wozu verpflichtet sich der Unternehmer bei Abschluss eines Werkvertrages?",
+    "antworten": [
+      "Zur Herstellung eines mangelfreien Werkes."
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Was gilt, wenn die Höhe der Vergütung nicht vereinbart wurde?",
+    "antworten": [
+      "Es gilt die übliche Vergütung (§ 632 BGB)."
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Wie hat ein Unternehmer seine Leistung auszuführen?",
+    "antworten": [
+      "Fachgerecht und mangelfrei nach den anerkannten Regeln der Technik."
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Voraussetzungen der Abnahme?",
+    "antworten": [
+      "Werk ist fertiggestellt",
+      "Keine wesentlichen Mängel",
+      "Besteller erklärt (ausdrücklich oder konkludent) die Abnahme"
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Unter welchen Vorrausetzungen kommt eine Abnahme nach BGB zustande?",
+    "antworten": [
+      "das Werk fertiggestellt ist keine wesentlichen Mängel vorliegen der Besteller die Leistung billigt ausdrücklich oder konkludent (z. B. Nu"
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Wann wird die Vergütung für eine Leistung fällig?",
+    "antworten": [
+      "Die Vergütung wird mit der Abnahme fällig (§ 641 BGB)."
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "In welcher Höhe kann der Besteller bei einem vorliegenden Mangel die Vergütung verweigern?",
+    "antworten": [
+      "Der Besteller kann einen angemessenen Teil der Vergütung zurückhalten,",
+      "in der Regel bis zum Doppelten der Mängelbeseitigungskosten (§ 6"
+    ]
+  },
+  {
+    "kategorie": "BGB",
+    "frage": "Bis zu welchem Zeitpunkt trägt der Unternehmer die Gefahr für sein Werk?",
+    "antworten": [
+      "Der Unternehmer trägt die Gefahr bis zur Abnahme des Werkes."
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Ab welcher Höhe besteht eine Absturzgefahr?",
+    "antworten": [
+      "2 m"
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Wie sind Öffnungen und Vertiefungen ordnungsgemäß gesichert?",
+    "antworten": [
+      "Durch Abdeckungen, Umwehrungen oder Geländer müssen tragfähig, rutschfest und gegen Verschieben gesichert sein"
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Durch welche Maßnahmen lassen sich Absturzkanten deutlich absperren?",
+    "antworten": [
+      "Geländer",
+      "Absperrungen (Ketten oder Schranken)",
+      "Warnschilder"
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Wie hoch müssen Bordbretter den Belag mindestens überragen?",
+    "antworten": [
+      "15cm"
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Nennen Sie zwei Systeme für den Einsatz als Absturzsicherungen auf Flachdächern.",
+    "antworten": [
+      "Geländersysteme",
+      "Auffangsysteme (z. B. Auffanggurte mit Seilsicherung)"
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Wo sollen die Randsicherungen denn Absturz von Personen verhindern?",
+    "antworten": [
+      "An freien Kanten, z. B.:",
+      "Dachränder",
+      "Deckenöffnungen",
+      "Gerüste"
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Was muss vor der Montage von Randsicherungen geklärt werden?",
+    "antworten": [
+      "Art der Befestigung",
+      "Beschaffenheit des Untergrundes",
+      "Geeignetes Sicherheitssystem"
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "In welchem Abstand dürfen Randsicherungspfosten maximal montiert werden?",
+    "antworten": [
+      "Maximal 10 m"
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Wie darf der Auf-, Um- und Abbau von Randsicherungen getätigt werden?",
+    "antworten": [
+      "fachkundige Personen unter geeigneten Schutzmaßnahmen (z. B. persönliche Schutzausrüstung gegen Absturz)"
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Wann dürfen Fanggerüste verwendet werden?",
+    "antworten": [
+      "2m absturzhöhe",
+      "Wenn Absturz nicht durch Seitenschutz verhindert werden kann zum Auffangen abstürzender Personen"
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Bis zur welchen Neigung dürfen Fanggerüste benutzt werden?",
+    "antworten": [
+      "Wenn bei Arbeiten auf einer Fläche mit nicht mehr als 22,5° Neigung an der Absturzkante als Sicherungsmaßnahme kein Seitenschutz angebracht werden kann, müssen statt dessen",
+      "Fanggerüste verwendet werden, die ein Auffangen abstützender Personen gewährleisten."
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Wie groß darf der Höhenunterschied zwischen Absturzkante und Gerüstbelag maximal sein?",
+    "antworten": [
+      "Höchstens 1,00 m (zwischen Absturzkante und Fanggerüstbelag)."
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Wozu dient die Inaugenscheinnahme vor der Verwendung eines Gerüst?",
+    "antworten": [
+      "Gerüstnutzer: Inaugenscheinnahme durch eine",
+      "„qualifizierte Person“ des jeweiligen Nutzers vor der Verwendung, um die sichere Funktion und die",
+      "Mängelfreiheit festzustellen (Nachweis Checkliste)"
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Bis zu welcher Dachneigung ist der Einsatz von Dachschutzwände zulässig?",
+    "antworten": [
+      "Dachschutzwände nur bis zu einer Dachneigung von 60° einsetzen."
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Wie groß darf die Maschenweite von Netzen höchstens sein?",
+    "antworten": [
+      "als Absturzsicherung nur Schutznetze mit einer",
+      "Maschenweite von höchstens 10 cm benutzen"
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Was ist unter einer „zur Prüfung befähigte Person“ zu verstehen?",
+    "antworten": [
+      "Fach und Sachkundig ausgebildete Person"
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Wie weit müssen Dachschutzwände den zu sichernden Arbeitsplatz überragen?",
+    "antworten": [
+      "Bei Arbeiten auf geneigten Flächen sind besondere Arbeitsplätze zu schaffen, unabhängig der erforderlichen Absturzsicherung."
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Bei welcher Neigung sind diese erforderlich?",
+    "antworten": [
+      "Ab einer Dachneigung von mehr als 20° sind besondere Arbeitsplätze (z. B. Dachdeckerstühle, Auflegeleitern) erforderlich."
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Nennen sie den Höchstabstand von Dachdeckerstühlen.",
+    "antworten": [
+      "Höchstens 1,00 m Abstand zwischen den Dachdeckerstühlen."
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Bis zu welcher Dachneigung sind Dachdecker-Auflegeleitern zulässig?",
+    "antworten": [
+      "Bis zu einer Dachneigung von 75°."
+    ]
+  },
+  {
+    "kategorie": "Absturzsicherungen",
+    "frage": "Wann sind Auflegeleitern auf augenscheinliche Mängel zu Kontrollieren?",
+    "antworten": [
+      "Dachdeckerstühle und deren Tragmittel vor jedem",
+      "Einsatz auf ihren einwandfreien Zustand kontrollieren.",
+      "Auflegeleitern vor jeder Benutzung auf augenscheinliche Mängel kontrollieren.",
+      "Sicherheitsdachhaken müssen vor der Benutzung von einer sachkundigen Person augenscheinlich auf ihre Tragfähigkeit überprüft werden."
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Welche 8 gesetzte zum Arbeitsschutz gibt es?",
+    "antworten": [
+      "Arbeitsschutzgesetz (ArbSchG),",
+      "Arbeitssicherheitsgesetz (ASiG),",
+      "Chemikaliengesetz (ChemG)",
+      "Arbeitszeitgesetz (ArbZG),",
+      "Jugendarbeitsschutzgesetz (JArbSchG)",
+      "Bundeselterngeld- und Elternzeitgesetz (BEEG)",
+      "Mutterschutzgesetz (MuSchG),",
+      "Siebtes Sozialgesetzbuch (SGB VII)"
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Was beinhaltet das Arbeitsschutzgesetz?",
+    "antworten": [
+      "Das ArbSchG ist das Grundgesetz des",
+      "Arbeitsschutzes in Deutschland.",
+      "Es verpflichtet den Arbeitgeber, Maßnahmen zu treffen, um Gesundheit und Sicherheit der",
+      "Beschäftigten bei der Arbeit zu gewährleisten und",
+      "kontinuierlich zu verbessern.",
+      "Ziele des ArbSchG (§ 1 ArbSchG)",
+      "Verhütung von Arbeitsunfällen",
+      "Schutz vor arbeitsbedingten Gesundheitsgefahren",
+      "Menschengerechte Gestaltung der Arbeit"
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Was sind Arbeitsmittel im Sinne der Betriebssicherheitsverordnung?",
+    "antworten": [
+      "Arbeitsmittel sind alle Werkzeuge, Geräte, Maschinen, Anlagen, Fahrzeuge usw., die bei der Arbeit verwendet werden"
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Welches Gesetz gilt als „Grundgesetz des Arbeitsschutzes“?",
+    "antworten": [
+      "Arbeitsschutzgesetz (ArbSchG)"
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Welche Ziele verfolgt das ArbSchG?",
+    "antworten": [
+      "Ziele des ArbSchG (§ 1 ArbSchG)",
+      "Verhütung von Arbeitsunfällen",
+      "Schutz vor arbeitsbedingten Gesundheitsgefahren",
+      "Menschengerechte Gestaltung der Arbeit"
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Wer ist für die Umsetzung des ArbSchG verantwortlich?",
+    "antworten": [
+      "Der Arbeitgeber"
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Welche Pflichten haben Beschäftigte nach dem ArbSchG?",
+    "antworten": [
+      "Pflicht zur Mitwirkung (z.B. Benutzung von",
+      "PSA, Meldung von Gefahren).",
+      "Recht, bei unmittelbarer Gefahr die Arbeit niederzulegen (§ 16 ArbSchG).",
+      "Schutz vor Benachteiligung, wenn sie ihre",
+      "Rechte wahrnehmen (§ 17 ArbSchG)."
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Welches Gesetz verpflichtet Arbeitgeber zur Bestellung von Betriebsärzten?",
+    "antworten": [
+      "Arbeitssicherheitsgesetz (ASIG)"
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Welche Aufgaben hat eine Fachkraft für Arbeitssicherheit?",
+    "antworten": [
+      "Beratung bei Planung, Einrichtung und Änderung von Arbeitsplätzen.",
+      "Unterstützung bei Gefährdungsbeurteilungen.",
+      "Mitwirkung bei Schulungen und Unterweisungen.",
+      "Untersuchung von Ursachen bei Arbeitsunfällen und Erkrankungen"
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Wer muss über Gefährdungen am Arbeitsplatz unterwiesen werden?",
+    "antworten": [
+      "Beschäftigte"
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Welche Verordnung regelt die Gestaltung von Arbeitsplätzen?",
+    "antworten": [
+      "Arbeitsstättenverordnung"
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Was ist der Zweck der ASR?",
+    "antworten": [
+      "Die Arbeitsstättenrichtlinien (ASR) konkretisieren die",
+      "Arbeitsstättenverordnung (ArbStättV).",
+      "Sie legen im Detail fest, wie die Anforderungen der",
+      "Verordnung in der Praxis umgesetzt werden können."
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Müssen ASR immer 1:1 umgesetzt werden?",
+    "antworten": [
+      "Eine Verpflichtung zur Anwendung der ASR schreibt die",
+      "Arbeitsstättenverordnung jedoch nicht vor. Der Arbeitgeber kann eigenständig von den Vorgaben der ASR abweichen und",
+      "die Schutzzielvorgaben der Arbeitsstättenverordnung einschließlich des Anhangs auch auf andere Weise erfüllen"
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Was ist der Zweck der BaustellV?",
+    "antworten": [
+      "Vermeidung von Gefährdungen",
+      "Ziel der Baustellenverordnung (BaustellV)",
+      "Vermeidung von Unfällen und Gesundheitsgefahren auf",
+      "Baustellen.",
+      "Bessere Koordination zwischen verschiedenen Firmen und",
+      "Gewerken.",
+      "Integration von Arbeitsschutz bereits in der Planungsphase eines Bauprojekts"
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Welche Verordnung regelt die sichere Verwendung von Arbeitsmitteln?",
+    "antworten": [
+      "Betriebssicherheitsverordnung (BetrSichV)"
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Nennen Sie ein Beispiel für ein überwachungsbedürftiges Arbeitsmittel.",
+    "antworten": [
+      "Flex"
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Wer erlässt die Unfallverhütungsvorschriften (UVV)?",
+    "antworten": [
+      "Die Berufsgenossenschaften"
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Was regelt das Chemikaliengesetz (ChemG)?",
+    "antworten": [
+      "Das Chemikaliengesetz (ChemG) regelt den",
+      "Umgang mit gefährlichen Stoffen und",
+      "Zubereitungen in Deutschland."
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Was ist der Unterschied zwischen ChemG und GefStoffV?",
+    "antworten": [
+      "Die Gefahrstoffverordnung konkretisiert das",
+      "Arbeitsschutzgesetz (ArbSchG) für den Umgang mit gefährlichen Stoffen am Arbeitsplatz."
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Wie lange darf ein Arbeitnehmer höchstens pro Tag arbeiten laut ArbZG?",
+    "antworten": [
+      "Max. 8 Stunden pro Werktag (Montag–Samstag = 48 Std./Woche).",
+      "Verlängerung auf 10 Stunden/Tag möglich, wenn innerhalb von 6 Monaten oder 24 Wochen im",
+      "Schnitt wieder 8 Stunden erreicht werden."
+    ]
+  },
+  {
+    "kategorie": "Arbeitsschutzgesetz",
+    "frage": "Welche Ruhezeit muss laut ArbZG nach Beendigung der Arbeit eingehalten werden?",
+    "antworten": [
+      "Nach Arbeitsende müssen mindestens 11 Stunden ununterbrochene Ruhezeit folgen."
+    ]
+  },
+  {
+    "kategorie": "PSA",
+    "frage": "Was Bedeutet Persönliche Schutzausrüstung im Sinne der PSA Benutzungsverordnung?",
+    "antworten": [
+      "Persönliche Schutzausrüstung im Sinne der",
+      "Benutzungsverordnung",
+      "PSA (PSA-BV) ist jede Ausrüstung,",
+      "die dazu bestimmt ist, von den Beschäftigten benutzt oder getragen zu werden, um sich gegen eine",
+      "Gefährdung für ihre Sicherheit und Gesundheit zu schützen, sowie jede mit demselben Ziel verwendete und mit der persönlichen",
+      "Schutzausrüstung verbundene",
+      "Zusatzausrüstung."
+    ]
+  },
+  {
+    "kategorie": "PSA",
+    "frage": "Wann muss die Persönliche Schutzausrüstungen vom Versicherten auf augenscheinliche Mängel hin geprüft werden?",
+    "antworten": [
+      "Vor jeder Benutzung müssen Persönliche",
+      "Schutzausrüstungen vom Versicherten auf augenscheinliche Mängel hin geprüft werden (Sicht-/Funktionsprüfung). Sofern dieser vermutet,",
+      "dass kein ordnungsgemäßer Zustand der PSA vorliegt, so hat er dieses dem Unternehmer bzw.",
+      "seinem Beauftragten unverzüglich zu melden."
+    ]
+  },
+  {
+    "kategorie": "PSA",
+    "frage": "Nennen Sie 4 gebräuchliche Arten der PSA.",
+    "antworten": [
+      "Atemschutz",
+      "Augen- und Gesichtsschutz",
+      "Kopfschutz",
+      "Gehörschutz",
+      "Schutzhandschuhe",
+      "Schutzkleidung",
+      "Persönliche Schutzausrüstung gegen Absturz",
+      "Hautschutz",
+      "Knieschutz",
+      "Fußschutz"
+    ]
+  },
+  {
+    "kategorie": "PSA",
+    "frage": "Womit muss die PSA gekennzeichnet sein?",
+    "antworten": [
+      "Nur CE-gekennzeichnete, baumustergeprüfte",
+      "Produkte bereitstellen/benutzen."
+    ]
+  },
+  {
+    "kategorie": "PSA",
+    "frage": "Warum müssen sie im Dachdeckerhandwerk mindestens Sicherheitsschuhe der Klasse S3 tragen?",
+    "antworten": [
+      "Auf Baustellen und in ähnlichen Bereichen besteht insbesondere die Gefahr des Stolperns, Rutschens,",
+      "Stürzens, Verbrennens, dass Nägel durch",
+      "Schuhsohlen durchgetreten werden, dass schwere",
+      "Teile herabfallen oder dass Kräfte auf das",
+      "Fersenbein einwirken"
+    ]
+  },
+  {
+    "kategorie": "PSA",
+    "frage": "Nennen Sie drei Gefährdungen gegen die ein Knieschutz einzusetzen ist.",
+    "antworten": [
+      "Durch ständige kniende Haltung ohne Polsterung besteht eine Gefährdung für die Knie und den",
+      "Bewegungsapparat.",
+      "Kniende Tätigkeiten können zur Erkrankung der",
+      "Schleimbeutel, der Menisken, zur Gonarthrose und",
+      "zur Druckschädigung der Nerven führen."
+    ]
+  },
+  {
+    "kategorie": "PSA",
+    "frage": "Wann müssen sie Industrieschutzhelme austauschen?",
+    "antworten": [
+      "Industrieschutzhelme nach einem starken Schlag oder Aufprall austauschen, auch wenn keine",
+      "Schäden erkennbar sind."
+    ]
+  },
+  {
+    "kategorie": "PSA",
+    "frage": "Sie verwenden eine Atemmaske mit Partikelfilter P2 und der Kennzeichnung „NR“. Wie verfahren sie nach gebrauch mit der Maske?",
+    "antworten": [
+      "Ich tausche die Maske aus da NR da diese maske auf eine weitere Schicht begrenzt ist könnte sie allerdings nochmal benutzen je nach dem wie stark sie verschmutzt ist"
+    ]
+  },
+  {
+    "kategorie": "PSA",
+    "frage": "Nennen Sie 3 Gefährdungen bei denen Sie einen Augen- und Gesichtsschutz tragen",
+    "antworten": [
+      "Schweiß-, Schleif- und Trenn arbeiten,",
+      "Stemm- und Meißelarbeiten,",
+      "Steinbearbeitung und Steinverarbeitung",
+      "Arbeiten mit Bolzenschubwerkzeugen,",
+      "Arbeiten mit starker Grobstaubbelastung,",
+      "Arbeiten mit Säuren, Laugen, Desinfektionsmitteln und ätzenden Reinigungsmittel"
+    ]
+  },
+  {
+    "kategorie": "PSA",
+    "frage": "Ab einem Tageslärmexpositionsschallpegel muss Gehörschutz getragen werden?",
+    "antworten": [
+      "Ab einem Tageslärmexpositionsschallpegel von LEX,8h= 80 dB(A) oder einem Impulsschallpegel von LPC, peak= 135 dB(C) sind vom Unternehmer persönliche",
+      "Gehörschutzmittel zur Verfügung zu stellen.",
+      "Ab einem Tageslärmexpositionsschallpegel von LEX,8h= 85 dB(A) oder einem Impulsschallpegel von LPC, peak= 137dB(C) muss Gehörschutz getragen werden."
+    ]
+  },
+  {
+    "kategorie": "PSA",
+    "frage": "Was versteht man unter dem Tageslärmexpositionsschallpegel?",
+    "antworten": [
+      "Der Tages-Lärmexpositionspegel (LEX,8h) ist der über die Zeit gemittelte Lärmexpositionspegel bezogen auf eine 8-Stunden-Schicht. Er umfasst alle am",
+      "Arbeitsplatz auftretenden Schallereignisse"
+    ]
+  },
+  {
+    "kategorie": "PSA",
+    "frage": "Nennen sie 3 Arten von Gehörschutz.",
+    "antworten": [
+      "Gehörschutzstöpsel (Einweg oder wiederverwendbar)",
+      "Kapselgehörschützer (Bügelkapseln)",
+      "Otoplastiken (individuell angepasste Gehörschutzstöpsel)"
+    ]
+  },
+  {
+    "kategorie": "PSA",
+    "frage": "Nennen sie 4 Gefährdungen gegen die Schutzhandschuhe schützen.",
+    "antworten": [
+      "thermische Belastung,",
+      "mechanische Belastung,",
+      "chemische Belastung,",
+      "biologische Arbeitsstoffe (z.B. Keime, Viren,",
+      "Bakterien),",
+      "ultraviolette Strahlen,",
+      "elektrostatische Aufladung,",
+      "elektrische Spannung,",
+      "Vibration"
+    ]
+  },
+  {
+    "kategorie": "Statik",
+    "frage": "Was versteht man unter Eigenlast?",
+    "antworten": [
+      "Eigenlast ist das ständig wirkende Eigengewicht des Bauteils selbst, also Tragwerk, Eindeckung, Dämmung und alle dauerhaft verbundenen Bestandteile."
+    ]
+  },
+  {
+    "kategorie": "Statik",
+    "frage": "Was versteht man unter Nutzlast?",
+    "antworten": [
+      "Nutzlast ist eine veränderliche Verkehrslast aus der Nutzung des Gebäudes (Personen, Möbel, Lager, Schnee, etc.) — sie kann zeitweise auftreten oder ganz fehlen."
+    ]
+  },
+  {
+    "kategorie": "Statik",
+    "frage": "Was versteht man unter Linienlast?",
+    "antworten": [
+      "Linienlast ist eine Last, die entlang einer Linie gleichmäßig verteilt wirkt (Einheit kN/m), z. B. eine Wand, die auf einem Träger steht."
+    ]
+  },
+  {
+    "kategorie": "Statik",
+    "frage": "Was versteht man in der Statik unter Moment?",
+    "antworten": [
+      "Das Moment ist das Produkt aus Kraft und Hebelarm (Einheit kNm) — es beschreibt die Drehwirkung einer Kraft um einen Punkt und ist maßgebend für Biegung."
+    ]
+  },
+  {
+    "kategorie": "Statik",
+    "frage": "Nennen Sie 4 Einwirkungen auf ein Dach und erläutern Sie 2 davon näher.",
+    "antworten": [
+      "Schneelast abhängig von Region & Dachneigung flache Dächer = höhere Belastung",
+      "Verwehungen möglich → ungleichmäßige Last!",
+      "Windlast",
+      "Druck (von außen)",
+      "Sog (zieht Bauteile nach oben!)",
+      "Windsog ist oft kritischer als Druck",
+      "Eigenlast",
+      "Nutzlast",
+      "Verkehrslast"
+    ]
+  },
+  {
+    "kategorie": "Statik",
+    "frage": "Was versteht man unter Kräftegleichgewicht? Nennen Sie die Bedingungen.",
+    "antworten": [
+      "Kräftegleichgewicht",
+      "Ein Bauteil bleibt stehen, wenn:",
+      "keine Bewegung entsteht keine Drehung entsteht",
+      "Deshalb:",
+      "ΣF = 0",
+      "ΣM = 0"
+    ]
+  },
+  {
+    "kategorie": "Statik",
+    "frage": "Erklären Sie den Unterschied zwischen Sparrendach und Pfettendach.",
+    "antworten": [
+      "Sparrendach bildet ein „Dreieckssystem“ stabil durch gegenseitige Abstützung",
+      "Kräfte gehen direkt in die Wände",
+      "Pfettendach zusätzliche Träger (Pfetten)",
+      "Last wird weitergeleitet",
+      "Vorteil: größere Spannweiten möglich"
+    ]
+  },
+  {
+    "kategorie": "Statik",
+    "frage": "Ein Kunde möchte eine PV-Anlage installieren. Was ist statisch zu prüfen? (4 Punkte nennen)",
+    "antworten": [
+      "Zusatzprobleme:",
+      "Punktlasten durch Halterungen veränderte Windangriffsfläche",
+      "Schneestau hinter Modulen",
+      "Besonders kritisch:",
+      "alte Dächer geringe Reserven in der Statik"
+    ]
+  },
+  {
+    "kategorie": "Statik",
+    "frage": "Nennen Sie 5 typische statische Schäden am Dach.",
+    "antworten": [
+      "Durchbiegung der Dachkonstruktion (Schnee, Material)",
+      "Risse in tragenden Bauteilen",
+      "Pfetten oder Mauerwerk",
+      "Verformung oder Absacken des Dachstuhls durch mangelhafte Statik oder Materialermüdung",
+      "Bruch von tragenden Holzelementen",
+      "Sparrenbruch durch Überlastung",
+      "Lockerung oder Versagen von Verbindungen",
+      "Nägel, Schrauben oder Verbinder lösen sich"
+    ]
+  },
+  {
+    "kategorie": "Statik",
+    "frage": "Was bedeutet in der Statik Knickgefahr bei Stützen?",
+    "antworten": [
+      "Problem bei Druckstäben:",
+      "plötzliches seitliches Ausweichen abhängig von:",
+      "Länge",
+      "Querschnitt",
+      "Lagerung kurze, dicke Stützen = sicherer"
+    ]
+  },
+  {
+    "kategorie": "Statik",
+    "frage": "Was ist der Unterschied zwischen charakteristischen Lasten und Bemessungslasten?",
+    "antworten": [
+      "Charakteristische Lasten",
+      "Das sind die realistisch zu erwartenden Einwirkungen (z. B. Schnee, Wind, Eigengewicht) ohne Sicherheitszuschläge",
+      "Bemessungslasten",
+      "Das sind die für die Berechnung verwendeten Lasten entstehen aus den charakteristischen Lasten mit Sicherheitsbeiwerten (Zuschlägen), um Risiken abzudecken"
+    ]
+  },
+  {
+    "kategorie": "Statik",
+    "frage": "Beschreiben Sie die Bedeutung der Lastenermittlung in der Statik?",
+    "antworten": [
+      "Die Lastenermittlung ist die Grundlage jeder statischen Berechnung.",
+      "Sie dient dazu, alle auf ein Bauwerk wirkenden Kräfte vollständig und korrekt zu erfassen (z. B. Eigengewicht, Schnee, Wind, Nutzlasten).",
+      "Warum ist das wichtig?",
+      "Nur mit richtigen Lasten kann die Konstruktion sicher dimensioniert werden",
+      "Sie verhindert Überlastung, Verformung oder Einsturz",
+      "Sie ermöglicht eine wirtschaftliche Bauweise (nicht über- oder unterdimensioniert)",
+      "Kurz gesagt:",
+      "Ohne korrekte Lastenermittlung ist keine sichere und zuverlässige Tragwerksplanung möglich."
+    ]
+  },
+  {
+    "kategorie": "Statik",
+    "frage": "Was beschreibt die Statik im Dachdeckerhandwerk?",
+    "antworten": [
+      "Die Statik beschreibt,",
+      "wie Kräfte und Lasten auf das Dach wirken und",
+      "wie diese sicher über die Konstruktion abgetragen werden.",
+      "Dazu gehört:",
+      "Aufnahme von Lasten (z. B. Eigengewicht, Schnee, Wind)",
+      "Verteilung der Kräfte innerhalb des Dachstuhls",
+      "Ableitung der Lasten in die tragenden Bauteile und schließlich ins Gebäude/Fundament",
+      "Ziel der Statik:",
+      "Das Dach muss standsicher, stabil und dauerhaft tragfähig sein."
+    ]
   }
 ]
