@@ -19,7 +19,7 @@ damit auch in 5 Jahren ohne Toolchain wartbar.
 │             ↓ fetch                       ↓ caches API       │
 │  ┌─────────────────────┐    ┌──────────────────────────┐    │
 │  │  questions.json     │    │  service-worker.js       │    │
-│  │  ~91 KB, 259 Q&A    │    │  network-first cache     │    │
+│  │  ~160 KB, 446 Q&A   │    │  network-first cache     │    │
 │  └─────────────────────┘    └──────────────────────────┘    │
 └──────────────────────────────────────────────────────────────┘
                                 ↑

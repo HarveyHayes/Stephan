@@ -6,7 +6,7 @@ vorliest, eine Pause zum Antworten lässt und die Lösung vorliest.
 Stephan bewertet selbst, ob er es wusste — die App zeigt ihm
 nicht-gewusste Fragen häufiger.
 
-**259 Fragen aus 18 Themenbereichen sind enthalten.**
+**446 Fragen aus 30 Themenbereichen sind enthalten.**
 
 ## Inhalt des `app/`-Ordners
 - `index.html` — die App selbst
