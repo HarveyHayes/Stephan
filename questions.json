@@ -2972,5 +2972,784 @@
       "Ziel der Statik:",
       "Das Dach muss standsicher, stabil und dauerhaft tragfähig sein."
     ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Im Regelwerk und in der Landesbauordnung ist die Rede von „Harter Bedachung\". Definieren Sie den Unterschied zwischen harter und weicher Bedachung.",
+    "antworten": [
+      "Die Landesbauordnungen fordern, dass Bedachungen gegen Flugfeuer und strahlende Wärme widerstandsfähig sein müssen (harte Bedachungen).",
+      "Andernfalls handelt es sich um eine weiche Bedachung."
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Welche Metalle verbergen sich hinter den Bezeichnungen Ag, Al, Cd, Cu, P, Pb, Si, Sn, S.S., VSt, Zn?",
+    "antworten": [
+      "Ag = Silber",
+      "Al = Aluminium",
+      "Cd = Cadmium",
+      "Cu = Kupfer",
+      "P = Phosphor",
+      "Pb = Blei",
+      "Si = Silicium",
+      "Sn = Zinn",
+      "S.S = nicht rostender Stahl",
+      "VSt = verzinkter Stahl",
+      "Zn = Zink/Titanzink"
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Nennen Sie die erforderlichen Materialmindestdicken für: Rinne halbrund Cu NW 400 mm; Rinne halbrund Zn NW 250 mm; quadratisches Rohr S.S NW 100 mm.",
+    "antworten": [
+      "Rinne, halbrund, Cu, Nenngröße 400 mm: 0,70 mm",
+      "Rinne, halbrund, Zn, Nenngröße 250 mm: 0,65 mm",
+      "Quadratisches Rohr, S.S, Nenngröße 100 mm: 0,40 mm"
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Bemaßen Sie die Skizze für eine halbrunde Dachrinne aus Zink mit einem Zuschnitt von 333 mm.",
+    "antworten": [
+      "d1 = 20 mm",
+      "d2 = 153 mm",
+      "e1 = 9 mm",
+      "f1 = 11 mm",
+      "g = 6 mm",
+      "S1 = 0,70 mm"
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Kehlen aus Metall: Nennen Sie fünf Unterscheidungsmerkmale.",
+    "antworten": [
+      "Durchgehende Kehlen mit seitlichem Wasserfalz",
+      "Kehlen in vertiefter Ausführung",
+      "Kehlen mit Steg und Wasserlauf",
+      "Kehlen mit Schichtstücken (Nocken)",
+      "Dachgräben mit oder ohne Gefällestufen"
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Erläutern Sie den Begriff „Selbsttragende Metalldeckung\".",
+    "antworten": [
+      "Selbsttragende Metalldeckungen bestehen aus maschinell vorgeformten Blechbahnen, die aufgrund ihrer Profilierung in der Lage sind, alle auftretenden Beanspruchungen und Verkehrslasten aufzunehmen und zu übertragen. Sie erfordern daher keine vollflächigen Deckunterlagen."
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Berechnen Sie die Längenänderung einer 6,00 m langen Zinkregenrinne bei einer Einbautemperatur von 15 °C, a) im Winter, b) im Sommer.",
+    "antworten": [
+      "a) Winter: ΔL = L · α · Δt = 6,00 m · 0,022 mm/mK · 35 K = 4,62 mm",
+      "b) Sommer: ΔL = L · α · Δt = 6,00 m · 0,022 mm/mK · 65 K = 8,58 mm"
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Nennen Sie den maximalen Abstand von Dehnungsausgleichern bei a) innenliegenden nicht eingeklebten Rinnen NW > 500 mm, b) Scharen für Dachdeckungen aus Kupfer.",
+    "antworten": [
+      "a) innenliegende, nicht eingeklebte Rinnen NW > 500 mm: 10,00 m",
+      "b) Scharen für Dachdeckungen aus Kupfer: 10,00 m"
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Nennen Sie sechs mögliche Längsverbindungen nicht selbsttragender Metalldeckungen.",
+    "antworten": [
+      "Einfacher Falz",
+      "Winkelstehfalz",
+      "Doppelstehfalz",
+      "Leistenfalz",
+      "Hohlwulst bei Blei",
+      "Holzwulst bei Blei",
+      "(Mindestabstand ca. 3 bis 5 mm zum Ausgleich temperaturbedingter Querdehnungen)"
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Wie weit dürfen Rohrschellen auseinander liegen?",
+    "antworten": [
+      "Bis 100 mm DN: 3 m",
+      "Über 100 mm DN: 2 m"
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Welche Arbeitstemperatur ist für die Unterscheidung zwischen Weich- und Hartlöten genannt?",
+    "antworten": [
+      "450 °C"
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Wie müssen Sie verfahren, wenn Sie Kupfer weichlöten wollen?",
+    "antworten": [
+      "Beim Weichlöten von Kupfer mit einem Blei-Zinn-Weichlot ist eine zusätzliche Nietung erforderlich. Nur beim Weichlöten mit Zinn-Kupfer-Weichlot oder antimonfreiem Blei-Zinn-Weichlot kann auf eine zusätzliche Nietung verzichtet werden."
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Wo dürfen Sie die sog. „Spenglerschrauben\" verwenden?",
+    "antworten": [
+      "Schrauben mit Dichtscheiben und andere Befestigungselemente, die der Witterung ausgesetzt sind, müssen korrosionsbeständig sein und dürfen nur bei wandseitigen Anschlüssen zum Einsatz kommen."
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Wie befestigt man Trapezprofile auf der Unterkonstruktion?",
+    "antworten": [
+      "Auf der Unterkonstruktion werden die Trapezprofile vorzugsweise in den Obergurten befestigt. Hier werden meist Kalotten und Dichtscheiben oder Schrauben mit Dichtscheiben und Stützgewinde verwendet. Bei der Befestigung in den Untergurten mit Schrauben und Dichtscheiben sind die jeweiligen Herstellerrichtlinien zu beachten und eine regelmäßige Wartung ist erforderlich."
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Welche Mindesthöhe der Aufkantung eines Doppelstehfalzes muss im fertigen Zustand eingehalten werden?",
+    "antworten": [
+      "Ein Doppelstehfalz erfolgt durch doppeltes Umlegen verschieden hoher Aufkantungen (35/45 mm) der nebeneinanderliegenden Scharen mit einer Mindesthöhe im fertigen Zustand von 23 mm."
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Wie hat ein fachgerechter Überhangstreifen auszusehen?",
+    "antworten": [
+      "Überhangstreifen überdecken den Anschluss um min. 40 mm und werden in vorher geschlitzten Fugen eingelassen und abgedichtet.",
+      "Sie sollen eine Einlasstiefe von min. 20 mm und eine Rückkantung aufweisen.",
+      "Die Dichtung der Überhangstreifen an aufgehenden Bauteilen erfolgt z. B. mit Mörtel, Bleiwolle oder geeigneten Dichtungsstoffen."
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Wie haben die Überdeckungen Ihres Traufbleches auszusehen (DN = 60°, Ziegel springen 4 cm von Vorderkante Traufblech zurück)?",
+    "antworten": [
+      "Das Traufblech wird vom Deckwerkstoff min. 10 cm überdeckt.",
+      "Es überdeckt sich untereinander ebenfalls min. 10 cm.",
+      "Es wird mit Rückkantung und Haftern ausgebildet. Der max. Hafterabstand beträgt 50 cm und jeder Hafter erhält 2 Befestiger."
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Sollen laut Regelwerk vorgehängte Dachrinnen mit Gefälle verlegt werden?",
+    "antworten": [
+      "Die vorgehängten Dachrinnen können mit oder ohne Gefälle zu den Abläufen verlegt werden. Wasserrückstände sind bei waagerecht verlegten Rinnen nach einem Regenereignis unvermeidbar und stellen keinen Mangel dar."
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Welche Mindestanforderungen gelten bezüglich der Dämmung unter Fensterbänken bzw. an Laibungen bei der Fassade?",
+    "antworten": [
+      "2 cm XPS-Dämmung als Mindestwärmeschutz."
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Aus welchen Materialien dürfen Hafter für eine Zink-Winkelstehfalzdeckung sein?",
+    "antworten": [
+      "Siehe Tabelle – Spannungsreihe beachten."
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Wie wird zwischen Schwer- bzw. Leichtmetallen differenziert? Nennen Sie je ein Beispiel.",
+    "antworten": [
+      "Schwermetall = Dichte > 5 g/cm³, z. B. Kupfer, Zink, Blei",
+      "Leichtmetall = Dichte < 5 g/cm³, z. B. Aluminium"
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Welche verschiedenen Arten der Korrosion kennen Sie?",
+    "antworten": [
+      "Kontaktkorrosion",
+      "Chemische Korrosion",
+      "Korrosion durch Emissionen",
+      "Kondenswasserkorrosion",
+      "Bitumenkorrosion bzw. Korrosion durch Auswaschungen",
+      "Elektrochemische Korrosion",
+      "Interkristalline Korrosion"
+    ]
+  },
+  {
+    "kategorie": "Metall",
+    "frage": "Was bedeutet im Zusammenhang mit Korrosion und Nägeln der Ausdruck beständig / geschützt?",
+    "antworten": [
+      "Beständig = Edelstahl",
+      "Geschützt = verzinkt"
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Welche 4 Arten von Gefälle werden laut Regelwerk unterschieden? Erklären Sie diese kurz.",
+    "antworten": [
+      "Geplantes Gefälle: in der Planung angegeben, sollte mindestens 2 % betragen.",
+      "Tatsächliches Gefälle: das am Ende der Arbeiten tatsächlich vorhandene Gefälle; kann durch Toleranzen in der Tragkonstruktion vom geplanten abweichen.",
+      "Vertraglich vereinbartes Gefälle: muss nach Fertigstellung unbedingt erreicht werden.",
+      "Gefällelose Flächen: in Ausnahmefällen zulässig, benötigen aber erhöhten Planungsaufwand."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Sind im Regelwerk Abbildungen oder Texte von höherer Priorität?",
+    "antworten": [
+      "Die Abbildungen zeigen Beispiele für eine Ausführung. Sie sind nicht maßstabsgetreu und zeigen nicht alle durch den Textteil möglichen Ausführungsvarianten. Die Abbildungen ergänzen den Text und ersetzen ihn nicht."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Dürfen Sie bei einer Dachsanierung die alten Entwässerungsleitungen ohne weiteres wiederverwenden?",
+    "antworten": [
+      "Werden Abdichtungen im Gebäudebestand erneuert, ist durch den Planer zu prüfen:",
+      "bei innenliegender Entwässerung: die Entwässerungsleistung der Abläufe und Notüberläufe sowie ggf. der innenliegenden Rinnen,",
+      "bei Entwässerung über außenliegende Rinnen: die Entwässerungsleistung der Rinnen und Fallrohre."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Sollten Sie bei einem Gründachaufbau der Dampfsperre eine besondere Aufmerksamkeit schenken und warum?",
+    "antworten": [
+      "Ja. Bei einem Dach mit Begrünung können sich z. B. durch Anstaubewässerung oder Wasserrückhaltung im Begrünungsaufbau die bauphysikalischen Verhältnisse verändern. Dies muss bei der Bemessung der Dampfsperre berücksichtigt werden. In diesem Fall haben sich dampfdichte Stoffe mit einem sd-Wert > 1.500 m, z. B. Bahnen mit Metallbandeinlage, bewährt."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Sie möchten Ihre Dämmstoffplatten durch Kleben fixieren. Wie viel PU-Klebestreifen benötigen Sie bei einem Gebäude bis 25 m im Innenbereich (H)?",
+    "antworten": [
+      "5 Streifen je m² à 40 g/m."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Ihr Kunde stellt nach der Dachsanierung fest, dass sich bei morgendlichem Reif die Randhölzer abzeichnen. Stellt dies pauschal einen Mangel dar, wenn Sie alles nach Ausführungsplanung ausgeführt haben?",
+    "antworten": [
+      "Nein. An Fugen von Wärmedämmungen oder im Bereich von Randhölzern, Zargen u. Ä. ergibt sich ein von den Werten der Fläche geringfügig abweichender Wärmedurchlasswiderstand. Dadurch können bei Reif, dünner Schneedecke oder Feuchtigkeit auf der Dachfläche Abzeichnungen erkennbar werden, die die Funktionsfähigkeit nicht beeinträchtigen."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Dürfen Sie bedenkenlos eine EPS-Dämmung vor einer reflektierenden Wand oder unterhalb von sich erwärmenden Anlagen verwenden?",
+    "antworten": [
+      "Nein. Wärmedämmstoffe aus expandiertem Polystyrol (EPS) sollen wegen der begrenzten Temperaturbeständigkeit nicht vor transparenten oder stark reflektierenden Flächen, z. B. Fassaden oder Anlagentechnik, eingesetzt werden."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Welche Überdeckungsmaße gelten bei der Verlegung einer PYE PV 200 S5 als Oberlage?",
+    "antworten": [
+      "Bitumenbahnen müssen an Längs- und Quernähten überlappt werden: bei mehrlagigen Abdichtungen mindestens 8 cm, bei einlagigen Abdichtungen mindestens 10 cm.",
+      "Bei Polymerbitumenbahnen mit Polyestervlieseinlage als obere Lage muss die Überlappung am Querstoß wegen des Schrumpfverhaltens erhöht werden: empfohlen 12 cm zum Zeitpunkt der Verlegung."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Ist der Kapillarschnitt in der Oberlage am Querstoß von Bahnenüberlappungen verpflichtend?",
+    "antworten": [
+      "Bei Polymerbitumen-Schweißbahnen in der Oberlage, bei einlagigen Abdichtungen und bei kaltselbstklebenden Polymerbitumenbahnen müssen in der Überlappung am Querstoß an der unterdeckenden Bahn Schrägschnitte angeordnet werden."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Müssen Sie bei Anpressschienen zwingend einen Überhangstreifen montieren?",
+    "antworten": [
+      "Wird der obere Rand des Klemm-/Wandanschlussprofils nicht durch einen Überhangstreifen oder die Wandbekleidung vor der Bewitterung geschützt, ist er durch Abkanten so zu gestalten, dass eine Dichtstoffverfugung von mindestens 10 mm Breite und 6 mm Dicke eingebracht werden kann, oder durch vorkomprimierte Bänder für eine zusätzliche Abdichtung gesorgt wird. Dichtstoffverfugungen sind regelmäßig zu warten und instand zu setzen."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Wie müssen Sie verfahren bei einer Wandanschlusshöhe von 65 cm?",
+    "antworten": [
+      "Bei Kunststoff- und Elastomerbahnen sind die Bahnen im Anschlussbereich bei Anschlusshöhen von mehr als 50 cm an der senkrechten Fläche mechanisch zu befestigen (Linienbefestigung) und sollen zusätzlich aufgeklebt werden.",
+      "Bei Bitumen- oder Polymerbitumenbahnen sind die Bahnen im Anschlussbereich aufzukleben und bei Anschlusshöhen von mehr als 50 cm zusätzlich mechanisch zu befestigen. Die Befestigung kann in der ersten oder zweiten Lage erfolgen."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Welche Anforderungen sind an einen Wandanschluss gestellt?",
+    "antworten": [
+      "Bei Abdichtungen aus Bitumenbahnen soll der Anschlussbereich mit einer Haftbrücke versehen werden. Anschlüsse aus Bitumenbahnen sind mindestens zweilagig auszuführen.",
+      "Am Übergang vom abzudichtenden zum aufgehenden Bauteil soll ein Keil (z. B. aus Dämmstoff) oder eine Hohlkehle angeordnet werden. Die Lagen der Flächenabdichtung sind im Bereich des Keils abzusetzen.",
+      "Die Anschlussbahnen werden in die Lagen der Flächenabdichtung eingebunden und bis zur erforderlichen Höhe hochgeführt; die Verlegung soll senkrecht zum Anschluss erfolgen und Rollenbreite nicht überschreiten.",
+      "Anschlusshöhe: < 5° = 15 cm, > 5° = 10 cm."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Welche Anschlusshöhen gelten für die Abdichtung einer Terrassentüre?",
+    "antworten": [
+      "Die Höhe der Abdichtung soll im Hinblick auf Spritzwasser- und Überflutungsschutz ≥ 15 cm über Oberfläche Belag (z. B. Kiesschüttung oder Vegetationsschicht) betragen. Der Anschluss kann mit bahnenförmigen Abdichtungen und Flüssigkunststoffen ausgeführt werden.",
+      "Eine Reduzierung auf ≥ 5 cm über Oberfläche Belag ist möglich, wenn zur Reduzierung der Spritzwasserbelastung direkt vor dem Element entsprechende Rinnen/Roste mit Nennbreite ≥ 15 cm und Entwässerung angeordnet sind; der Anschluss sollte dann mit Flüssigkunststoff ausgeführt werden.",
+      "Die Spritzwasserbelastung kann auch durch ausreichend dimensionierte Überdachungen reduziert werden."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Welche Anforderungen sind an eine Flüssigkunststoffabdichtung gestellt, um einen barrierefreien Türanschluss herzustellen?",
+    "antworten": [
+      "Fügeflächen des Flüssigkunststoffs auf dem Tür-/Fensterelement müssen im ausgeführten Zustand eine Breite ≥ 5 cm aufweisen.",
+      "Die Aufkantungshöhe von Oberkante der Flächenabdichtung bis zum oberen Ende des Flüssigkunststoffes am Schwellenprofil muss mindestens 10 cm betragen. D. h. die Aufbauhöhe für den Nutzbelag einschließlich Stelzlager oder Kies beträgt mindestens 10 cm."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Dürfen Sie einen barrierefreien Türanschluss mit einer Holztüre ausführen?",
+    "antworten": [
+      "Die Schwellen bei Türen/Fenstern sollten nicht aus Holz bestehen."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Wie ist mit Rollladenschienen an einer Terrassentüre zu verfahren?",
+    "antworten": [
+      "Rollladen-Führungsschienen dürfen erst nach Ausführung und Aushärtung des Flüssigkunststoffs angebracht werden. Befestigungen dürfen den Flüssigkunststoff nicht durchdringen. Clips für die Befestigung dürfen nicht innerhalb der Fügefläche des Flüssigkunststoffs angeordnet sein."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Dürfen Sie eine Ortgangausbildung mit eingeklebten Blechen („Berliner Nase\") ausführen?",
+    "antworten": [
+      "Nein. Dachrandabschlussprofile, die direkt in die Abdichtung eingeklebt werden, sind ungeeignet, weil die an den Stoßstellen auftretenden temperaturbedingten Bewegungen zu Rissen in der Abdichtung führen können."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Was ist unter einer Voruntersuchung bezogen auf die Wartung eines Flachdaches zu verstehen?",
+    "antworten": [
+      "Vor Instandsetzungen und Erneuerungen sind Bestandsaufnahmen und Zustandsfeststellungen durchzuführen. Beim Vorliegen von Schäden sind Ursachenermittlungen durchzuführen. Art und Umfang sind abzustimmen (z. B. auf vorliegende Dokumente, das Schadensbild und die Ziele der Maßnahme). Die Ergebnisse sind zu protokollieren. Der Dachaufbau ist vor Bearbeitung gemäß Gefahrstoffverordnung auf Schadstoffe zu überprüfen."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Wie ist der Begriff „Behelfsabdichtung\" zu definieren?",
+    "antworten": [
+      "Unter Behelfsabdichtung versteht man den vorübergehenden Schutz einer Konstruktion oder Bauteilfläche, um das Gebäude vor Feuchtigkeit zu schützen und z. B. eine Weiterarbeit im Gebäudeinneren zu ermöglichen. Behelfsabdichtungen sind zumindest für einige Zeit der Witterung ausgesetzt; die Werkstoffe und die Ausführung müssen hierfür geeignet sein. Je nach Art können auch Dampfsperren oder erste Lagen mehrlagiger Dachabdichtungen als Behelfsabdichtung verwendet werden."
+    ]
+  },
+  {
+    "kategorie": "Flachdach",
+    "frage": "Wie ist der Begriff „Notabdichtung\" zu definieren?",
+    "antworten": [
+      "Unter Notabdichtung versteht man eine befristete Abdichtung als vorübergehender Schutz im Schadensfall. Notabdichtungen sind keine dauerhafte Lösung. Von ihr können nicht die Kriterien einer Abdichtung erwartet werden. Sie ersetzen keine Abdichtung."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Was sind Polymer-Bitumen?",
+    "antworten": [
+      "Polymer-Bitumen sind durch Elastomer- oder Plastomerzusätze modifizierte Bitumen. Dadurch kann das Sprödigkeitsverhalten und die Temperaturbeständigkeit günstig beeinflusst werden."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Nennen Sie die Abbaugebiete für Dachschiefer.",
+    "antworten": [
+      "Mosel",
+      "Westfalen (Fredeburg)",
+      "Hessen (Waldeck)",
+      "Thüringen",
+      "Frankreich (Angers)",
+      "Spanien (Galicien)",
+      "England (Wales)"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Welche Qualitätsanforderungen sind vom Dachdecker an Dachschiefer zu stellen?",
+    "antworten": [
+      "Der Schiefer soll sich leicht bearbeiten, spalten, behauen, lochen und sägen lassen, ohne dass größere Absplitterungen erfolgen.",
+      "Er soll weitgehend eben sein, eine glatte Oberfläche und gleichmäßige Korngrößen haben, der Bruch soll dünnblättrig sein.",
+      "Möglichst hohe Bruchfestigkeit ist erwünscht.",
+      "Haarrisse und sichtbare Einschlüsse (Knollen, Adern) dürfen nicht enthalten sein.",
+      "Guter Dachschiefer soll farbbeständig sein."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Was sind Dachziegel?",
+    "antworten": [
+      "Dachziegel sind flächige, keramische Bauteile zur Deckung von geneigten Dachflächen. Sie werden aus tonigen Massen, gegebenenfalls mit Zusätzen, geformt und gebrannt."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Welches Kurzzeichen bezeichnet eine elastomere Polymer-Bitumenbahn mit einem Trägerstoff aus Glasgewebe 200 g/m² als 5 mm dicke Schweißbahn?",
+    "antworten": [
+      "PYE G 200 S 5"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Nennen Sie vier Dachziegeltypen ohne Verfalzung.",
+    "antworten": [
+      "Hohlpfanne",
+      "Biberschwanzziegel",
+      "Krempziegel",
+      "Mönch- und Nonnenziegel"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Mit Hilfe welchen Verfahrens weist man hohen Schwefelgehalt im Schiefer nach?",
+    "antworten": [
+      "Man erhitzt den Schiefer mit einer Flamme. Bei starkem Schwefelgehalt steigt ein beißender Geruch auf."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Nennen Sie die Eigenschaften und das Haupteinsatzgebiet von Destillationsbitumen.",
+    "antworten": [
+      "Destillationsbitumen ist weich bis mittelhart und wird hauptsächlich im Straßenbau eingesetzt."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Seit wann ist die Herstellung von Betondachsteinen bekannt und wer war der „Erfinder\"?",
+    "antworten": [
+      "Die ersten Betondachsteine wurden 1840 hergestellt. Der Erfinder war Adolph Kroher (Staudach / Bayern)."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Beschreiben Sie einen Betondachstein mit ebenem Wasserlauf und Mittelwulst.",
+    "antworten": [
+      "Der Stein besitzt eine halbzylindrische Mittelwulst, entsprechend ist die Deckfalz ausgebildet. Die meist doppelte Wasserfalz kann in der Wasserebene des Steines oder erhöht angeordnet sein."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Was bewirkt beim Ton eine a) weißliche, b) rostbraune, c) grünliche, d) braune bis schwarze Färbung?",
+    "antworten": [
+      "a) weißliche Färbung: hoher Kaliumgehalt",
+      "b) rostbraune Färbung: hoher Eisenanteil",
+      "c) grünliche Färbung: Chloranteile",
+      "d) braune bis schwarze Färbung: Mangan"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Wie entsteht Oxidations- oder geblasenes Bitumen?",
+    "antworten": [
+      "Durch Einblasen von Luft in heißes, flüssiges Destillationsbitumen werden Oxidationsbitumen erzeugt. Durch dieses Verfahren erhalten Bitumen bei gleicher Härte eine höhere Temperaturstandfestigkeit und eine größere Elastizität."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Sie lesen auf einer Banderole einer Dachbahnrolle PV 200 DD. Welches Produkt haben Sie vor sich?",
+    "antworten": [
+      "Eine Bitumen-Dachdichtungsbahn mit einer Polyestervlies-Einlage von 200 g/m²."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Was ist der Unterschied zwischen Bitumendachbahn DD und Bitumendachbahn S?",
+    "antworten": [
+      "DD = Dachdichtungsbahn; Verlegung in flüssigem Bitumen.",
+      "S = Schweißbahn; Verlegung im Flamm-Schweiß-Verfahren."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Was ist Lehm?",
+    "antworten": [
+      "Ton mit Einlagerungen von Quarzmehl oder Quarzsand."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Wie erhält der Strangziegel seine Form?",
+    "antworten": [
+      "Die Strangpresse gleicht einem überdimensionalen Fleischwolf und fördert je nach aufgesetztem Mundstück einfache Strangziegelformen zutage, die dann mittels Drahtbügeln abgelängt werden und denen der überflüssige Nasenbalken abgestreift wird."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Nennen und erläutern Sie die drei handwerklichen Prüfverfahren für Dachziegel, die Sie auf der Baustelle durchführen können.",
+    "antworten": [
+      "a) Optische Prüfung: Farbe, Form, Oberflächenbeschaffenheit.",
+      "b) Klangprobe: Dichte/Porosität, Brand, Haarrisse. Gute Dachziegel klingen hell; feuchte oder engobierte Ziegel klingen dumpfer, Klirren deutet auf versteckte Risse.",
+      "c) Bruchfestigkeit: Bruchkanten sollen scharfkantig sein, im Bruchquerschnitt keine Einschlüsse über 1 mm Korngröße; die Struktur darf mit bloßem Auge nicht erkennbar sein. Durch Zerbrechen gewinnt man Anhaltspunkte für die allgemeine Festigkeit."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 4",
+    "frage": "Beschreiben Sie „Mönch und Nonne\".",
+    "antworten": [
+      "Die Nonne ist ein muldenförmiger Hohlziegel ohne Falze, der an den Seiten zum Nachbarziegel jeweils vom halbrunden, konischen Mönch überdeckt wird. Die Nonne liegt mit einer Nase auf der Dachlatte, der Mönch mit einem Steg auf den Kopfteilen der Nonne auf."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 7",
+    "frage": "Bei der hinterlüfteten Außenwandbekleidung spricht man von einem Maximalwert der Hinterlüftungsebene. Wie groß sollte dieser sein und warum sollte er eingehalten werden?",
+    "antworten": [
+      "Der Maximalwert sollte zwischen 4 cm und 6 cm liegen. Wenn man diesen Wert überschreitet, läuft man Gefahr, dass bei einem Brand ein brandbeschleunigender Kamineffekt auftritt."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 7",
+    "frage": "Nennen Sie folgende Regeldachneigungen: a) Altdeutsche Deckung, b) Biberschwanzziegel Kronendeckung, c) Doppelstehfalz.",
+    "antworten": [
+      "a) Altdeutsche Deckung: 25° DN",
+      "b) Biberschwanzziegel Kronendeckung: 30° DN",
+      "c) Doppelstehfalz: 7° DN"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 7",
+    "frage": "Nennen Sie 5 mögliche Trägereinlagen für Bitumenbahnen (Bezeichnung + Abkürzung).",
+    "antworten": [
+      "PV – Polyesterfaservlies",
+      "V – Glasvlies",
+      "G – Glasgewebe",
+      "R – Rohfilz",
+      "J – Jute",
+      "VCU – Verbundträgereinlage mit Kupfer",
+      "KTG – Kombinationsträgereinlage mit > 50 % Glasanteil",
+      "KTP – Kombinationsträgereinlage mit > 50 % Polyesteranteil"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 7",
+    "frage": "Nennen Sie 3 Dachabdichtungsbahnen aus thermoplastischen Kunststoffen (Bezeichnung + Abkürzung).",
+    "antworten": [
+      "PVC – Polyvinylchlorid",
+      "ECB – Ethylen-Bitumen-Copolymer",
+      "FPO – Polyolefine",
+      "PIB – Polyisobutylen",
+      "VAE/EVA – Ethylen-Vinyl-Acetat-Copolymer",
+      "PEC – Chloriertes Polyethylen"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 7",
+    "frage": "Nennen Sie 2 Dachabdichtungsbahnen aus elastomeren Kunststoffen (Bezeichnung + Abkürzung).",
+    "antworten": [
+      "EPDM – Ethylen-Propylen-Dien-Mixture",
+      "CSM – Chlorsulfoniertes Polyethylen",
+      "NBR – Nitril-Kautschuk",
+      "IIR – Isobutylen-Isopren-Kautschuk"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 7",
+    "frage": "Nennen Sie die Rohdichte (g/cm³) für: a) Qualitätsschiefer, b) Zink, c) Blei, d) Aluminium, e) Kupfer, f) Zinn.",
+    "antworten": [
+      "a) Qualitätsschiefer: 2,75",
+      "b) Zink: 7,15 – 7,2",
+      "c) Blei: 11,34",
+      "d) Aluminium: 2,7",
+      "e) Kupfer: 8,93",
+      "f) Zinn: 7,3"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 7",
+    "frage": "Nennen Sie die Ausdehnungskoeffizienten (mm/mK) für: a) Titanzink, b) Blei, c) Aluminium, d) Kupfer.",
+    "antworten": [
+      "a) Titanzink: 0,022",
+      "b) Blei: 0,029",
+      "c) Aluminium: 0,024",
+      "d) Kupfer: 0,017"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 7",
+    "frage": "Nennen Sie die Schmelzpunkttemperatur (°C) und das Kurzzeichen für: Zink, Blei, Aluminium, Kupfer, Zinn.",
+    "antworten": [
+      "Zink: 420 °C, ZN",
+      "Blei: 327 °C, PB",
+      "Aluminium: 660 °C, AL",
+      "Kupfer: 1083 °C, CU",
+      "Zinn: 232 °C, SN"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 7",
+    "frage": "Erklären Sie die Anwendungstypen der Dachabdichtung anhand der Kurzzeichen DE, DO, DU, DZ.",
+    "antworten": [
+      "DE – Bahnen für einlagige Abdichtung",
+      "DO – Bahnen für die Oberlage einer mehrlagigen Abdichtung",
+      "DU – Bahnen für die Unterlage einer mehrlagigen Abdichtung",
+      "DZ – Bahnen für die Zwischenlage einer mehrlagigen Abdichtung"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 7",
+    "frage": "Wie groß muss der Lüftungsquerschnitt bei Steildächern im Bereich der Grate mindestens sein?",
+    "antworten": [
+      "0,5 Promille der dazugehörigen Dachfläche, aber min. 50 cm²/m."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 7",
+    "frage": "Was versteht man unter einem Dachgraben und was ist hierbei zu beachten?",
+    "antworten": [
+      "Ein Dachgraben ist die Verschneidungslinie zweier giebelständiger Gebäude.",
+      "Zu beachten: eigene Entwässerung, Sicherheitsrinne und Rinnenheizung."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 7",
+    "frage": "Nennen Sie 2 Kunststoffarten, die sich in Flüssigabdichtungen wiederfinden.",
+    "antworten": [
+      "Polyurethane",
+      "Acrylate und Methacrylatharze",
+      "Polyesterharze",
+      "Kautschuk und Kunststoffderivate",
+      "Bitumen-Latexgemische"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 7",
+    "frage": "Im Dachdeckergewerk kommen auch Holzwerkstoffe zum Einsatz. Was ist darunter zu verstehen?",
+    "antworten": [
+      "Zur Herstellung der Holzwerkstoffe wird geeignetes Holz zersägt, zerspant oder zerfasert und zu Platten verarbeitet.",
+      "Holzwerkstoffe sind grundsätzlich nicht als Ersatz zu betrachten. Sie stellen häufig eine Verbesserung des Vollholzes dar."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 7",
+    "frage": "Nennen Sie die möglichen Nahtverbindungen für plastomere Kunststoffdachbahnen.",
+    "antworten": [
+      "Quellschweißen",
+      "Warmgasschweißen (Heißluftschweißen)",
+      "Dichtungsbänder / Abdeckbänder",
+      "Hochfrequenzschweißen (industrielle Fertigung)",
+      "Heißkeilschweißen (industrielle Fertigung)"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 7",
+    "frage": "Nennen Sie drei große Kunststoffgruppen, die auch im Dachbereich Anwendung finden.",
+    "antworten": [
+      "Plastomere",
+      "Elastomere",
+      "Duromere"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 9",
+    "frage": "Berechnen Sie die Regenwasserabflussmenge Q (l/s) für: Berechnungsregenspende r(5,5) = 341 l/s·ha (Köln), Abflussbeiwert C = 1, Gebäude 10 m × 6 m, 60° DN, Sicherheitsfaktor S = 1.",
+    "antworten": [
+      "Q = r(5,5) · C · A · S / 10000",
+      "Q = 341 · 1 · 60 · 1 / 10000 = 2,046 l/s",
+      "(A = im Grundriss projizierte Niederschlagsfläche in m²)"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 9",
+    "frage": "Was müssen Sie beachten, wenn Sie ein Regenrinnenabflussvermögen berechnen und Fallrohrsiebe verbauen möchten?",
+    "antworten": [
+      "In diesem Fall muss das Ergebnis noch mit dem Wert 0,5 multipliziert werden."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 9",
+    "frage": "Was müssen Sie beachten, wenn Sie ein Regenrinnenabflussvermögen berechnen möchten und sich Rinnenwinkel am Gebäude befinden?",
+    "antworten": [
+      "In diesem Fall muss das Ergebnis noch mit dem Wert 0,85 multipliziert werden."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 9",
+    "frage": "Was versteht man unter dem Begriff Infiltration im Zusammenhang mit einer Gebäudehülle?",
+    "antworten": [
+      "Unter Infiltration versteht man den Luftvolumenstrom aufgrund von Undichtigkeiten in der Gebäudehülle."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 9",
+    "frage": "Die Flachdachrichtlinie 2016 schreibt vor, dass Dichtstofffasen unter gewissen Gegebenheiten zu schützen sind. Unter welchen Gegebenheiten und wie sind sie zu schützen?",
+    "antworten": [
+      "Gegebenheiten: bei Vorsatzmauerwerk, WDVS, Sichtbeton und Putzschichten.",
+      "Schutz: Die Dichtstofffasen sind durch eingelassene Überhangstreifen bzw. Z-Profile u. Ä. zu schützen."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 9",
+    "frage": "In der Flachdachrichtlinie 2016 wird eine Sicherung zur Aufnahme horizontaler Kräfte auch im bituminösen Flachdach gefordert. Unter welchen Voraussetzungen müssen Sie sichern?",
+    "antworten": [
+      "Bei Unterkonstruktionen aus Stahltrapezblech, nagelbaren Untergründen (Dachschalung), einlagigen Abdichtungen oder Abdichtungen mit leichtem Oberflächenschutz auf Hartschaum-Dämmplatten (EPS, XPS und PUR) < 150 kPa."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 9",
+    "frage": "In der Flachdachrichtlinie 2016 wird eine Sicherung zur Aufnahme horizontaler Kräfte gefordert. Was muss hier gesichert werden?",
+    "antworten": [
+      "Dachränder",
+      "Anschlüsse an aufgehende Bauteile",
+      "Neigungswechsel > 7 % (4°) bei loser Verlegung",
+      "Bewegungsfugen",
+      "Lichtbänder und Lichtkuppeln",
+      "Kehlen etc."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 9",
+    "frage": "Wie dick muss eine Abdichtung mit Flüssigkunststoff sein?",
+    "antworten": [
+      "Sie muss 2,1 mm dick sein."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 9",
+    "frage": "Welche Möglichkeiten des Bewegungsausgleichs haben Sie bei vorgehängten Dachrinnen?",
+    "antworten": [
+      "Hochpunktschiebenaht",
+      "Dilatationsstück",
+      "Bewegungsausgleich im Sammelkasten bzw. Einhangstutzen (Tiefpunktschiebenaht)"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 9",
+    "frage": "Nennen Sie die Längenausdehnungskoeffizienten (mm/mK) für folgende Baumetalle: Blei, Kupfer, Aluminium, Zink.",
+    "antworten": [
+      "Blei: 0,029 mm/mK",
+      "Kupfer: 0,017 mm/mK",
+      "Aluminium: 0,024 mm/mK",
+      "Zink: 0,022 mm/mK"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 9",
+    "frage": "Nennen Sie 5 Gründe für eine luft-/winddichte Gebäudehülle.",
+    "antworten": [
+      "Energiekosten sparen",
+      "Bauschäden vermeiden",
+      "CO₂-Ausstoß senken",
+      "Vorschrift (ZVDH, GEG)",
+      "Auskühlen und Mindern der Dämmwirkung vermeiden"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 9",
+    "frage": "Nennen Sie die beiden unterschiedlichen Arten von Unterspannbahnen.",
+    "antworten": [
+      "Mikroporöse: Die Spannbahn wird mit einer Nadelrolle überwalzt.",
+      "Monolithische: Obere und untere Lage bestehen jeweils aus hochreißfesten Polypropylen-Spinnvliesen. In der Mitte sind eine atmungsaktive mikroporöse Membrane sowie eine reißfeste gewebeverstärkte Einlage integriert."
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 9",
+    "frage": "Wenn Sie die Regensicherheit und die Auswahl von Zusatzmaßnahmen eines Steildaches betrachten, können Ihnen „erhöhte Anforderungen\" begegnen. Nennen Sie 5 erhöhte Anforderungen in diesem Sinne.",
+    "antworten": [
+      "Dachneigung",
+      "Sparrenlänge",
+      "Klimatische Verhältnisse",
+      "Konzentrierter Wasserlauf",
+      "Örtliche Bestimmungen",
+      "Konstruktion",
+      "Windlast"
+    ]
+  },
+  {
+    "kategorie": "Fachkunde Übung 9",
+    "frage": "Nennen Sie 5 Beispiele für Schablonenschiefer.",
+    "antworten": [
+      "Fischschuppen",
+      "Spitzwinkel",
+      "Waben",
+      "Universal",
+      "Schuppen",
+      "Octogones",
+      "Coquettes"
+    ]
   }
 ]
