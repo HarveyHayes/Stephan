@@ -3145,7 +3145,9 @@
     "kategorie": "Metall",
     "frage": "Aus welchen Materialien dürfen Hafter für eine Zink-Winkelstehfalzdeckung sein?",
     "antworten": [
-      "Siehe Tabelle – Spannungsreihe beachten."
+      "Geeignet sind Hafter aus nicht rostendem (Edel-)Stahl, aus Titanzink selbst oder aus verzinktem Stahl.",
+      "Maßgebend ist die Spannungsreihe: Es dürfen keine deutlich edleren Metalle (z. B. Kupfer) als Hafter verwendet werden, da sonst Kontaktkorrosion am Zink auftritt.",
+      "(Quelle: Siehe Tabelle – Spannungsreihe beachten.)"
     ]
   },
   {
